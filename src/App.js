@@ -1,13 +1,16 @@
-import './App.css';
+import { ThemeProvider } from '@mui/material/styles'
+import theme from './theme'
+
 import Navbar from './navbar/Navbar.js'
 import GrantCard from './grant_card/GrantCard.js'
+import './App.css';
 
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={ theme }>
       <Navbar />
-      <GrantCard id="GrantCard" />
-    </div>
+      <GrantCard />
+    </ThemeProvider>
   );
 }
 

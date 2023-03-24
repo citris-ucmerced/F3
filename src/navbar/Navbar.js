@@ -1,22 +1,13 @@
-import { AppBar, Toolbar, Typography, Button, makeStyles } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 
-const useStyles = makeStyles((theme) => ({
-    root:  {
-      backgroundColor:'white',
-      color: 'black',
-    },
-    title: {
-      flexGrow: 1,
-    }
-}));
 
 const Navbar = () => {
-    const classes = useStyles();
 
     return (
-        <AppBar position="static" classes={{root: classes.root}}>
+      
+        <AppBar position="static">
           <Toolbar>
-            <Typography variant="h6" className={classes.title}>
+            <Typography variant="h6" sx={{ flexGrow: 1}}>
               F3 Innovate
             </Typography>
             <Button color="inherit">Home</Button>
