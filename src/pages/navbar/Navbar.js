@@ -13,7 +13,7 @@ const Navbar = () => {
         <Box
           component="image"
         >
-          <img className="logo" src={ logo }/>
+          <img className="logo" src={ logo } alt="F3 logo" />
         </Box>
         <Typography sx={{ flexGrow: 1}}>
           F3 Innovate
