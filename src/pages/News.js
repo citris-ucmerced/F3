@@ -1,6 +1,6 @@
 import './News.css'
 
-import Navbar from '../navbar/Navbar.js'
+import Navbar from '../components/Navbar'
 
 const News = () => {
 

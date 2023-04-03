@@ -1,16 +1,8 @@
-
 .paragraph {
-    font-weight: light;
-    color: grey;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 6;
-    margin: 1rem
 }
 
-.button {
+.learn-more-button {
     float: right;
 }
-
