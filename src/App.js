@@ -6,7 +6,6 @@ import Home from './pages/home/Home.js'
 import News from './pages/news/News.js'
 import ChallengeGrants from './pages/challenge-grants/ChallengeGrants.js'
 import People from './pages/people/People.js'
-
 import './App.css';
 
 function App() {
