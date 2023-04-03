@@ -26,7 +26,7 @@ const GrantCard = ({ content }) => {
                 <Box sx={{ width: "35%", height: '100%' }}>
                     <CardMedia
                         component="img"
-                        image={require("../../../assets/images/grant-participants/" + imageName)}
+                        image={require("../assets/images/grant-participants/" + imageName)}
                         alt={imageName}
                     />
                 </Box>

@@ -1,5 +1,5 @@
-import Navbar from '../navbar/Navbar.js'
-import GrantCard from './grant-card/GrantCard'
+import Navbar from '../components/Navbar'
+import GrantCard from '../components/GrantCard'
 import { Typography } from '@mui/material'
 import Papa from 'papaparse'
 import { useEffect, useState } from 'react'

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
-import logo from '../../assets/images/F3_Logo.png'
+import logo from '../assets/images/F3_Logo.png'
 
 import './Navbar.css'
 
