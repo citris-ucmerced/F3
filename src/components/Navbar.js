@@ -2,13 +2,11 @@ import { Link } from 'react-router-dom'
 import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import logo from '../assets/images/F3_Logo.png'
 
-import './Navbar.css'
-
 const Navbar = () => {
 
   return (
 
-    <AppBar position="fixed">
+    <AppBar className='main-navbar'>
       <Toolbar>
         <Box
           component="image"

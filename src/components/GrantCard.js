@@ -1,8 +1,6 @@
 import { Card, CardMedia, CardContent, Typography, Button, Box } from '@mui/material'
 import { useState } from 'react'
 
-import './GrantCard.css'
-
 
 
 const GrantCard = ({ content }) => {
@@ -17,6 +15,7 @@ const GrantCard = ({ content }) => {
 
     return (
         <Card
+            className='grant-card'
             sx={{
                 minWidth: '40rem',
                 width: isOpen ? '70%' : '50%',
