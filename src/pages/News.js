@@ -1,4 +1,3 @@
-import './News.css'
 
 import Navbar from '../components/Navbar'
 

@@ -4,8 +4,6 @@ import { Typography } from '@mui/material'
 import Papa from 'papaparse'
 import { useEffect, useState } from 'react'
 
-import './ChallengeGrants.css'
-
 const ChallengeGrants = () => {
 
     const [data, setData] = useState([])
