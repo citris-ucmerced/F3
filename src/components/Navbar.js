@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
+import { AppBar, Toolbar, Typography, Box } from '@mui/material';
 import logo from '../assets/images/F3_Logo.png'
 
 const Navbar = () => {
@@ -16,11 +16,11 @@ const Navbar = () => {
         <Typography sx={{ flexGrow: 1}}>
           F3 Innovate
         </Typography>
-        <Button color="inherit"><Link to="/" className="nav-link">Home</Link></Button>
-        <Button color="inherit"><Link to="/News" className="nav-link">News</Link></Button>
-        <Button color="inherit"><Link to="/ChallengeGrants" className="nav-link">Challenge Grants</Link></Button>
-        <Button color="inherit"><Link to="/People" className="nav-link">People</Link></Button>
-        <Button color="inherit" >Contact Us</Button>
+        <Link to="/" className="nav-link">Home</Link>
+        <Link to="/News" className="nav-link">News</Link>
+        <Link to="/ChallengeGrants" className="nav-link">Challenge Grants</Link>
+        <Link to="/People" className="nav-link">People</Link>
+        <Link to="/ContactUs" className="nav-link">Contact Us</Link>
       </Toolbar>
     </AppBar>
   );
