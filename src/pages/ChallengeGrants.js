@@ -37,7 +37,7 @@ const ChallengeGrants = () => {
                 variant='h2'
                 sx={{
                     textAlign: 'center',
-                    marginTop: '6rem'
+                    marginTop: '3.5rem'
                 }}
             >
                 Challenge Grants

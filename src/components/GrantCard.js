@@ -14,69 +14,32 @@ const GrantCard = ({ content }) => {
     }
 
     return (
-        <Card
-            className='grant-card'
-            sx={{
-                minWidth: '40rem',
-                width: isOpen ? '70%' : '50%',
-            }}
-        >
-            <CardContent sx={{ display: 'flex', flexDirection: 'row'}}>
-                <Box sx={{ width: "35%", height: '100%' }}>
-                    <CardMedia
-                        component="img"
-                        image={require("../assets/images/grant-participants/" + imageName)}
-                        alt={imageName}
-                    />
-                </Box>
-                <Box sx={{display: 'flex', width: "65%" }}>
-                    <CardContent sx={{ flex: 1, display: 'flex', flexDirection: 'column', }}>
-                        <Typography
-                            variant="h6"
-                            color="textPrimary"
-                            className="title"
-                            sx={{
-                                flex: 1
-                            }}
-                        >
-                            {proposal}
-                        </Typography>
+        <div className='grant-card-container'>
+            <Card 
+                className='grant-card grant-card-modal'
+            
+            >
+                <CardMedia
+                    component = 'img'
+                    image = {require("../assets/images/grant-participants/" + imageName)}
+                    alt={ imageName }
+                />
 
-                        <Typography
-                            variant="h7"
-                            color="textPrimary"
-                            className="affiliates"
-                            sx={{
-                                textAlign: 'center',
-                                flex: 1
-                            }}
-                        >
-                            {team.join(' • ')}
-                        </Typography>
+                <CardContent>
+                    <Typography variant='h5' component='div'>
+                        { proposal }
+                    </Typography>
 
-                        <Typography
-                            variant="body1"
-                            color="textPrimary"
-                            className="paragraph"
-                            sx={{
-                                flex: 10
-                            }}
-                        >
-                            {description}
-                        </Typography>
-                        <Button
-                            className="learn-more-button"
-                            onClick={() => { handleClick() }}
-                            sx={{
-                                flex: 1
-                            }}
-                        >
-                            Learn More
-                        </Button>
-                    </CardContent>
-                </Box>
-            </CardContent>
-        </Card>
+                    <Typography>
+                        { team.join(' • ') }
+                    </Typography>
+
+                    <Box>
+                        <Button className='learn-more-button'> Learn More </Button>
+                    </Box>
+                </CardContent>
+            </Card>
+        </div>
     );
 }
 

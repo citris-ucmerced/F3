@@ -1,4 +1,5 @@
 /* ChallengeGrants.js */
+
 .paragraph {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 6;
@@ -6,14 +7,20 @@
 
 .learn-more-button {
     float: right;
+    margin-right:5%;
+    margin-top:2.5%;
 }
 
 /* GrantCard.js */
+
 .grant-card.MuiCard-root{
+    width:50rem;
+    height:20rem;
+
     display: flex;
     align-items: center;
     margin: auto;
-    margin-top: 6rem;
+    margin-top: 5rem;
     transition: all 1s ease;
 }
 
@@ -32,6 +39,7 @@
 }
 
 /* Navbar.js */
+
 .main-navbar.MuiAppBar-root{
     position: static;
     background-color: white;
