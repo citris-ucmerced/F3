@@ -21,7 +21,7 @@ const GrantCard = ({ content }) => {
             >
                 <CardMedia
                     component = 'img'
-                    image = {require("../assets/images/grant-participants/" + imageName)}
+                    image = {require("../assets/images/challenge-grants/" + imageName)}
                     alt={ imageName }
                 />
 

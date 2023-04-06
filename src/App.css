@@ -74,3 +74,65 @@
     height: 3rem;
     width: 4rem;
 }
+
+/* News.js */
+
+.news-card-container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-card.MuiCard-root{
+    width: 20rem;
+    height: 37rem;
+
+    min-width: 20rem;
+    min-height: 37rem;
+
+
+    max-width: 20rem;
+    max-height: 37rem;
+
+    margin: 2rem;
+}
+
+.news-card-summary{
+    height: 25%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-card-tag-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-card-tag{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.news-search-bar{
+    margin: 2rem 0 1.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+
+.main-footer{
+    position: static;
+    top: auto;
+    bottom: 0;
+    margin-top: 2rem;
+
+    color: black;
+    background-color: white;
+    
+}
+
+.main-footer *{
+    margin-left:1rem;
+}
