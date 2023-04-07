@@ -22,8 +22,6 @@ const ChallengeGrants = () => {
 
     }, [])
 
-    console.log(data)
-
     const content1 = {
         proposal: "Development of a smart water pre-treatment system for controlled environment agriculture using micro-plasma and AI machines",
         team: ["Sankha Banerjee", "Venkattraman Ayyaswamy", "Gerardo Diaz"],
