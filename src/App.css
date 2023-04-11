@@ -177,6 +177,25 @@
   justify-content: center;
 }
 
+/* Contact Us */
+.contact-us-container{
+  display:flex; 
+  flex-direction:row;
+}
+
+.contact-us-container .info-box{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+
+/* Header */
+.header{
+  margin: 3rem 0;
+}
+
+
 /* Footer */
 
 .main-footer {
@@ -191,4 +210,11 @@
 
 .main-footer * {
   margin-left: 1rem;
+}
+
+/* iFrame */
+iframe{
+  border-style: none;
+  aspect-ratio: 9/10;
+  width: 100%;
 }

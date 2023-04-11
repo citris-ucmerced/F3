@@ -1,7 +1,6 @@
 
 import Navbar from '../components/Navbar'
-import { Box, Typography } from '@mui/material';
-import { Container } from '@mui/system';
+import { Box, Typography, Container } from '@mui/material';
 import PeopleCard from '../components/PeopleCard';
 
 const People = () => {
@@ -9,7 +8,7 @@ const People = () => {
         <div>
             <Navbar />
             <Container>
-                <Box className="header" sx={{margin: '3rem 0'}}>
+                <Box className="header">
                     <Typography sx={{width:'fit-content', margin:'auto'}} variant='h4' component='h1'>
                         Our Team
                     </Typography>
