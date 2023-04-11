@@ -19,7 +19,7 @@ const PeopleCard = () => {
         >
           <CardMedia
             component="img"
-            image={require("../assets/images/grant-participants/Sankja Banerjee.jpeg")}
+            image={require("../assets/images/Sankja_Banerjee.jpeg")}
             alt="person"
           />
           <CardContent>
