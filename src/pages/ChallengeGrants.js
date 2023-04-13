@@ -38,7 +38,7 @@ const ChallengeGrants = () => {
 
     const content3 = {
         proposal: "Non-invasive Hybrid Sensing of Key Chemical Compositions of Grapes",
-        team: ["Recardo de Castro", "Luca Brillante", "Reza Ehsani"],
+        team: ["Ricardo de Castro", "Luca Brillante", "Reza Ehsani"],
         description: "This project aims to develop an optical-based sensing system for monitoring quality factors ofgrapes in the field during the growing season. We will focus on monitoring key chemical substances,such as sugar, acidity and anthocyanins, which affect aroma and color of wines and play a key role inthe ripening of grapes. A non-invasive hybrid sensing approach will be developed, which combinestwo types of optical sensing devices (near-infrared and Raman spectroscopy) together with machine-learning models to improve the estimation of key chemical composition of grapes. Our approach willbe experimentally validated at the vineyard of the CSU Fresno, using samples from 70 differentvarieties of table and wine grapes.The proposed hybrid sensing will provide an important source of information for enabling ultra-precision agricultural practices in vineyards, where each plant receives a precise amount of inputs(water, pesticides, nutrients, etc.) based on the data provided by our system. This sensing systemcan also be integrated in future robotic data scouts to autonomously perform large-scale mapping ofgrape quality in real-time.",
         imageName: "grapes.jpg"
     }

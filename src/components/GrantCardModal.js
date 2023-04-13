@@ -15,7 +15,7 @@ const GrantCardModal = ({ content, open, handleClose }) => {
   return (
     <Dialog open={open} onClose={handleClose} fullWidth='true' maxWidth='md' sx={{height:'80%', marginTop:'5%'}}>
           <Grid className="modal" container spacing={2}>
-            <Grid item xs={3}>
+            <Grid item xs={3} id='modal-cover'>
                 <CardMedia
                   component="img"
                   image={require("../assets/images/challenge-grants/" + imageName)}
