@@ -1,7 +1,5 @@
 import { AppBar, Toolbar, Typography, Box } from '@mui/material';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
@@ -14,10 +12,12 @@ const Footer = () => {
           @2023 F3. All rights reserved.
         </Typography>
 
-            <TwitterIcon style={{ fill: "black" }}/>
-            <FacebookIcon style={{ fill: "black" }}/>
-            <InstagramIcon style={{ fill: "black" }}/>
-            <LinkedInIcon style={{ fill: "black" }}/>
+            <a href="https://twitter.com/f3ucmerced">
+              <TwitterIcon style={{ fill: "black" }}/>
+            </a>
+            <a href="https://www.linkedin.com/company/center-for-information-technology-research-in-the-interest-of-society-citris-/">
+              <LinkedInIcon style={{ fill: "black" }}/>
+            </a>
         </Toolbar>
     </AppBar>
   );
