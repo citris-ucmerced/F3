@@ -18,15 +18,6 @@ const NewsCard = ({ content }) => {
             <Typography variant='body2' className='news-card-summary'>
                 { summary }
             </Typography>
-            <CardContent className='news-card-tag-container'>
-                {
-                    tags.map((tag) => (
-                        <Button variant='outlined' className='news-card-tag'>
-                            #{ tag }
-                        </Button>
-                    ))
-                }
-            </CardContent>
         </Card>
     );
 }

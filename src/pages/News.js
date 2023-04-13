@@ -41,7 +41,7 @@ const News = () => {
                 News
             </Typography>
 
-            <NewsSearchBar />
+            {/* <NewsSearchBar />    <--- Future implementation */}
 
             
             <div className='news-card-container'>

@@ -143,13 +143,7 @@
 
 .news-card.MuiCard-root {
   width: 20rem;
-  height: 37rem;
-
-  min-width: 20rem;
-  min-height: 37rem;
-
-  max-width: 20rem;
-  max-height: 37rem;
+  height: 29rem;
 
   margin: 2rem;
 }
@@ -158,17 +152,6 @@
   height: 25%;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.news-card-tag-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.news-card-tag {
-  margin: 0.5rem;
-  padding: 0.5rem;
 }
 
 .news-search-bar {
