@@ -5,7 +5,7 @@ import PeopleCard from '../components/PeopleCard';
 
 const People = () => {
     return(
-        <div>
+        <div className="Page">
             <Navbar />
             <Container>
                 <Box className="header">

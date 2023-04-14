@@ -35,7 +35,7 @@ const GrantCard = ({ content }) => {
           />
 
           <CardContent>
-            <Typography variant="h5" component="div">
+            <Typography variant="h5" component="div" sx={{fontWeight: 'bold'}}>
               {proposal}
             </Typography>
 

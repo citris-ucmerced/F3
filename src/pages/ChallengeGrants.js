@@ -3,23 +3,29 @@ import GrantCard from '../components/GrantCard'
 import Footer from '../components/Footer.js'
 
 import { Typography } from '@mui/material'
-import Papa from 'papaparse'
 import { useEffect, useState } from 'react'
+import Papa from 'papaparse'
+import csvFile from '../assets/sheets/recipriants.csv'
 
 const ChallengeGrants = () => {
 
     const [data, setData] = useState([])
 
     useEffect(() => {
-        async function fetchData() {
-            const response = await fetch('../../../assets/sheets/recipriants.csv');
-            const csvData = await response.text();
-            const parsedData = Papa.parse(csvData, { header: true }).data;
-            setData(parsedData);
+        const fetchCSV = async() => {
+            Papa.parse(csvFile, {
+                download: true,
+                headers: true,
+                delimiter: ',',
+                skipEmptyLines: true,
+                complete: function (results) {
+                    console.log(results.data)
+                    setData(results.data)
+               }
+            })
         }
 
-        fetchData()
-
+        fetchCSV();
     }, [])
 
     const content1 = {
@@ -44,15 +50,12 @@ const ChallengeGrants = () => {
     }
 
     return (
-        <div>
+        <div className='Page'>
             <Navbar />
 
             <Typography
                 variant='h2'
-                sx={{
-                    textAlign: 'center',
-                    marginTop: '3.5rem'
-                }}
+                className='PageTitle'
             >
                 Challenge Grants
             </Typography>

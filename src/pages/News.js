@@ -29,14 +29,11 @@ const News = () => {
     }
     
     return(
-        <div>
+        <div className="Page">
             <Navbar />
             <Typography
                 variant='h2'
-                sx={{
-                    textAlign: 'center',
-                    marginTop: '3.5rem'
-                }}
+                className='PageTitle'
             >
                 News
             </Typography>

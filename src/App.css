@@ -1,9 +1,22 @@
+/* All */
+
+.Page {
+  height: 100%;
+  background: linear-gradient(to bottom, white, lightblue);
+}
+
+.PageTitle {
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
 /* Navbar.js */
 
 .main-navbar.MuiAppBar-root {
   position: static;
   background-color: white;
   color: black;
+  font-weight: bold;
 }
 
 /* ChallengeGrants.js */
@@ -17,6 +30,16 @@
   float: right;
   margin-right: 5%;
   margin-top: 2.5%;
+  margin-bottom: 0.6rem;
+  color: white;
+  padding:0.6rem;
+  background-color: #679461;
+  border-radius: 2rem;
+}
+
+.learn-more-button:hover {
+  color: black;
+  background-color: orange;
 }
 
 /* PeopleCard.js */
@@ -61,6 +84,8 @@
   height: 29rem;
 
   margin: 2rem;
+
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .news-card-summary {
@@ -115,7 +140,7 @@ iframe {
   width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 790px) {
   /* Add  desktop styles here */
   body {
     font-size: 18px;
@@ -210,14 +235,8 @@ iframe {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Add tablet styles here */
-  body {
-    font-size: 16px;
-  }
-}
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 789px) {
   /* Add mobile styles here */
   body {
     font-size: 14px;

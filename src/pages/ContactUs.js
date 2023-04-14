@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 const ContactUs = () => {
   return (
-    <div>
+    <div className="Page">
       <Navbar />
       <Box className="header">
         <Typography
