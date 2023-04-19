@@ -8,9 +8,9 @@ import {
 } from "@mui/material";
 
 
-const GrantCardModal = ({ content, open, handleClose }) => {
+const GrantCardModal = ({ proposal, team, description, image, open, handleClose }) => {
 
-    const { proposal, team, description, imageName } = content;
+  const IMAGE_PATH = "../assets/images/grant-participants/";
 
   return (
     <Dialog open={open} onClose={handleClose} fullWidth='true' maxWidth='md' sx={{height:'80%', marginTop:'5%'}}>
@@ -18,8 +18,8 @@ const GrantCardModal = ({ content, open, handleClose }) => {
             <Grid item xs={3} id='modal-cover'>
                 <CardMedia
                   component="img"
-                  image={require("../assets/images/challenge-grants/" + imageName)}
-                  alt={imageName}
+                  image={require("../assets/images/challenge-grants/" + image)}
+                  alt={image}
                 />
             </Grid>
             <Grid item xs={9}>

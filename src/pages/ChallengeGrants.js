@@ -4,29 +4,26 @@ import Footer from '../components/Footer.js'
 
 import { Typography } from '@mui/material'
 import { useEffect, useState } from 'react'
-import Papa from 'papaparse'
-import csvFile from '../assets/sheets/recipriants.csv'
+import recipientsCSV from '../assets/sheets/recipients.csv'
+import readCSV from '../utils/CSVReader'
 
 const ChallengeGrants = () => {
 
     const [data, setData] = useState([])
+    const [grantCards, setGrantCards] = useState();
 
     useEffect(() => {
-        const fetchCSV = async() => {
-            Papa.parse(csvFile, {
-                download: true,
-                headers: true,
-                delimiter: ',',
-                skipEmptyLines: true,
-                complete: function (results) {
-                    console.log(results.data)
-                    setData(results.data)
-               }
-            })
-        }
+        readCSV(recipientsCSV, setData);
+    }, []);
 
-        fetchCSV();
-    }, [])
+    useEffect(()=>{
+        const grantCardUI = [];
+        data.forEach((content)=>{
+            grantCardUI.push(<GrantCard content={content}/>);
+        })
+        console.log("dchoi",grantCardUI);
+        setGrantCards(grantCardUI);
+    }, [data])
 
     const content1 = {
         proposal: "Development of a smart water pre-treatment system for controlled environment agriculture using micro-plasma and AI machines",
@@ -60,9 +57,7 @@ const ChallengeGrants = () => {
                 Challenge Grants
             </Typography>
 
-            <GrantCard content={content1} />
-            <GrantCard content={content2} />
-            <GrantCard content={content3} />
+            {grantCards}
 
             <Footer />
         </div>
