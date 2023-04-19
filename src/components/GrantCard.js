@@ -10,28 +10,12 @@ import { useState } from "react";
 
 import GrantCardModal from "./GrantCardModal.js";
 
-const IMAGE_PATH = "../assets/images/challenge-grants/default.jpg";
+const GRANT_IMAGE_PATH = "./images/challenge-grants/";
 
-const GrantCard = ({ content }) => {
-  const { proposal, description, imageName } = content;
-  const team = content.team.split(",").map((item) => item.trim());
-  let image;
-  try {
-    image = require(IMAGE_PATH + imageName);
-  } catch (error) {
-    image = require(IMAGE_PATH);
-  }
-
+const GrantCard = ({ proposal, description, imageName, team }) => {
+  const image = GRANT_IMAGE_PATH + imageName;
 
   const [open, setOpen] = useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   return (
     <>
@@ -39,9 +23,9 @@ const GrantCard = ({ content }) => {
         proposal={proposal}
         team={team}
         description={description}
-        image={image}
+        imageName={imageName}
         open={open}
-        handleClose={handleClose}
+        setOpen={setOpen}
       />
       <div className="grant-card-container">
         <Card className="grant-card grant-card-modal">
@@ -58,7 +42,7 @@ const GrantCard = ({ content }) => {
             <Typography>{team.join("•")}</Typography>
 
             <Box>
-              <Button className="learn-more-button" onClick={handleClickOpen}>
+              <Button className="learn-more-button" onClick={()=>{setOpen(true)}}>
                 Learn More
               </Button>
             </Box>
