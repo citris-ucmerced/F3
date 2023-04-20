@@ -7,8 +7,15 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import ReactCardFlip from "react-card-flip";
-const PeopleCard = () => {
+
+const PEOPLE_IMAGE_PATH = "./images/people/";
+
+const PeopleCard = ({name, title, description}) => {
+  
   const [isFlipped, setIsFlipped] = useState(false);
+
+  const image = PEOPLE_IMAGE_PATH + name + ".jpeg"
+
   return (
     <ReactCardFlip isFlipped={isFlipped}>
       <Card className="people_card">
@@ -19,12 +26,13 @@ const PeopleCard = () => {
         >
           <CardMedia
             component="img"
-            image={require("../assets/images/Sankja_Banerjee.jpeg")}
+            draggable={false}
+            image={image}
             alt="person"
           />
           <CardContent>
-            <Typography variant="h5">Fred Adams</Typography>
-            <Typography variant="p">Professional Baker</Typography>
+            <Typography variant="h5">{name}</Typography>
+            <Typography variant="p">{title}</Typography>
           </CardContent>
         </CardActionArea>
       </Card>
@@ -36,13 +44,11 @@ const PeopleCard = () => {
           }}
         >
           <CardContent>
-            <Typography variant="h5">Fred Adams</Typography>
-            <Typography variant="p" >Professional Baker <br/></Typography>
+            <Typography variant="h5">{name}</Typography>
+            <Typography variant="p" >{title}</Typography>
+            <br/>
             <Typography variant="p">
-              A workshop series inaugural event to learn about technology,
-              Computer Science, networking and research. This is a free
-              conference, open to Central Valley students. Discover paid
-              research opportunities and apply at this event. Register here.
+              {description}
             </Typography>
           </CardContent>
         </CardActionArea>

@@ -32,14 +32,14 @@ const GrantCard = ({ proposal, description, imageName, team }) => {
           <CardMedia component="img" image={image} alt={imageName} />
           <CardContent>
             <Typography
-              variant="h5"
+              variant="h6"
               component="div"
               sx={{ fontWeight: "bold" }}
             >
               {proposal}
             </Typography>
 
-            <Typography>{team.join("•")}</Typography>
+            <Typography>{team.join(" • ")}</Typography>
 
             <Box>
               <Button className="learn-more-button" onClick={()=>{setOpen(true)}}>

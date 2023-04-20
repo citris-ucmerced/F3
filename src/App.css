@@ -1,14 +1,20 @@
 /* All */
-
-.Page {
-  height: 100%;
+.page {
+  position: relative;
+  min-height: 100vh;
   background: linear-gradient(to bottom, white, lightblue);
 }
 
-.PageTitle {
+.page-title {
   text-align: center;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
+
+.page-title.MuiTypography-h4{
+  font-weight: bold;
+}
+
 
 /* Navbar.js */
 
@@ -112,15 +118,10 @@
   justify-content: center;
 }
 
-/* Header */
-.header {
-  margin: 3rem 0;
-}
-
 /* Footer */
 
 .main-footer {
-  position: static;
+  position: absolute;
   top: auto;
   bottom: 0;
   margin-top: 2rem;
@@ -236,7 +237,7 @@ iframe {
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 789px) {
+@media screen and (max-width: 768px) {
   /* Add mobile styles here */
   body {
     font-size: 14px;
