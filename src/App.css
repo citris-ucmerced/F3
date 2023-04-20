@@ -237,7 +237,7 @@ iframe {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 789px) {
   /* Add mobile styles here */
   body {
     font-size: 14px;
