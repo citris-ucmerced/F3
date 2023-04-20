@@ -15,7 +15,6 @@
   font-weight: bold;
 }
 
-
 /* Navbar.js */
 
 .main-navbar.MuiAppBar-root {
@@ -27,9 +26,8 @@
 
 /* ChallengeGrants.js */
 
-.paragraph {
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
+.grant-card .MuiTypography-root {
+  margin: 1.5rem;
 }
 
 .learn-more-button {
@@ -47,6 +45,7 @@
   color: black;
   background-color: orange;
 }
+
 
 /* PeopleCard.js */
 .people_card.MuiCard-root {
@@ -88,14 +87,17 @@
 .news-card.MuiCard-root {
   width: 20rem;
   height: 29rem;
-
   margin: 2rem;
-
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+
 }
 
-.news-card-summary {
-  height: 25%;
+.news-card-text {
+  padding:1rem;
+}
+
+.news-card-description {
+  height: 10%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -233,6 +235,10 @@ iframe {
     height: 5rem;
     clip-path: circle();
     object-fit: cover;
+  }
+
+  .modal .MuiBox-root {
+    margin: 1.5rem;
   }
 }
 
