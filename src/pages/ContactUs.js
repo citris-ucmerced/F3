@@ -3,21 +3,16 @@ import Navbar from "../components/Navbar";
 
 const ContactUs = () => {
   return (
-    <div className="Page">
+    <div className="page">
       <Navbar />
-      <Box className="header">
-        <Typography
-          sx={{ width: "fit-content", margin: "auto" }}
-          variant="h4"
-          component="h1"
-        >
-          Contact Us
-        </Typography>
-      </Box>
+      <Typography variant="h4" component="h1" className="page-title">
+        Contact Us
+      </Typography>
+
       <Container className="contact-us-container">
         <Box sx={{ flex: "4" }}>
           <iframe
-            src="https://forms.office.com/Pages/ResponsePage.aspx?id=o-nf9HjKmEm3p-bQaS6s5iEyxpMcRwBLumaQqCTOHI1UQ1ZNSVFRTFhRRTFDRTNOM1VXMzJCOEpSVS4u"
+            src="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=o-nf9HjKmEm3p-bQaS6s5iTKSvsBWF5BqrxIXpmK-adUQUM2VFRUWDY2RkZKSE1RSjAxM1pOSDA0Ty4u"
             title="Contact Us Microsoft Form"
           />
         </Box>

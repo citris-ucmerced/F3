@@ -1,55 +1,50 @@
-import { Typography } from '@mui/material';
+import { Typography } from "@mui/material";
 
-import Navbar from '../components/Navbar.js'
-import NewsCard from '../components/NewsCard.js'
-import NewsSearchBar from '../components/NewsSearchBar.js'
-import Footer from '../components/Footer.js'
+import Navbar from "../components/Navbar.js";
+import NewsCard from "../components/NewsCard.js";
+import NewsSearchBar from "../components/NewsSearchBar.js";
+import newsCSV from "../assets/sheets/news.csv";
+import readCSV from "../utils/CSVReader.js";
+import Footer from "../components/Footer.js";
+import { useEffect, useState } from "react";
 
 const News = () => {
+  const [data, setData] = useState([]);
+  const [newsCards, setNewsCards] = useState([]);
 
-    const content1 = {
-        imageName: 'tomatoes.jpg',
-        heading: 'Smart Irrigation Systems',
-        summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        tags: ['tomatoes', 'water', 'industry', 'social']
-    }
+  useEffect(() => {
+    readCSV(newsCSV, setData);
+  }, []);
 
-    const content2 = {
-        imageName: 'vineyards.jpg',
-        heading: 'Passion Agriculture',
-        summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        tags: ['vineyards', 'food', 'San Joaquin']
-    }
+  useEffect(() => {
+    const newsCardUI = data.map((content) => {
+      const tags = content.tags.split(",").map((item) => item.trim());
+      return (
+        <NewsCard
+          title={content.title}
+          imageName={content.imageName}
+          description={content.description}
+          tags={tags}
+        />
+      );
+    });
+    setNewsCards(newsCardUI);
+  }, [data]);
 
-    const content3 = {
-        imageName: 'drone.jpg',
-        heading: 'The Future of Farming',
-        summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        tags: ['innovation', 'tech', 'future']
-    }
-    
-    return(
-        <div className="Page">
-            <Navbar />
-            <Typography
-                variant='h2'
-                className='PageTitle'
-            >
-                News
-            </Typography>
+  return (
+    <div className="page">
+      <Navbar />
+      <Typography variant="h4" component="h1" className="page-title">
+        Challenge Grants
+      </Typography>
 
-            {/* <NewsSearchBar />    <--- Future implementation */}
+      {/* <NewsSearchBar />    <--- Future implementation */}
 
-            
-            <div className='news-card-container'>
-                <NewsCard content={ content1 }/>
-                <NewsCard content={ content2 }/>
-                <NewsCard content={ content3 }/>
-            </div>
+      <div className="news-card-container">{newsCards}</div>
 
-            <Footer />
-        </div>
-    );
-}
+      <Footer />
+    </div>
+  );
+};
 
-export default News
+export default News;

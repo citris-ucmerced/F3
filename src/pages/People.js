@@ -1,32 +1,57 @@
-
-import Navbar from '../components/Navbar'
-import { Box, Typography, Container } from '@mui/material';
-import PeopleCard from '../components/PeopleCard';
+import Navbar from "../components/Navbar";
+import { Box, Typography, Container } from "@mui/material";
+import PeopleCard from "../components/PeopleCard";
+import { useEffect, useState } from "react";
+import readCSV from "../utils/CSVReader";
+import staffCSV from "../assets/sheets/staff.csv";
+import Footer from "../components/Footer";
 
 const People = () => {
-    return(
-        <div className="Page">
-            <Navbar />
-            <Container>
-                <Box className="header">
-                    <Typography sx={{width:'fit-content', margin:'auto'}} variant='h4' component='h1'>
-                        Our Team
-                    </Typography>
-                </Box>
-                <Box sx={{display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:4}}>
-                    <PeopleCard/>
-                    <PeopleCard/>
-                    <PeopleCard/>
-                    <PeopleCard/>
-                    <PeopleCard/>
-                    <PeopleCard/>
-                    <PeopleCard/>
+  const [data, setData] = useState([]);
+  const [peopleCards, setPeopleCards] = useState([]);
 
-                </Box>
-                
-            </Container>
-        </div>
-    );
-}
+  useEffect(() => {
+    readCSV(staffCSV, setData);
+  }, []);
+
+  useEffect(() => {
+    const peopleCardUI = data.map((content) => {
+      return (
+        <PeopleCard
+          name={content.name}
+          title={content.title}
+          description={content.description}
+        />
+      );
+    });
+    setPeopleCards(peopleCardUI);
+  }, [data]);
+
+  return (
+    <div className="page">
+      <Navbar />
+      <Container>
+        <Typography
+          className="page-title"
+          variant="h4"
+          component="h1"
+        >
+          Our Team
+        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: 4,
+          }}
+        >
+          {peopleCards}
+        </Box>
+      </Container>
+      <Footer />
+    </div>
+  );
+};
 
 export default People;

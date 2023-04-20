@@ -10,39 +10,39 @@ import { useState } from "react";
 
 import GrantCardModal from "./GrantCardModal.js";
 
-const GrantCard = ({ content }) => {
-  const { proposal, team, description, imageName } = content;
+const GRANT_IMAGE_PATH = "./images/challenge-grants/";
+
+const GrantCard = ({ proposal, description, imageName, team }) => {
+  const image = GRANT_IMAGE_PATH + imageName;
 
   const [open, setOpen] = useState(false);
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   return (
     <>
-      <GrantCardModal content={content} open={open} handleClose={handleClose} />
+      <GrantCardModal
+        proposal={proposal}
+        team={team}
+        description={description}
+        imageName={imageName}
+        open={open}
+        setOpen={setOpen}
+      />
       <div className="grant-card-container">
         <Card className="grant-card grant-card-modal">
-          <CardMedia
-            component="img"
-            image={require("../assets/images/challenge-grants/" + imageName)}
-            alt={imageName}
-          />
-
+          <CardMedia component="img" image={image} alt={imageName} />
           <CardContent>
-            <Typography variant="h5" component="div" sx={{fontWeight: 'bold'}}>
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ fontWeight: "bold" }}
+            >
               {proposal}
             </Typography>
 
             <Typography>{team.join(" • ")}</Typography>
 
             <Box>
-              <Button className="learn-more-button" onClick={handleClickOpen}>
+              <Button className="learn-more-button" onClick={()=>{setOpen(true)}}>
                 Learn More
               </Button>
             </Box>

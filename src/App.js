@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles";
-import theme from "./theme";
+import { StyledEngineProvider } from "@mui/material/styles";
 
 import Home from "./pages/Home.js";
 import News from "./pages/News.js";
@@ -12,7 +11,6 @@ import "./App.css";
 function App() {
   return (
     <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={theme}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -22,7 +20,6 @@ function App() {
             <Route path="ContactUs" element={<ContactUs />} />
           </Routes>
         </BrowserRouter>
-      </ThemeProvider>
     </StyledEngineProvider>
   );
 }
