@@ -10,13 +10,13 @@ const ContactUs = () => {
       </Typography>
 
       <Container className="contact-us-container">
-        <Box sx={{ flex: "4" }}>
+        <Box sx={{ display: 'flex', flex: "4" }}>
           <iframe
             src="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=o-nf9HjKmEm3p-bQaS6s5iTKSvsBWF5BqrxIXpmK-adUQUM2VFRUWDY2RkZKSE1RSjAxM1pOSDA0Ty4u"
             title="Contact Us Microsoft Form"
           />
         </Box>
-        <Box className="info-box" sx={{ flex: "3" }}>
+        <Box className="info-box" sx={{ flex: "3", alignItems: 'baseline'}}>
           <Typography variant="p">
             <b>Phone:</b> (111)-111-1111
             <br />

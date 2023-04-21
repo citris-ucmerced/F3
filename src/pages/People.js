@@ -39,11 +39,13 @@ const People = () => {
           Our Team
         </Typography>
         <Box
+
           sx={{
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "center",
             flexWrap: "wrap",
             gap: 4,
+            paddingBottom:'10rem'
           }}
         >
           {peopleCards}

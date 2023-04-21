@@ -2,11 +2,13 @@ import { Typography } from "@mui/material";
 
 import Navbar from "../components/Navbar.js";
 import NewsCard from "../components/NewsCard.js";
-import NewsSearchBar from "../components/NewsSearchBar.js";
 import newsCSV from "../assets/sheets/news.csv";
 import readCSV from "../utils/CSVReader.js";
 import Footer from "../components/Footer.js";
 import { useEffect, useState } from "react";
+
+// import NewsSearchBar from "../components/NewsSearchBar.js";
+
 
 const News = () => {
   const [data, setData] = useState([]);
@@ -18,13 +20,12 @@ const News = () => {
 
   useEffect(() => {
     const newsCardUI = data.map((content) => {
-      const tags = content.tags.split(",").map((item) => item.trim());
       return (
         <NewsCard
           title={content.title}
-          imageName={content.imageName}
+          fileName={content.fileName}
+          link={content.link   }
           description={content.description}
-          tags={tags}
         />
       );
     });
@@ -35,7 +36,7 @@ const News = () => {
     <div className="page">
       <Navbar />
       <Typography variant="h4" component="h1" className="page-title">
-        Challenge Grants
+        News
       </Typography>
 
       {/* <NewsSearchBar />    <--- Future implementation */}

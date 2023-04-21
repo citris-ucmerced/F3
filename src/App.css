@@ -36,14 +36,18 @@
   margin-top: 2.5%;
   margin-bottom: 0.6rem;
   color: white;
-  padding:0.6rem;
+  padding:0.75rem;
   background-color: #679461;
   border-radius: 2rem;
 }
 
 .learn-more-button:hover {
   color: black;
-  background-color: orange;
+  background-color: lightgreen;
+}
+
+.grant-card-container:last-of-type{
+  padding-bottom: 10rem;
 }
 
 
@@ -51,7 +55,8 @@
 .people_card.MuiCard-root {
   width: 18rem;
   height: 23.5rem;
-  margin: 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .people_card .MuiCardMedia-root {
@@ -93,11 +98,13 @@
 }
 
 .news-card-text {
+  height:auto;
+  display: flex;
+  flex-direction: column;
   padding:1rem;
 }
 
 .news-card-description {
-  height: 10%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -111,7 +118,10 @@
 /* Contact Us */
 .contact-us-container {
   display: flex;
-  flex-direction: row;
+}
+
+.contact-us-container *{
+  padding:1.25rem;
 }
 
 .contact-us-container .info-box {
@@ -120,13 +130,17 @@
   justify-content: center;
 }
 
+.news-link {
+  text-decoration: none;
+}
+
 /* Footer */
 
 .main-footer {
   position: absolute;
   top: auto;
   bottom: 0;
-  margin-top: 2rem;
+  margin-top: 3rem;
 
   color: black;
   background-color: white;
@@ -240,6 +254,11 @@ iframe {
   .modal .MuiBox-root {
     margin: 1.5rem;
   }
+
+  /* Contact Us */
+  .contact-us-container {
+    flex-direction: row;
+  }
 }
 
 
@@ -297,6 +316,7 @@ iframe {
   /* GrantCardModal.js */
 
   .modal {
+    padding-top: 1.5rem;
     display: flex;
     justify-content: center;
   }
@@ -304,6 +324,8 @@ iframe {
   #modal-cover{
     display: none;
   }
+
+  
 
   .modal-individuals-container {
     display: flex;
@@ -322,5 +344,11 @@ iframe {
     height: 5rem;
     clip-path: circle();
     object-fit: cover;
+  }
+
+  /* Contact Us */
+
+  .contact-us-container {
+    flex-direction: column;
   }
 }

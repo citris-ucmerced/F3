@@ -18,12 +18,25 @@ const GrantCardModal = ({
   open,
   setOpen,
 }) => {
+
   const grantImage = GRANT_IMAGE_PATH + imageName;
+
   const grantParticipants = team.map((name) => {
+
     let participantImage = PEOPLE_IMAGE_PATH + name + ".jpeg";
+
+
+    const handleImageError = (e) => {
+      e.target.src = PEOPLE_IMAGE_PATH + "default.jpg";
+    };
+
     return (
       <CardContent className="modal-individuals-profile">
-        <CardMedia component="img" image={participantImage} />
+        <CardMedia
+          component="img"
+          image={participantImage}
+          onError={handleImageError}
+        />
         <Typography>{name}</Typography>
       </CardContent>
     );
