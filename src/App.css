@@ -24,6 +24,53 @@
   font-weight: bold;
 }
 
+/* Home */
+.home-banner{
+  height: 100vh;
+}
+
+.home-banner-video-container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home-banner-video-container:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(80, 167, 196, 0.5)
+}
+
+#home-banner-video {
+  position: relative; 
+  left: 50; 
+  top: 0;
+  height: 106%;
+  z-index: -100;
+}
+
+.home-banner-text-container{
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+
+h1.home-banner-text{
+  color: white;
+  font-size: 8rem;
+}
+h2.home-banner-text{
+  color: white;
+  font-size: 5rem;
+}
+
+
+
+
 /* ChallengeGrants.js */
 
 .grant-card .MuiTypography-root {
