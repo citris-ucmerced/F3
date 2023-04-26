@@ -10,11 +10,10 @@ import ReactCardFlip from "react-card-flip";
 
 const PEOPLE_IMAGE_PATH = "./images/people/";
 
-const PeopleCard = ({name, title, description}) => {
-  
+const PeopleCard = ({ name, title, description }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const image = PEOPLE_IMAGE_PATH + name + ".jpeg"
+  const image = PEOPLE_IMAGE_PATH + name + ".jpeg";
 
   return (
     <ReactCardFlip isFlipped={isFlipped}>
@@ -31,8 +30,12 @@ const PeopleCard = ({name, title, description}) => {
             alt="person"
           />
           <CardContent>
-            <Typography variant="h5">{name}</Typography>
-            <Typography variant="p">{title}</Typography>
+            <Typography className="card-title" variant="h5">
+              {name}
+            </Typography>
+            <Typography className="card-subtitle" variant="p">
+              {title}
+            </Typography>
           </CardContent>
         </CardActionArea>
       </Card>
@@ -44,10 +47,13 @@ const PeopleCard = ({name, title, description}) => {
           }}
         >
           <CardContent>
-            <Typography variant="h5">{name}</Typography>
-            <Typography variant="p" >{title}</Typography>
-            <br/>
-            <Typography variant="p">
+            <Typography className="card-title" variant="h5">
+              {name}
+            </Typography>
+            <Typography className="card-subtitle" variant="p">
+              {title}
+            </Typography>
+            <Typography className="people_card_description" variant="p">
               {description}
             </Typography>
           </CardContent>

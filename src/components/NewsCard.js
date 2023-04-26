@@ -1,5 +1,4 @@
 import {
-  Button,
   Card,
   CardContent,
   CardMedia,
@@ -14,13 +13,13 @@ const NewsCard = ({ title, fileName, link, description }) => {
   return (
     <a href={link} class='news-link'>
       <Card className="news-card">
-        <CardMedia component="img" image={newsImage} />
-        <div className="news-card-text">
-          <Typography variant="h5">{title}</Typography>
-          <Typography variant="body2" className="news-card-description">
+        <CardMedia className="news-card-image" component="img" image={newsImage} />
+        <CardContent className="news-card-text">
+          <Typography className="news-card-title " variant="h5">{title}</Typography>
+          <Typography className="news-card-description" variant="body2">
             {description}
           </Typography>
-        </div>
+        </CardContent>
       </Card>
     </a>
   );
