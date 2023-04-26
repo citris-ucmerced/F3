@@ -31,21 +31,24 @@ const GrantCard = ({ proposal, description, imageName, team }) => {
         <Card className="grant-card grant-card-modal">
           <CardMedia component="img" image={image} alt={imageName} />
           <CardContent>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ fontWeight: "bold" }}
-            >
-              {proposal}
-            </Typography>
+            <Box className="grant-card-text-container">
+              <Typography variant="h5" className="card-title">
+                {proposal}
+              </Typography>
 
-            <Typography>{team.join(" • ")}</Typography>
-
-            <Box>
-              <Button className="learn-more-button" onClick={()=>{setOpen(true)}}>
-                Learn More
-              </Button>
+              <Typography className="card-subtitle" variant="p">
+                {team.join(" • ")}
+              </Typography>
             </Box>
+            <Button
+              variant="contained"
+              className="learn-more-button"
+              onClick={() => {
+                setOpen(true);
+              }}
+            >
+              Learn More
+            </Button>
           </CardContent>
         </Card>
       </div>
