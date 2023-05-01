@@ -1,5 +1,6 @@
 import { Container, Typography, Box } from "@mui/material";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const ContactUs = () => {
   return (
@@ -32,6 +33,7 @@ const ContactUs = () => {
           </Typography>
         </Box>
       </Container>
+      <Footer />
     </div>
   );
 };

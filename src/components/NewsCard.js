@@ -2,7 +2,7 @@ import {
   Card,
   CardContent,
   CardMedia,
-  Typography,
+  Typography
 } from "@mui/material";
 
 const NewsCard = ({ title, fileName, link, description }) => {
@@ -12,7 +12,7 @@ const NewsCard = ({ title, fileName, link, description }) => {
 
   return (
     <a href={link} class='news-link'>
-      <Card className="news-card">
+      <Card className="news-card custom-card" title="Click me to read more!">
         <CardMedia className="news-card-image" component="img" image={newsImage} />
         <CardContent className="news-card-text">
           <Typography className="news-card-title " variant="h5">{title}</Typography>

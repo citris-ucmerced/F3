@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import GrantCard from "../components/GrantCard";
 import Footer from "../components/Footer.js";
 
-import { Container, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import recipientsCSV from "../assets/sheets/recipients.csv";
 import readCSV from "../utils/CSVReader";

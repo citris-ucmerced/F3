@@ -17,7 +17,7 @@ const PeopleCard = ({ name, title, description }) => {
 
   return (
     <ReactCardFlip isFlipped={isFlipped}>
-      <Card className="people_card">
+      <Card className="people-card">
         <CardActionArea
           onClick={() => {
             setIsFlipped(!isFlipped);

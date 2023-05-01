@@ -28,7 +28,7 @@ const GrantCard = ({ proposal, description, imageName, team }) => {
         setOpen={setOpen}
       />
       <div className="grant-card-container">
-        <Card className="grant-card grant-card-modal">
+        <Card className="custom-card grant-card grant-card-modal">
           <CardMedia component="img" image={image} alt={imageName} />
           <CardContent>
             <Box className="grant-card-text-container">

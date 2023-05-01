@@ -2,7 +2,13 @@
 .page {
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(to bottom, white, lightblue);
+  background-image: url("../src/assets/images/background.svg"),
+    linear-gradient(180deg, #ffffff 0%, #b1e3ff 55.21%, #d3e2eb 100%);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+
+  padding-bottom: 7rem;
 }
 
 .page-title {
@@ -11,8 +17,14 @@
   margin-bottom: 3rem;
 }
 
-.page-title.MuiTypography-h4{
+.page-title.MuiTypography-h4 {
   font-weight: bold;
+}
+
+.custom-card {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
 }
 
 /* Navbar.js */
@@ -25,11 +37,11 @@
 }
 
 /* Home */
-.home-banner{
+.home-banner {
   height: 100vh;
 }
 
-.home-banner-video-container{
+.home-banner-video-container {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -37,62 +49,61 @@
 }
 
 .home-banner-video-container:before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgba(80, 167, 196, 0.5)
+  background: rgba(80, 167, 196, 0.5);
 }
 
 #home-banner-video {
-  position: relative; 
-  left: 50; 
+  position: relative;
+  left: 50;
   top: 0;
   height: 106%;
   z-index: -100;
 }
 
-.home-banner-text-container{
+.home-banner-text-container {
   position: absolute;
   top: 30%;
   left: 0;
   right: 0;
 }
 
-h1.home-banner-text{
+h1.home-banner-text {
   color: white;
   font-size: 8rem;
 }
-h2.home-banner-text{
+h2.home-banner-text {
   color: white;
   font-size: 5rem;
 }
 
-
-
-
 /* ChallengeGrants.js */
 
-.grant-card .MuiCardContent-root{
+.grant-card .MuiCardContent-root {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.grant-card .card-subtitle{
+.grant-card .card-subtitle {
   margin-top: 8rem;
 }
 
-.grant-card-text-container{
+.grant-card-text-container {
   margin: 1.5rem;
 }
 
-
 .learn-more-button {
+  border-radius: 3rem;
+  padding: 0.75rem;
+
   justify-self: flex-end;
-  background-color: #679461;
+  background: linear-gradient(to top right, #679461, #77ab6f);
   box-shadow: none;
-  
+
   margin: 1.5rem;
   margin-top: auto;
   width: 8rem;
@@ -109,32 +120,25 @@ h2.home-banner-text{
   box-shadow: none;
 }
 
-.grant-card-container:last-of-type{
-  padding-bottom: 10rem;
-}
-
 /* Card */
-.card-title{
 
-}
-
-.card-subtitle{
-  font-size: .95rem;
+.card-subtitle {
+  font-size: 0.95rem;
 }
 
 /* PeopleCard.js */
-.people_card.MuiCard-root {
+.people-card.MuiCard-root {
   width: 18rem;
   height: 23.5rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
-.people_card .MuiCardMedia-root {
+.people-card .MuiCardMedia-root {
   aspect-ratio: 1/1;
 }
 
-.people_card .MuiCardActionArea-root {
+.people-card .MuiCardActionArea-root {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -142,19 +146,19 @@ h2.home-banner-text{
   align-items: flex-start;
 }
 
-.people_card .MuiCardContent-root {
+.people-card .MuiCardContent-root {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   height: max-content;
 }
 
-.people_card .MuiTypography-root {
+.people-card .MuiTypography-root {
   margin: 0;
 }
 
-.people_card .people_card_description{
+.people-card .people-card_description {
   display: block;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 /* News.js */
@@ -163,9 +167,8 @@ h2.home-banner-text{
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 6rem;
 }
-
 
 .news-card {
   display: flex;
@@ -174,7 +177,7 @@ h2.home-banner-text{
   width: 19rem;
 }
 
-.news-card-image{
+.news-card-image {
   height: 40%;
 }
 
@@ -202,8 +205,8 @@ h2.home-banner-text{
   display: flex;
 }
 
-.contact-us-container *{
-  padding:1.25rem;
+.contact-us-container * {
+  padding: 1.25rem;
 }
 
 .contact-us-container .info-box {
@@ -252,22 +255,37 @@ iframe {
 
   .nav-link {
     margin-left: 1.5rem;
-    color: black;
     text-decoration: none;
     vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
+    background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-link:before {
+    content: "";
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
   }
 
   .nav-link:hover {
-    color: darkblue;
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    background-position: 0;
+  }
+
+  .nav-link:hover::before {
+    width: 100%;
   }
 
   .logo {
@@ -338,7 +356,6 @@ iframe {
   }
 }
 
-
 @media screen and (max-width: 789px) {
   /* Add mobile styles here */
 
@@ -400,7 +417,7 @@ iframe {
     justify-content: center;
   }
 
-  #modal-cover{
+  #modal-cover {
     display: none;
   }
 

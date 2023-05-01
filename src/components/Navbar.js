@@ -70,8 +70,8 @@ const Navbar = () => {
         </Box>
         <Typography sx={{ flexGrow: 1, fontWeight: 'bold' }}>F3 Innovate</Typography>
 
-        <Button onClick={toggleDrawer(true)}>
-          <MenuIcon id="hamburger-menu" />
+        <Button onClick={toggleDrawer(true)} id="hamburger-menu">
+          <MenuIcon/>
         </Button>
 
         <SwipeableDrawer
