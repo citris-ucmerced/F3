@@ -17,7 +17,7 @@ const PeopleCard = ({ name, title, description }) => {
 
   return (
     <ReactCardFlip isFlipped={isFlipped}>
-      <Card className="people-card">
+      <Card className="people-card custom-card">
         <CardActionArea
           onClick={() => {
             setIsFlipped(!isFlipped);
@@ -40,7 +40,7 @@ const PeopleCard = ({ name, title, description }) => {
         </CardActionArea>
       </Card>
 
-      <Card className="people_card">
+      <Card className="people-card custom-card">
         <CardActionArea
           onClick={() => {
             setIsFlipped(!isFlipped);

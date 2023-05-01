@@ -1,4 +1,4 @@
-import { Container, Typography, Box } from "@mui/material";
+import { Container, Typography, Box, Card } from "@mui/material";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -17,7 +17,7 @@ const ContactUs = () => {
             title="Contact Us Microsoft Form"
           />
         </Box>
-        <Box className="info-box" sx={{ flex: "3", alignItems: 'baseline'}}>
+        <Card className="info custom-card" sx={{ flex: "3", alignItems: 'baseline'}}>
           <Typography variant="p">
             <b>Phone:</b> (111)-111-1111
             <br />
@@ -31,7 +31,7 @@ const ContactUs = () => {
             <b>Physical Location:</b><br/>CITRIS University of California, Merced 5200
             North Lake Road Merced, CA 95343
           </Typography>
-        </Box>
+        </Card>
       </Container>
       <Footer />
     </div>

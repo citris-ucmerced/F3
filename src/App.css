@@ -209,16 +209,19 @@ h2.home-banner-text {
 /* Contact Us */
 .contact-us-container {
   display: flex;
+  align-items: center;
+  
 }
 
 .contact-us-container * {
   padding: 1.25rem;
 }
 
-.contact-us-container .info-box {
+.contact-us-container .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: fit-content;
 }
 
 .news-link {
