@@ -53,6 +53,7 @@ const PeopleCard = ({ name, title, description }) => {
             <Typography className="card-subtitle" variant="p">
               {title}
             </Typography>
+            <br/>
             <Typography className="people_card_description" variant="p">
               {description}
             </Typography>

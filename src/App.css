@@ -210,18 +210,16 @@ h2.home-banner-text {
 .contact-us-container {
   display: flex;
   align-items: center;
-  
 }
 
-.contact-us-container * {
-  padding: 1.25rem;
-}
 
 .contact-us-container .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: fit-content;
+  margin: 0 1.25rem;
+  padding: 1.25rem;
 }
 
 .news-link {

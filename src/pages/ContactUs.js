@@ -23,10 +23,12 @@ const ContactUs = () => {
             <br />
             <b>Email:</b> email@email.com
           </Typography>
+          <br />
           <Typography variant="p">
             <b>Mailing Address:</b><br/>CITRIS University of California, Merced 5200
             North Lake Road Merced, CA 95343
           </Typography>
+          <br />
           <Typography variant="p">
             <b>Physical Location:</b><br/>CITRIS University of California, Merced 5200
             North Lake Road Merced, CA 95343
