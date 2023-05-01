@@ -5,7 +5,7 @@ import {
   Typography
 } from "@mui/material";
 
-const NewsCard = ({ title, fileName, link, description }) => {
+const NewsCard = ({ title, fileName, link, description, date }) => {
 
   const NEWS_IMAGE_PATH = "./images/news/";
   const newsImage = NEWS_IMAGE_PATH + fileName

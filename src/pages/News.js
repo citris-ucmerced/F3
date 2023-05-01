@@ -26,9 +26,15 @@ const News = () => {
           fileName={content.fileName}
           link={content.link   }
           description={content.description}
+          date={content.date}
         />
       );
     });
+
+
+    newsCardUI.sort((a, b) => new Date(b.props.date) - new Date(a.props.date));
+
+    console.log(newsCardUI)
     setNewsCards(newsCardUI);
   }, [data]);
 

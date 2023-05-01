@@ -68,7 +68,10 @@
 }
 
 .home-banner-text-container {
+  display: flex;
+  flex-direction: column;
   position: absolute;
+  margin: 1rem;
   top: 30%;
   left: 0;
   right: 0;
@@ -363,6 +366,16 @@ iframe {
 
 @media screen and (max-width: 789px) {
   /* Add mobile styles here */
+
+  /* Home.js */
+
+  .home-banner-text-container h1{
+    font-size: 80px;
+  }
+
+  .home-banner-text-container h2{
+    font-size: 50px;
+  }
 
   /* Navbar.js */
 
