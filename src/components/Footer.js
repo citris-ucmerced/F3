@@ -9,7 +9,7 @@ const Footer = () => {
     <AppBar className='main-footer'>
       <Toolbar>
         <Typography sx={{ flexGrow: 1}}>
-          @2023 F3. All rights reserved.
+          ©2023 F3 | All rights reserved.
         </Typography>
 
             <a href="https://twitter.com/f3ucmerced">

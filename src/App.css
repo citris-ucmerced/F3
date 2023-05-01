@@ -25,6 +25,9 @@
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   border-radius: 1rem;
+
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+
 }
 
 /* Navbar.js */
@@ -132,6 +135,9 @@ h2.home-banner-text {
   height: 23.5rem;
   margin-left: 2rem;
   margin-right: 2rem;
+
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+
 }
 
 .people-card .MuiCardMedia-root {
@@ -303,8 +309,6 @@ iframe {
     margin: auto;
     margin-top: 5rem;
     transition: all 1s ease;
-
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
   }
 
   .grant-card .MuiCardMedia-root {
