@@ -3,7 +3,7 @@ import { Typography } from "@mui/material";
 import Navbar from "../components/Navbar.js";
 import NewsCard from "../components/NewsCard.js";
 import newsCSV from "../assets/sheets/news.csv";
-import readCSV from "../utils/CSVReader.js";
+import {readCSV} from "../utils/CSVReader.js";
 import Footer from "../components/Footer.js";
 import { useEffect, useState } from "react";
 

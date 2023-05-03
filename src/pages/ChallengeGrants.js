@@ -5,7 +5,7 @@ import Footer from "../components/Footer.js";
 import { Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import recipientsCSV from "../assets/sheets/recipients.csv";
-import readCSV from "../utils/CSVReader";
+import {readCSV} from "../utils/CSVReader";
 
 const ChallengeGrants = () => {
   const [data, setData] = useState([]);
