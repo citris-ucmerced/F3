@@ -183,8 +183,8 @@ h2.home-banner-text {
 .news-card {
   display: flex;
   flex-direction: column;
-  height: 28rem;
-  width: 19rem;
+  height: 31rem;
+  width: 21rem;
 }
 
 .news-card-image {
