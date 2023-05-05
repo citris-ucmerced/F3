@@ -23,7 +23,9 @@ const GrantCardModal = ({
 
   const grantParticipants = team.map((name) => {
 
-    let participantImage = PEOPLE_IMAGE_PATH + name + ".jpeg";
+    let filename = name.replace(/ /g, "_");
+    filename = filename.replace(/-/g, "_");
+    let participantImage = PEOPLE_IMAGE_PATH + filename + ".jpeg";
 
 
     const handleImageError = (e) => {
