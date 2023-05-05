@@ -12,16 +12,16 @@ const PeopleSection = ({ title, peopleData }) => {
           name={data.name}
           title={data.title}
           description={data.description}
+          filename={data.filename}
         />
       );
     });
     setPeopleCards(peopleCards);
-    console.log(peopleCards);
   }, []);
 
   return (
     <Container sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-        <Typography variant="h6" sx={{marginBottom:"2rem"}}>{title}</Typography>
+        <Typography variant="h5" sx={{marginBottom:"2rem"}}>{title}</Typography>
 
       <Box
         sx={{

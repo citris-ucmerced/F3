@@ -34,7 +34,6 @@ const News = () => {
 
     newsCardUI.sort((a, b) => new Date(b.props.date) - new Date(a.props.date));
 
-    console.log(newsCardUI)
     setNewsCards(newsCardUI);
   }, [data]);
 

@@ -10,15 +10,16 @@ import ReactCardFlip from "react-card-flip";
 
 const PEOPLE_IMAGE_PATH = "./images/people/";
 
-const PeopleCard = ({ name, title, description }) => {
+const PeopleCard = ({ name, title, description, filename }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const image = PEOPLE_IMAGE_PATH + name + ".jpeg";
+  const image = PEOPLE_IMAGE_PATH + filename;
 
   return (
     <ReactCardFlip isFlipped={isFlipped}>
       <Card className="people-card custom-card">
         <CardActionArea
+          disableRipple={true}
           onClick={() => {
             setIsFlipped(!isFlipped);
           }}
@@ -42,6 +43,7 @@ const PeopleCard = ({ name, title, description }) => {
 
       <Card className="people-card custom-card">
         <CardActionArea
+          disableRipple={true}
           onClick={() => {
             setIsFlipped(!isFlipped);
           }}
@@ -53,10 +55,19 @@ const PeopleCard = ({ name, title, description }) => {
             <Typography className="card-subtitle" variant="p">
               {title}
             </Typography>
-            <br/>
-            <Typography className="people_card_description" variant="p">
-              {description}
-            </Typography>
+            <br />
+            <div
+              className="people_card_description"
+              style={{
+                marginTop: '1rem',
+                maxHeight: "15.5rem", // Adjust the height as per your requirements
+                overflowY: "auto",
+              }}
+            >
+              <Typography className="people_card_description" variant="p">
+                {description}
+              </Typography>
+            </div>
           </CardContent>
         </CardActionArea>
       </Card>

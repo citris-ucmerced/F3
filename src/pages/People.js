@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import { Box, Typography, Container } from "@mui/material";
+import { Typography, Container } from "@mui/material";
 
 import { useEffect, useState } from "react";
 import { readCSVSortedByColumn } from "../utils/CSVReader";
@@ -33,7 +33,7 @@ const People = () => {
       <Navbar />
       <Container>
         <Typography className="page-title" variant="h4" component="h1">
-          Our Team
+        Get to Know Our Team
         </Typography>
         {peopleCards}
       </Container>
