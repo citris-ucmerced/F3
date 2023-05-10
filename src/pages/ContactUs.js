@@ -19,9 +19,9 @@ const ContactUs = () => {
         </Box>
         <Card className="info custom-card" sx={{ flex: "3", alignItems: 'baseline'}}>
           <Typography variant="p">
-            <b>Phone:</b> (111)-111-1111
+            <b>Phone:</b> (209) 382-4216
             <br />
-            <b>Email:</b> email@email.com
+            <b>Email:</b> lbernacchi@ucmerced.edu
           </Typography>
           <br />
           <Typography variant="p">
