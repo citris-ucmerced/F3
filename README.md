@@ -13,7 +13,7 @@ To update the image, follow these steps:
 
 1. Navigate to `public > images`.
 2. Open the folder for the page where you want to upload an image. For example, if you are uploading a headshot, open the "people" folder.
-3. Save your image into that folder and copy the file name for the image. If you are saving it into the people's folder make sure the image name matches the individual's full name.
+3. Save your image into that folder and copy the file name for the image. If you are saving it into the people's folder make sure the image name matches the individual's full name. Also make sure for headshots, they are cropped as squares for best alignment
 4. Input the file name of the image into the respective spreadsheet that you are editing.
 
 ## Available Scripts
