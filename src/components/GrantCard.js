@@ -12,8 +12,8 @@ import GrantCardModal from "./GrantCardModal.js";
 
 const GRANT_IMAGE_PATH = "./images/challenge-grants/";
 
-const GrantCard = ({ proposal, description, imageName, team }) => {
-  const image = GRANT_IMAGE_PATH + imageName;
+const GrantCard = ({ proposal, description, fileName, team }) => {
+  const image = GRANT_IMAGE_PATH + fileName;
 
   const [open, setOpen] = useState(false);
 
@@ -23,13 +23,13 @@ const GrantCard = ({ proposal, description, imageName, team }) => {
         proposal={proposal}
         team={team}
         description={description}
-        imageName={imageName}
+        fileName={fileName}
         open={open}
         setOpen={setOpen}
       />
       <div className="grant-card-container">
         <Card className="custom-card grant-card grant-card-modal">
-          <CardMedia component="img" image={image} alt={imageName} />
+          <CardMedia component="img" image={image} alt={fileName} />
           <CardContent>
             <Box className="grant-card-text-container">
               <Typography variant="h5" className="card-title">

@@ -22,7 +22,7 @@ const ChallengeGrants = () => {
         <GrantCard
           proposal={content.proposal}
           description={content.description}
-          imageName={content.imageName}
+          fileName={content.fileName}
           team={team}
         />
       );

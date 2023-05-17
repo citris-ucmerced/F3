@@ -10,10 +10,10 @@ import ReactCardFlip from "react-card-flip";
 
 const PEOPLE_IMAGE_PATH = "./images/people/";
 
-const PeopleCard = ({ name, title, description, filename }) => {
+const PeopleCard = ({ name, title, description, fileName }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const image = PEOPLE_IMAGE_PATH + filename;
+  const image = PEOPLE_IMAGE_PATH + fileName;
 
   return (
     <ReactCardFlip isFlipped={isFlipped}>

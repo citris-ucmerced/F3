@@ -14,12 +14,12 @@ const GrantCardModal = ({
   proposal,
   team,
   description,
-  imageName,
+  fileName,
   open,
   setOpen,
 }) => {
 
-  const grantImage = GRANT_IMAGE_PATH + imageName;
+  const grantImage = GRANT_IMAGE_PATH + fileName;
 
   const grantParticipants = team.map((name) => {
 
@@ -56,7 +56,7 @@ const GrantCardModal = ({
     >
       <Grid className="modal" container spacing={2}>
         <Grid item xs={3} id="modal-cover">
-          <CardMedia component="img" image={grantImage} alt={imageName} />
+          <CardMedia component="img" image={grantImage} alt={fileName} />
         </Grid>
         <Grid item xs={9}>
           <Box>

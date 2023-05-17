@@ -12,7 +12,7 @@ const PeopleSection = ({ title, peopleData }) => {
           name={data.name}
           title={data.title}
           description={data.description}
-          filename={data.filename}
+          fileName={data.fileName}
         />
       );
     });
