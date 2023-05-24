@@ -13,8 +13,9 @@ To update the image, follow these steps:
 
 1. Navigate to `public > images`.
 2. Open the folder for the page where you want to upload an image. For example, if you are uploading a headshot, open the "people" folder.
-3. Save your image into that folder and copy the file name for the image. If you are saving it into the people's folder make sure the image name matches the individual's full name. Also make sure for headshots, they are cropped as squares for best alignment
-4. Input the file name of the image into the respective spreadsheet that you are editing.
+3. Save your image into that folder and copy the file name for the image. If uploading a headshot, please make sure the image is cropped as a square for best alignment
+4. After saving the name of the image file, navigate to the respective spreadsheet where you will input the name of the file to associate that file with an asset.
+   - For example, if I was uploading a picture for Sam then I would first save the image file into the people's folder and then open the people.csv. In the spreadsheet I can simply input the name of the new image file in the column 'fileName' to associate that image file with Sam.
 
 ## Available Scripts
 
