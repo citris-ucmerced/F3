@@ -25,7 +25,7 @@ const GrantCardModal = ({
 
     let filename = name.replace(/ /g, "_");
     filename = filename.replace(/-/g, "_");
-    let participantImage = PEOPLE_IMAGE_PATH + filename + ".jpeg";
+    let participantImage = PEOPLE_IMAGE_PATH + filename + ".jpg";
 
 
     const handleImageError = (e) => {

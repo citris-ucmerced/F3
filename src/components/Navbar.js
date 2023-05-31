@@ -5,6 +5,8 @@ import { useState } from 'react';
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/images/F3_Logo.png";
 
+
+
 const Navbar = () => {
   const routes = [
     {
@@ -63,12 +65,14 @@ const Navbar = () => {
   };
 
   return (
+    
     <AppBar className="main-navbar">
       <Toolbar>
         <Box component="image">
-          <img className="logo" src={logo} alt="F3 logo" />
+          <a href="/"><img className="logo" src={logo} alt="F3 logo" /></a>
         </Box>
-        <Typography sx={{ flexGrow: 1, fontWeight: 'bold' }}>F3 Innovate</Typography>
+        
+          <Typography sx={{ flexGrow: 1, fontWeight: 'bold' }}><a href="/" style={{textDecoration: 'inherit', color: 'black'}}>F3 Innovate</a></Typography>
 
         <Button onClick={toggleDrawer(true)} id="hamburger-menu">
           <MenuIcon/>
