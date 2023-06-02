@@ -317,8 +317,8 @@ iframe {
   }
 
   .grant-card .MuiCardMedia-root {
-    min-width: 27rem;
-    max-width: 27rem;
+    min-width: 24rem;
+    max-width: 24rem;
     height: 100%;
     object-fit: cover;
   }
