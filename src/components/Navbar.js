@@ -72,7 +72,7 @@ const Navbar = () => {
           <a href="/"><img className="logo" src={logo} alt="F3 logo" /></a>
         </Box>
         
-          <Typography sx={{ marginLeft: '1rem', flexGrow: 1, fontWeight: 'bold' }}><a href="/" style={{textDecoration: 'inherit', color: 'black'}}>F3</a></Typography>
+          <Typography sx={{ flexGrow: 1, fontWeight: 'bold' }}><a href="/" style={{textDecoration: 'inherit', color: 'black'}}>F3</a></Typography>
 
         <Button onClick={toggleDrawer(true)} id="hamburger-menu">
           <MenuIcon/>
