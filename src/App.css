@@ -201,8 +201,8 @@ h2.home-banner-text {
 }
 
 .news-card:hover{
-  transform: scale(1.01);
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 .news-card:active{
