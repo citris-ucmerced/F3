@@ -12,7 +12,7 @@ const NewsCard = ({ title, fileName, link, description, date }) => {
 
   return (
     <a href={link} class='news-link'>
-      <Card className="news-card custom-card" title="Click me to read more!">
+      <Card className="news-card custom-card clickable-card" title="Click me to read more!">
         <CardMedia className="news-card-image" component="img" image={newsImage} />
         <CardContent className="news-card-text">
           <Typography className="news-card-title" variant="h5">{title}</Typography>

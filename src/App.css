@@ -105,11 +105,21 @@ h2.home-banner-text {
 }
 
 .grant-card .card-subtitle {
-  margin-top: 8rem;
+  padding: 1rem;
 }
 
+
 .grant-card-text-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 1.5rem;
+}
+
+.grant-card-text-container .card-title {
+  text-align: center;
+  margin: auto;
 }
 
 .learn-more-button {
@@ -140,6 +150,20 @@ h2.home-banner-text {
 
 .card-subtitle {
   font-size: 0.95rem;
+}
+
+.clickable-card {
+  transition:  box-shadow 200ms ease-out, transform 100ms ease-in;
+}
+
+.clickable-card:hover{
+  transform: scale(1.03);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.clickable-card:active{
+  transform: scale(1);
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.5);
 }
 
 /* PeopleCard.js */
@@ -197,17 +221,6 @@ h2.home-banner-text {
   flex-direction: column;
   height: 31rem;
   width: 21rem;
-  transition:  box-shadow 200ms ease-out, transform 100ms ease-in;
-}
-
-.news-card:hover{
-  transform: scale(1.03);
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
-}
-
-.news-card:active{
-  transform: scale(1);
-  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.5);
 }
 
 .news-card-image {
@@ -350,7 +363,6 @@ iframe {
     align-items: center;
     margin: auto;
     margin-top: 5rem;
-    transition: all 1s ease;
   }
 
   .grant-card .MuiCardMedia-root {
@@ -446,7 +458,6 @@ iframe {
     align-items: center;
     margin: auto;
     margin-top: 5rem;
-    transition: all 1s ease;
 
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
   }

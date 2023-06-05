@@ -3,7 +3,6 @@ import {
   CardMedia,
   CardContent,
   Typography,
-  Button,
   Box,
 } from "@mui/material";
 import { useState } from "react";
@@ -28,7 +27,12 @@ const GrantCard = ({ proposal, description, fileName, team }) => {
         setOpen={setOpen}
       />
       <div className="grant-card-container">
-        <Card className="custom-card grant-card grant-card-modal">
+        <Card
+          className="custom-card grant-card grant-card-modal clickable-card"
+          onClick={() => {
+            setOpen(true);
+          }}
+        >
           <CardMedia component="img" image={image} alt={fileName} />
           <CardContent>
             <Box className="grant-card-text-container">
@@ -40,15 +44,6 @@ const GrantCard = ({ proposal, description, fileName, team }) => {
                 {team.join(" • ")}
               </Typography>
             </Box>
-            <Button
-              variant="contained"
-              className="learn-more-button"
-              onClick={() => {
-                setOpen(true);
-              }}
-            >
-              Learn More
-            </Button>
           </CardContent>
         </Card>
       </div>
