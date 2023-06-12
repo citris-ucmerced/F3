@@ -3,6 +3,8 @@ import { Typography, Container } from "@mui/material";
 
 import { useEffect, useState } from "react";
 import { readCSVSortedByColumn } from "../utils/CSVReader";
+import { Helmet } from "react-helmet-async";
+
 import staffCSV from "../assets/sheets/staff.csv";
 import Footer from "../components/Footer";
 import PeopleSection from "../components/PeopleSection";
@@ -29,16 +31,26 @@ const People = () => {
   }, [data]);
 
   return (
-    <div className="page">
-      <Navbar />
-      <Container>
-        <Typography className="page-title" variant="h4" component="h1">
-        Get to Know Our Team
-        </Typography>
-        {peopleCards}
-      </Container>
-      <Footer />
-    </div>
+    <>
+      <Helmet>
+        <title>People</title>
+        <meta
+          name="description"
+          content="Get to know our talented team of researchers and staff!"
+        />
+        <link rel="canonical" href="/People" />
+      </Helmet>
+      <div className="page">
+        <Navbar />
+        <Container>
+          <Typography className="page-title" variant="h4" component="h1">
+            Get to Know Our Team
+          </Typography>
+          {peopleCards}
+        </Container>
+        <Footer />
+      </div>
+    </>
   );
 };
 

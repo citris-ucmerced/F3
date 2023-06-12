@@ -1,11 +1,12 @@
-import Navbar from "../components/Navbar";
-import GrantCard from "../components/GrantCard";
-import Footer from "../components/Footer.js";
-
 import { Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import recipientsCSV from "../assets/sheets/recipients.csv";
-import {readCSV} from "../utils/CSVReader";
+import { readCSV } from "../utils/CSVReader";
+import { Helmet } from "react-helmet-async";
+
+import Navbar from "../components/Navbar";
+import GrantCard from "../components/GrantCard";
+import Footer from "../components/Footer.js";
 
 const ChallengeGrants = () => {
   const [data, setData] = useState([]);
@@ -31,18 +32,27 @@ const ChallengeGrants = () => {
   }, [data]);
 
   return (
-    <div className="page">
-      <Navbar />
+    <>
+      <Helmet>
+        <title>Challenge Grants</title>
+        <meta
+          name="description"
+          content="Check out the recipients of our challenge grants!"
+        />
+        <link rel="canonical" href="/ChallengeGrants" />
+      </Helmet>
+      <div className="page">
+        <Navbar />
 
-      <Typography variant="h4" component="h1" className="page-title">
-        Challenge Grants
-      </Typography>
+        <Typography variant="h4" component="h1" className="page-title">
+          Challenge Grants
+        </Typography>
 
-      {grantCards}
-      
+        {grantCards}
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 

@@ -1,14 +1,12 @@
 import { Typography } from "@mui/material";
+import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import {readCSV} from "../utils/CSVReader.js";
 
 import Navbar from "../components/Navbar.js";
 import NewsCard from "../components/NewsCard.js";
 import newsCSV from "../assets/sheets/news.csv";
-import {readCSV} from "../utils/CSVReader.js";
 import Footer from "../components/Footer.js";
-import { useEffect, useState } from "react";
-
-// import NewsSearchBar from "../components/NewsSearchBar.js";
-
 
 const News = () => {
   const [data, setData] = useState([]);
@@ -38,6 +36,13 @@ const News = () => {
   }, [data]);
 
   return (
+    <>
+      <Helmet>
+        <title>News</title>
+        <meta name="description" content="Check out recent F3 news!" />
+        <link rel="canonical" href="/News" />
+      </Helmet>
+
     <div className="page">
       <Navbar />
       <Typography variant="h4" component="h1" className="page-title">
@@ -50,6 +55,7 @@ const News = () => {
 
       <Footer />
     </div>
+    </>
   );
 };
 
