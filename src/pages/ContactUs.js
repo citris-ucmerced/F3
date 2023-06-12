@@ -3,61 +3,49 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const ContactUs = () => {
+  const contactDetails = [
+    {
+      title: "Phone Number",
+      detail: "(209) 382-4216"
+    },
+    {
+      title: "Email Address",
+      detail: "vista@ucmerced.edu"
+    },
+    {
+      title: "Mailing Address",
+      detail: "F3, University of California, Merced 5200 North Lake Road Merced, CA 95343"
+    },
+    {
+      title: "Physical Location",
+      detail: "Arts and Computational Sciences Building, Room 305, University of California, Merced"
+    }
+  ]
+
   return (
-    <div className="page">
+    <Box className="page">
       <Navbar />
       <Container>
         <Box my={4}>
-          <Typography variant="h4" component="h1" align="center">
+          <Typography variant="h4" component="h1" align="center" gutterBottom>
             Contact Us
           </Typography>
 
           <Grid container spacing={4} sx={{marginTop: "2rem"}}>
-            <Grid item xs={12} sm={6} md={3}>
-              <Card>
-                <CardContent>
-                  <Typography variant="h6">
-                    Phone Number
-                  </Typography>
-                  <Typography paragraph>(209) 382-4216</Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <Card>
-                <CardContent>
-                  <Typography variant="h6">
-                    Email Address
-                  </Typography>
-                  <Typography paragraph>vista@ucmerced.edu</Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <Card>
-                <CardContent>
-                  <Typography variant="h6">
-                    Mailing Address
-                  </Typography>
-                  <Typography paragraph>
-                    F3, University of California, Merced 5200 North Lake Road Merced, CA
-                    95343
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <Card>
-                <CardContent>
-                  <Typography variant="h6">
-                    Physical Location
-                  </Typography>
-                  <Typography paragraph>
-                    Arts and Computational Sciences Building, Room 305, University of California, Merced
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
+            {contactDetails.map((contact, index) => (
+              <Grid item xs={12} sm={6} md={3} key={index}>
+                <Card sx={{height: '100%', backgroundColor: 'rgba(255, 255, 255, 0.7)'}}>
+                  <CardContent>
+                    <Typography variant="h6">
+                      {contact.title}
+                    </Typography>
+                    <Typography paragraph>
+                      {contact.detail}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
           </Grid>
 
           <Box mt={4} p={2} className="contact-form">
@@ -70,7 +58,7 @@ const ContactUs = () => {
         </Box>
       </Container>
       <Footer />
-    </div>
+    </Box>
   );
 };
 
