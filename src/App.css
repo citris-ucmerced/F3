@@ -211,7 +211,7 @@ h2.home-banner-text {
   perspective: 1000px;
 }
 
-.flip-card *{
+.flip-card-inner > div{
   border-radius: 1rem;
   background-color: white;
 }
