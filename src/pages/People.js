@@ -43,7 +43,7 @@ const People = () => {
       <div className="page">
         <Navbar />
         <Container>
-          <Typography className="page-title" variant="h4" component="h1">
+          <Typography className="page-title" variant="h2" component="h1">
             Get to Know Our Team
           </Typography>
           {peopleCards}

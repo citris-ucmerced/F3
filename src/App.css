@@ -12,9 +12,11 @@
 }
 
 .page-title {
+  color:black;
+  text-shadow: lightblue 0px 1px 6px;
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .page-title.MuiTypography-h4 {
@@ -104,6 +106,10 @@ h2.home-banner-text {
   height: 100%;
 }
 
+.grant-cards-container > div:not(:first-child) {
+  margin-top: 5rem;
+}
+
 .grant-card .card-subtitle {
   padding: 1rem;
 }
@@ -120,30 +126,6 @@ h2.home-banner-text {
 .grant-card-text-container .card-title {
   text-align: center;
   margin: auto;
-}
-
-.learn-more-button {
-  border-radius: 3rem;
-  padding: 0.75rem;
-
-  justify-self: flex-end;
-  background: linear-gradient(to top right, #679461, #77ab6f);
-  box-shadow: none;
-
-  margin: 1.5rem;
-  margin-top: auto;
-  width: 8rem;
-  text-transform: none;
-  align-self: flex-end;
-}
-
-.learn-more-button:hover {
-  color: black;
-  background-color: lightgreen;
-  box-shadow: none;
-}
-.learn-more-button:focus {
-  box-shadow: none;
 }
 
 /* Card */
@@ -400,7 +382,6 @@ iframe {
     display: flex;
     align-items: center;
     margin: auto;
-    margin-top: 5rem;
   }
 
   .grant-card .MuiCardMedia-root {
@@ -495,8 +476,6 @@ iframe {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 5rem;
-
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
   }
 
@@ -505,11 +484,6 @@ iframe {
     max-height: 13rem;
   }
 
-  .learn-more-button {
-    width: 80%;
-    margin-bottom: 1.5rem;
-    align-self: center;
-  }
 
   .grant-card .MuiCardMedia-root {
     width: 100%;

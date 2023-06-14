@@ -44,11 +44,11 @@ const ChallengeGrants = () => {
       <div className="page">
         <Navbar />
 
-        <Typography variant="h4" component="h1" className="page-title">
+        <Typography variant="h2" className="page-title">
           Challenge Grants
         </Typography>
 
-        {grantCards}
+        <div className="grant-cards-container">{grantCards}</div>
 
         <Footer />
       </div>

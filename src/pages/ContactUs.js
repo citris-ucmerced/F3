@@ -40,11 +40,12 @@ const ContactUs = () => {
         <meta name="description" content="Have questions? Reach out and we'll be in touch!" />
         <link rel="canonical" href="/ContactUs" />
       </Helmet>
+
       <Box className="page">
         <Navbar />
         <Container>
           <Box my={4}>
-            <Typography variant="h4" component="h1" align="center" gutterBottom>
+            <Typography variant="h2" className="page-title" component="h1" align="center" gutterBottom>
               Contact Us
             </Typography>
 
