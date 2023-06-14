@@ -21,7 +21,7 @@ const PeopleSection = ({ title, peopleData }) => {
 
   return (
     <Container sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-        <Typography variant="h3" className="people-section-title">{title}</Typography>
+        <Typography variant="h5" sx={{marginBottom:"2rem"}}>{title}</Typography>
 
       <Box
         sx={{

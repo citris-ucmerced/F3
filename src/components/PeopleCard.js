@@ -31,11 +31,11 @@ const PeopleCard = ({ name, title, description, fileName }) => {
                 image={image}
                 alt="person"
               />
-              <CardContent sx={{textAlign:"left"}}>
-                <Typography className="card-title" variant="h6">
+              <CardContent>
+                <Typography className="card-title" variant="h5">
                   {name}
                 </Typography>
-                <Typography className="card-subtitle" variant="p" >
+                <Typography className="card-subtitle" variant="p">
                   {title}
                 </Typography>
               </CardContent>
