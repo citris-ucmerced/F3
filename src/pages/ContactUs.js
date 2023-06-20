@@ -44,7 +44,7 @@ const ContactUs = () => {
         <Navbar />
         <Container>
           <Box my={4}>
-            <Typography variant="h4" component="h1" align="center" gutterBottom>
+            <Typography variant="h4" component="h1" align="center" className="page-title" gutterBottom>
               Contact Us
             </Typography>
 
