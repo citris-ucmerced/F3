@@ -23,8 +23,18 @@ const Navbar = () => {
       route: "/News",
     },
     {
-      name: "Challenge Grants",
+      name: "Grants",
       route: "/ChallengeGrants",
+      sublinks: [
+        {
+          name: "Challenge Grants",
+          route: "/ChallengeGrants",
+        },
+        {
+          name: "Student Projects ",
+          route: "/StudentProjects",
+        }
+      ],
     },
     {
       name: "People",
@@ -73,11 +83,31 @@ const Navbar = () => {
         >
           <Sidebar routes={routes} toggleDrawer={toggleDrawer} />
         </SwipeableDrawer>
-        {routes.map((route) => (
-          <Link to={route.route} className="nav-link" key={route.name}>
-            {route.name}
-          </Link>
-        ))}
+        {routes.map((route) => {
+          if (route.sublinks === undefined) {
+            return (
+              <Link to={route.route} className="nav-link" key={route.name}>
+                {route.name}
+              </Link>
+            );
+          } else {
+            return (
+              <div className="dropdown">
+                <Link to={route.route} className="nav-link" key={route.name}>
+                  {route.name}
+                </Link>
+                
+                <div className="dropdown-content">
+                  {route.sublinks.map((sublink) => (
+                    <Link to={sublink.route} key={sublink.name}>
+                      {sublink.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            );
+          }
+        })}
       </Toolbar>
     </AppBar>
   );

@@ -34,7 +34,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: grey; 
+  background: grey;
   border-radius: 10px;
 }
 
@@ -108,7 +108,6 @@ h2.home-banner-text {
   padding: 1rem;
 }
 
-
 .grant-card-text-container {
   height: 100%;
   display: flex;
@@ -153,15 +152,15 @@ h2.home-banner-text {
 }
 
 .clickable-card {
-  transition:  box-shadow 200ms ease-out, transform 100ms ease-in;
+  transition: box-shadow 200ms ease-out, transform 100ms ease-in;
 }
 
-.clickable-card:hover{
+.clickable-card:hover {
   transform: scale(1.03);
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
-.clickable-card:active{
+.clickable-card:active {
   transform: scale(1);
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.5);
 }
@@ -171,7 +170,6 @@ h2.home-banner-text {
   width: 17rem;
   height: 23.75rem;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-
 }
 
 .people-card .MuiCardMedia-root {
@@ -211,7 +209,7 @@ h2.home-banner-text {
   perspective: 1000px;
 }
 
-.flip-card *{
+.flip-card * {
   border-radius: 1rem;
   background-color: white;
 }
@@ -229,7 +227,8 @@ h2.home-banner-text {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -293,10 +292,10 @@ h2.home-banner-text {
 }
 
 .contact-info {
-  flex: 1
+  flex: 1;
 }
 
-.contact-info *{
+.contact-info * {
   padding: 0.5rem;
 }
 
@@ -344,6 +343,36 @@ iframe {
 @media screen and (min-width: 790px) {
   /* Navbar.js */
 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    top: 100%;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
   #hamburger-menu {
     display: none;
   }
@@ -359,7 +388,6 @@ iframe {
     background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
     background-size: 200% 100%;
     background-position: -100%;
-    display: inline-block;
     padding: 5px 0;
     position: relative;
     -webkit-background-clip: text;
@@ -463,11 +491,11 @@ iframe {
 
   /* Home.js */
 
-  .home-banner-text-container h1{
+  .home-banner-text-container h1 {
     font-size: 4rem;
   }
 
-  .home-banner-text-container h2{
+  .home-banner-text-container h2 {
     font-size: 2rem;
   }
 

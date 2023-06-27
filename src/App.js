@@ -4,6 +4,7 @@ import { StyledEngineProvider } from "@mui/material/styles";
 import Home from "./pages/Home.js";
 import News from "./pages/News.js";
 import ChallengeGrants from "./pages/ChallengeGrants.js";
+import StudentProjects from "./pages/StudentProjects.js";
 import People from "./pages/People.js";
 import ContactUs from "./pages/ContactUs.js"
 import "./App.css";
@@ -17,7 +18,8 @@ function App() {
             <Route path="/News" element={<News />} />
             <Route path="/ChallengeGrants" element={<ChallengeGrants />} />
             <Route path="/People" element={<People />} />
-            <Route path="ContactUs" element={<ContactUs />} />
+            <Route path="/ContactUs" element={<ContactUs />} />
+            <Route path="/StudentProjects" element={<StudentProjects />} />
           </Routes>
         </BrowserRouter>
     </StyledEngineProvider>
