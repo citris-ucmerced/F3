@@ -501,6 +501,10 @@ iframe {
 
   /* Navbar.js */
 
+  .dropdown {
+    display: none;
+  }
+
   #hamburger-menu {
     display: block;
   }
