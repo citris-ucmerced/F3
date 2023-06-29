@@ -7,12 +7,12 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 
-import GrantCardModal from "./GrantCardModal.js";
+import GrantCardModal from "./ProjectCardModal.js";
 
-const GRANT_IMAGE_PATH = "./images/challenge-grants/";
+const IMAGE_ASSETS_PATH = "./images/projects/";
 
-const GrantCard = ({ proposal, description, fileName, team }) => {
-  const image = GRANT_IMAGE_PATH + fileName;
+const ProjectCard = ({ proposal, description, fileName, team }) => {
+  const image = IMAGE_ASSETS_PATH + fileName;
 
   const [open, setOpen] = useState(false);
 
@@ -51,4 +51,4 @@ const GrantCard = ({ proposal, description, fileName, team }) => {
   );
 };
 
-export default GrantCard;
+export default ProjectCard;

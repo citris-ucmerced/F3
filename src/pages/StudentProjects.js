@@ -1,35 +1,35 @@
 import { Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import recipientsCSV from "../assets/sheets/recipients.csv"; // Change this to read from student projects csv
+import csvFile from "../assets/sheets/studentProjects.csv"; // Change this to read from student projects csv
 import { readCSV } from "../utils/CSVReader";
 import { Helmet } from "react-helmet-async";
 
 import Navbar from "../components/Navbar";
-import GrantCard from "../components/GrantCard";
+import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer.js";
 
 const StudentProjects = () => {
-//   const [data, setData] = useState([]);
-//   const [grantCards, setGrantCards] = useState([]);
+  const [data, setData] = useState([]);
+  const [grantCards, setGrantCards] = useState([]);
 
-//   useEffect(() => {
-//     readCSV(recipientsCSV, setData);
-//   }, []);
+  useEffect(() => {
+    readCSV(csvFile, setData);
+  }, []);
 
-//   useEffect(() => {
-//     const grantCardUI = data.map((content) => {
-//       const team = content.team.split(",").map((item) => item.trim());
-//       return (
-//         <GrantCard
-//           proposal={content.proposal}
-//           description={content.description}
-//           fileName={content.fileName}
-//           team={team}
-//         />
-//       );
-//     });
-//     setGrantCards(grantCardUI);
-//   }, [data]);
+  useEffect(() => {
+    const grantCardUI = data.map((content) => {
+      const team = content.team.split(",").map((item) => item.trim());
+      return (
+        <ProjectCard
+          proposal={content.proposal}
+          description={content.description}
+          fileName={content.imageFile}
+          team={team}
+        />
+      );
+    });
+    setGrantCards(grantCardUI);
+  }, [data]);
 
   return (
     <>
@@ -48,6 +48,7 @@ const StudentProjects = () => {
           Student Projects
         </Typography>
 
+        { grantCards }
 
         <Footer />
       </div>

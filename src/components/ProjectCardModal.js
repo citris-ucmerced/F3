@@ -7,10 +7,10 @@ import {
   Grid,
 } from "@mui/material";
 
-const GRANT_IMAGE_PATH = "./images/challenge-grants/";
+const PROJECT_IMAGE_PATH = "./images/projects/";
 const PEOPLE_IMAGE_PATH = "./images/people/";
 
-const GrantCardModal = ({
+const ProjectCardModal = ({
   proposal,
   team,
   description,
@@ -18,15 +18,12 @@ const GrantCardModal = ({
   open,
   setOpen,
 }) => {
+  const grantImage = PROJECT_IMAGE_PATH + fileName;
 
-  const grantImage = GRANT_IMAGE_PATH + fileName;
-
-  const grantParticipants = team.map((name) => {
-
+  const Participants = team.map((name) => {
     let filename = name.replace(/ /g, "_");
     filename = filename.replace(/-/g, "_");
     let participantImage = PEOPLE_IMAGE_PATH + filename + ".jpg";
-
 
     const handleImageError = (e) => {
       e.target.src = PEOPLE_IMAGE_PATH + "default.jpg";
@@ -61,13 +58,11 @@ const GrantCardModal = ({
         <Grid item xs={9}>
           <Box>
             <Typography id="typ_id" variant="h5">
-              {proposal}
+              { proposal }
             </Typography>
-            <Box className="modal-individuals-container">
-              {grantParticipants}
-            </Box>
+            <Box className="modal-individuals-container">{ Participants }</Box>
             <Typography className="modal-description" variant="body2">
-              {description}
+              { description}
             </Typography>
           </Box>
         </Grid>
@@ -76,4 +71,4 @@ const GrantCardModal = ({
   );
 };
 
-export default GrantCardModal;
+export default ProjectCardModal;

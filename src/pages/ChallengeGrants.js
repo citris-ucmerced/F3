@@ -1,26 +1,26 @@
 import { Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import recipientsCSV from "../assets/sheets/recipients.csv";
+import csvFile from "../assets/sheets/challengeGrants.csv";
 import { readCSV } from "../utils/CSVReader";
 import { Helmet } from "react-helmet-async";
 
 import Navbar from "../components/Navbar";
-import GrantCard from "../components/GrantCard";
+import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer.js";
 
 const ChallengeGrants = () => {
   const [data, setData] = useState([]);
-  const [grantCards, setGrantCards] = useState([]);
+  const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    readCSV(recipientsCSV, setData);
+    readCSV(csvFile, setData);
   }, []);
 
   useEffect(() => {
-    const grantCardUI = data.map((content) => {
+    const cardsUI = data.map((content) => {
       const team = content.team.split(",").map((item) => item.trim());
       return (
-        <GrantCard
+        <ProjectCard
           proposal={content.proposal}
           description={content.description}
           fileName={content.fileName}
@@ -28,7 +28,7 @@ const ChallengeGrants = () => {
         />
       );
     });
-    setGrantCards(grantCardUI);
+    setCards(cardsUI);
   }, [data]);
 
   return (
@@ -48,7 +48,7 @@ const ChallengeGrants = () => {
           Challenge Grants
         </Typography>
 
-        {grantCards}
+        { cards }
 
         <Footer />
       </div>
