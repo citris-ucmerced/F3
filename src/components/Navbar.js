@@ -99,7 +99,7 @@ const Navbar = () => {
                 
                 <div className="dropdown-content">
                   {route.sublinks.map((sublink) => (
-                    <Link to={sublink.route} key={sublink.name}>
+                    <Link to={sublink.route} key={sublink.name} className="sublink">
                       {sublink.name}
                     </Link>
                   ))}
