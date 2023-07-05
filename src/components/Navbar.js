@@ -23,8 +23,8 @@ const Navbar = () => {
       route: "/News",
     },
     {
-      name: "Grants",
-      route: "/ChallengeGrants",
+      name: "Research",
+      route: "",
       sublinks: [
         {
           name: "Challenge Grants",
