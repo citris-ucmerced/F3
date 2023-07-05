@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.6bf25d48.css",
-    "main.js": "/static/js/main.1db58988.js",
+    "main.css": "/static/css/main.5a9c38e5.css",
+    "main.js": "/static/js/main.c50c03e1.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/tractor.mp4": "/static/media/tractor.36634e831b4ea967213f.mp4",
-    "static/media/background.svg": "/static/media/background.ef141253a9a14dd35b25.svg",
+    "static/media/background.svg": "/static/media/background.aba1af4ed75dc238bc5a.svg",
     "static/media/F3_Logo.png": "/static/media/F3_Logo.498df994e6859ffda509.png",
     "static/media/staff.csv": "/static/media/staff.9c28a35cab8b50a3926b.csv",
     "static/media/studentProjects.csv": "/static/media/studentProjects.f4e91ace745bc4d99920.csv",
     "static/media/challengeGrants.csv": "/static/media/challengeGrants.bc750c1ed3d276c4079a.csv",
     "static/media/news.csv": "/static/media/news.99ef0e54c2b8f18309b2.csv",
     "index.html": "/index.html",
-    "main.6bf25d48.css.map": "/static/css/main.6bf25d48.css.map",
-    "main.1db58988.js.map": "/static/js/main.1db58988.js.map",
+    "main.5a9c38e5.css.map": "/static/css/main.5a9c38e5.css.map",
+    "main.c50c03e1.js.map": "/static/js/main.c50c03e1.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bf25d48.css",
-    "static/js/main.1db58988.js"
+    "static/css/main.5a9c38e5.css",
+    "static/js/main.c50c03e1.js"
   ]
 }
