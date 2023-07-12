@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import csvFile from "../assets/sheets/studentProjects.csv"; // Change this to read from student projects csv
 import { readCSV } from "../utils/CSVReader";
@@ -35,10 +35,7 @@ const StudentProjects = () => {
     <>
       <Helmet>
         <title>Student Projects</title>
-        <meta
-          name="description"
-          content="Check out our student projects!"
-        />
+        <meta name="description" content="Check out our student projects!" />
         <link rel="canonical" href="/StudentProjects" />
       </Helmet>
       <div className="page">
@@ -48,7 +45,7 @@ const StudentProjects = () => {
           Student Projects
         </Typography>
 
-        { grantCards }
+        <Box mb={12}>{grantCards}</Box>
 
         <Footer />
       </div>

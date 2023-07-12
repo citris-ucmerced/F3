@@ -1,7 +1,7 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import {readCSV} from "../utils/CSVReader.js";
+import { readCSV } from "../utils/CSVReader.js";
 
 import Navbar from "../components/Navbar.js";
 import NewsCard from "../components/NewsCard.js";
@@ -22,13 +22,12 @@ const News = () => {
         <NewsCard
           title={content.title}
           fileName={content.fileName}
-          link={content.link   }
+          link={content.link}
           description={content.description}
           date={content.date}
         />
       );
     });
-
 
     newsCardUI.sort((a, b) => new Date(b.props.date) - new Date(a.props.date));
 
@@ -43,18 +42,18 @@ const News = () => {
         <link rel="canonical" href="/News" />
       </Helmet>
 
-    <div className="page">
-      <Navbar />
-      <Typography variant="h4" component="h1" className="page-title">
-        News
-      </Typography>
+      <div className="page">
+        <Navbar />
+        <Typography variant="h4" component="h1" className="page-title">
+          News
+        </Typography>
 
-      {/* <NewsSearchBar />    <--- Future implementation */}
+        <Box className="news-card-container" mb={12}>
+          {newsCards}
+        </Box>
 
-      <div className="news-card-container">{newsCards}</div>
-
-      <Footer />
-    </div>
+        <Footer />
+      </div>
     </>
   );
 };

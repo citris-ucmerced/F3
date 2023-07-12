@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import csvFile from "../assets/sheets/challengeGrants.csv";
 import { readCSV } from "../utils/CSVReader";
@@ -48,7 +48,7 @@ const ChallengeGrants = () => {
           Challenge Grants
         </Typography>
 
-        { cards }
+        <Box mb={12}>{cards}</Box>
 
         <Footer />
       </div>
