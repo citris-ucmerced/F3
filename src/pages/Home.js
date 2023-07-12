@@ -28,6 +28,7 @@ const Home = () => {
             className="filtered-video"
             src={require("../assets/video/tractor.mp4")}
             type="video/mp4"
+            playsInline
           />
           <Box className="full-size centered">
             <Grid container spacing={1} id="banner-content">

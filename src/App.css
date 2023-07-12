@@ -10,6 +10,11 @@
   height: 100%;
 }
 
+.full-view {
+  width: 100vw;
+  height: 100vh;
+}
+
 .page {
   position: relative;
   min-height: 100vh;
@@ -328,6 +333,16 @@ iframe {
   border-style: none;
   aspect-ratio: 9/10;
   width: 100%;
+}
+
+/* Not Found */
+
+.go-home-link {
+  color: #000080;
+}
+
+.go-home-link:hover {
+  color: blue;
 }
 
 @media screen and (min-width: 790px) {
