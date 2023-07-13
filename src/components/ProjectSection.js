@@ -1,23 +1,26 @@
 import { Box, Container, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 
-import PeopleCard from "./PeopleCard";
+import ProjectCard from "./ProjectCard";
 
-const PeopleSection = ({ title, peopleData }) => {
-  const [peopleCards, setPeopleCards] = useState([]);
+const ProjectSection = ({ title, projectData }) => {
+  const [projectCards, setProjectCards] = useState([]);
 
   useEffect(() => {
-    const peopleCards = peopleData.map((data) => {
+    const cards = projectData.map((data) => {
+      console.log(data.imageName);
+      if (typeof data.team === "string") data.team = data.team.split(",");
+
       return (
-        <PeopleCard
-          name={data.name}
-          title={data.title}
+        <ProjectCard
+          proposal={data.proposal}
           description={data.description}
-          fileName={data.fileName}
+          fileName={data.imageFile}
+          team={data.team}
         />
       );
     });
-    setPeopleCards(peopleCards);
+    setProjectCards(cards);
   }, []);
 
   return (
@@ -37,10 +40,10 @@ const PeopleSection = ({ title, peopleData }) => {
           paddingBottom: "10rem",
         }}
       >
-        {peopleCards}
+        {projectCards}
       </Box>
     </Container>
   );
 };
 
-export default PeopleSection;
+export default ProjectSection;

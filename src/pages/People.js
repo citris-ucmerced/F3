@@ -1,22 +1,21 @@
-import Navbar from "../components/Navbar";
 import { Typography, Container } from "@mui/material";
-
 import { useEffect, useState } from "react";
-import { readCSVSortedByColumn } from "../utils/CSVReader";
 import { Helmet } from "react-helmet-async";
 
+import { readCSVSortedByColumn } from "../utils/CSVReader";
+
 import staffCSV from "../assets/sheets/staff.csv";
-import Footer from "../components/Footer";
 import PeopleSection from "../components/PeopleSection";
 
-const COLUMN_TITLE = "section";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const People = () => {
   const [data, setData] = useState({});
   const [peopleCards, setPeopleCards] = useState([]);
 
   useEffect(() => {
-    readCSVSortedByColumn(staffCSV, COLUMN_TITLE, setData);
+    readCSVSortedByColumn(staffCSV, "section", setData);
   }, []);
 
   useEffect(() => {

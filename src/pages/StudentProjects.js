@@ -1,34 +1,32 @@
 import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import csvFile from "../assets/sheets/studentProjects.csv"; // Change this to read from student projects csv
-import { readCSV } from "../utils/CSVReader";
 import { Helmet } from "react-helmet-async";
 
+import { readCSVSortedByColumn } from "../utils/CSVReader";
+import csvFile from "../assets/sheets/studentProjects.csv";
+import ProjectSection from "../components/ProjectSection";
+
 import Navbar from "../components/Navbar";
-import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer.js";
 
 const StudentProjects = () => {
-  const [data, setData] = useState([]);
-  const [grantCards, setGrantCards] = useState([]);
+  const [data, setData] = useState({});
+  const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    readCSV(csvFile, setData);
+    readCSVSortedByColumn(csvFile, "section", setData);
   }, []);
 
   useEffect(() => {
-    const grantCardUI = data.map((content) => {
-      const team = content.team.split(",").map((item) => item.trim());
-      return (
-        <ProjectCard
-          proposal={content.proposal}
-          description={content.description}
-          fileName={content.imageFile}
-          team={team}
-        />
-      );
-    });
-    setGrantCards(grantCardUI);
+    if (data.keys !== undefined) {
+      const cardsUI = data.keys.map((key) => {
+        console.log(data);
+        return (
+          <ProjectSection title={key} projectData={data.dataByCategory[key]} />
+        );
+      });
+      setCards(cardsUI);
+    }
   }, [data]);
 
   return (
@@ -45,7 +43,7 @@ const StudentProjects = () => {
           Student Projects
         </Typography>
 
-        <Box mb={12}>{grantCards}</Box>
+        <Box mb={12}>{cards}</Box>
 
         <Footer />
       </div>
