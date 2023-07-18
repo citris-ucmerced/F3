@@ -27,7 +27,7 @@ const ProjectSection = ({ title, projectData }) => {
     <Container
       sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
-      <Typography variant="h5" sx={{ marginBottom: "2rem" }}>
+      <Typography variant="h5" sx={{ marginBottom: "2rem", textAlign: "center"}}>
         {title}
       </Typography>
 

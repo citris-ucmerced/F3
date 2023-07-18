@@ -21,9 +21,13 @@ const ProjectCardModal = ({
   const grantImage = PROJECT_IMAGE_PATH + fileName;
 
   const Participants = team.map((name) => {
+
     let filename = name.replace(/ /g, "_");
     filename = filename.replace(/-/g, "_");
+    filename = filename.replace(/^_/, "");
     let participantImage = PEOPLE_IMAGE_PATH + filename + ".jpg";
+
+    console.log(participantImage);
 
     const handleImageError = (e) => {
       e.target.src = PEOPLE_IMAGE_PATH + "default.jpg";
