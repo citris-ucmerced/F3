@@ -8,7 +8,24 @@ import StudentProjects from "./pages/StudentProjects.js";
 import People from "./pages/People.js";
 import ContactUs from "./pages/ContactUs.js";
 import NotFound from "./pages/NotFound.js";
+
 import "./App.css";
+
+/*
+  Wrapping in StyledEngineProvider is required for overriding MUI
+  styles with CSS. See https://mui.com/guides/interoperability/#controlling-priority-3
+  for more information.
+
+  (e.g. So we can target Mui Components with CSS like this:
+    .class .MuiButton-root {
+      background-color: red;
+    }
+  )
+
+  We use react-browser-router for routing. See https://reactrouter.com/en/main/router-components/browser-router
+  for more information.
+
+*/
 
 function App() {
   return (

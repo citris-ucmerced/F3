@@ -16,6 +16,11 @@ const readCSV = (file, setData) => {
   });
 };
 
+/*
+  file: csv file
+  catagory: the column name to sort by
+  setData: function to set the data (e.g. const [data, setData] = useState({})
+*/
 const readCSVSortedByColumn = (file, catagory, setData)=>{
   const data = {
     keys: [],

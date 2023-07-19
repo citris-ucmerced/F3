@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HelmetProvider } from "react-helmet-async";
 
+import App from './App';
+import './index.css';
+
+/*
+  For SEO purposes, we use react-helmet-async to set the title and other
+  meta tags. See https://www.npmjs.com/package/react-helmet-async
+*/
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
