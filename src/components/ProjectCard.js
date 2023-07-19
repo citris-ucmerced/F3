@@ -1,20 +1,19 @@
-import {
-  Card,
-  CardMedia,
-  CardContent,
-  Typography,
-  Box,
-} from "@mui/material";
 import { useState } from "react";
+import { Card, CardMedia, CardContent, Typography, Box } from "@mui/material";
+import { ImSpinner2 } from "react-icons/im";
 
 import GrantCardModal from "./ProjectCardModal.js";
 
-const IMAGE_ASSETS_PATH = "./images/projects/";
-
 const ProjectCard = ({ proposal, description, fileName, team }) => {
+  const IMAGE_ASSETS_PATH = "./images/projects/";
   const image = IMAGE_ASSETS_PATH + fileName;
 
+  const [imageLoaded, setImageLoaded] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const handleImageLoaded = () => {
+    setImageLoaded(true);
+  };
 
   return (
     <>
@@ -33,7 +32,19 @@ const ProjectCard = ({ proposal, description, fileName, team }) => {
             setOpen(true);
           }}
         >
-          <CardMedia component="img" image={image} alt={fileName} />
+          {!imageLoaded && (
+            <div className="loading-animation grant-card-media" style={{width: "24rem"}}>
+              <ImSpinner2 />
+            </div>
+          )}
+          <CardMedia
+            className="grant-card-media"
+            component="img"
+            image={image}
+            alt={fileName}
+            onLoad={handleImageLoaded}
+            style={{ display: imageLoaded ? "block" : "none" }}
+          />
           <CardContent>
             <Box className="grant-card-text-container">
               <Typography variant="h5" className="card-title">

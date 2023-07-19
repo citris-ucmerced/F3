@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Card,
   CardActionArea,
@@ -5,18 +6,25 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import { useState } from "react";
-
-const PEOPLE_IMAGE_PATH = "./images/people/";
+import { ImSpinner2 } from "react-icons/im";
 
 const PeopleCard = ({ name, title, description, fileName }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
+  // const PEOPLE_IMAGE_PATH = "./images/people/";
+  const PEOPLE_IMAGE_PATH = "./";
 
   const image = PEOPLE_IMAGE_PATH + fileName;
 
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleImageLoaded = () => {
+    setImageLoaded(true);
+  };
+
+
   return (
     <div className="flip-card">
-      <div className={`flip-card-inner ${isFlipped ? "do-flip": ""}`}>
+      <div className={`flip-card-inner ${isFlipped ? "do-flip" : ""}`}>
         <div className="flip-card-front">
           <Card className="people-card custom-card">
             <CardActionArea
@@ -25,10 +33,17 @@ const PeopleCard = ({ name, title, description, fileName }) => {
                 setIsFlipped(!isFlipped);
               }}
             >
+              {!imageLoaded && (
+                <div className="loading-animation">
+                  <ImSpinner2 />
+                </div>
+              )}
               <CardMedia
                 component="img"
                 draggable={false}
                 image={image}
+                onLoad={handleImageLoaded}
+                style={{ display: imageLoaded ? "block" : "none" }}
                 alt="person"
               />
               <CardContent>
