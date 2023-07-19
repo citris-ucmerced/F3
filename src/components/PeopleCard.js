@@ -9,8 +9,7 @@ import {
 import { ImSpinner2 } from "react-icons/im";
 
 const PeopleCard = ({ name, title, description, fileName }) => {
-  // const PEOPLE_IMAGE_PATH = "./images/people/";
-  const PEOPLE_IMAGE_PATH = "./";
+  const PEOPLE_IMAGE_PATH = "./images/people/";
 
   const image = PEOPLE_IMAGE_PATH + fileName;
 
