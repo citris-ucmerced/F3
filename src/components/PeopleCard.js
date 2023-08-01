@@ -6,7 +6,10 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
+
 import { ImSpinner2 } from "react-icons/im";
+
+import "./styles/PeopleCard.css"
 
 const PeopleCard = ({ name, title, description, fileName }) => {
   const PEOPLE_IMAGE_PATH = "./images/people/";

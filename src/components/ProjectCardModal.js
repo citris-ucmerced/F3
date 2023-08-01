@@ -7,6 +7,8 @@ import {
   Grid,
 } from "@mui/material";
 
+import "./styles/ProjectCardModal.css";
+
 const PROJECT_IMAGE_PATH = "./images/projects/";
 const PEOPLE_IMAGE_PATH = "./images/people/";
 
@@ -21,7 +23,6 @@ const ProjectCardModal = ({
   const grantImage = PROJECT_IMAGE_PATH + fileName;
 
   const Participants = team.map((name) => {
-
     let filename = name.replace(/ /g, "_");
     filename = filename.replace(/-/g, "_");
     filename = filename.replace(/^_/, "");
@@ -62,11 +63,11 @@ const ProjectCardModal = ({
         <Grid item xs={9}>
           <Box>
             <Typography id="typ_id" variant="h5">
-              { proposal }
+              {proposal}
             </Typography>
-            <Box className="modal-individuals-container">{ Participants }</Box>
+            <Box className="modal-individuals-container">{Participants}</Box>
             <Typography className="modal-description" variant="body2">
-              { description}
+              {description}
             </Typography>
           </Box>
         </Grid>

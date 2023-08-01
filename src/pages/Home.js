@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+import "./styles/Home.css"
+
 const Home = () => {
   return (
     <>
@@ -54,7 +56,7 @@ const Home = () => {
                     textAlign: "center",
                   }}
                 >
-                  Supporting the central valley
+                  Supporting the Central Valley
                 </Typography>
               </Grid>
             </Grid>

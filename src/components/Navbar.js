@@ -12,6 +12,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/images/F3_Logo.png";
 import Sidebar from "./Sidebar";
 
+import "./styles/Navbar.css"
+
 const Navbar = () => {
 
   /*

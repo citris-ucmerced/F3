@@ -9,7 +9,7 @@ import People from "./pages/People.js";
 import ContactUs from "./pages/ContactUs.js";
 import NotFound from "./pages/NotFound.js";
 
-import "./App.css";
+import "./global.css";
 
 /*
   Wrapping in StyledEngineProvider is required for overriding MUI

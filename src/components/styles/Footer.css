@@ -1,0 +1,15 @@
+/* Footer */
+
+/*How to make footer appear all the way at the end of the page?
+https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b
+*/
+.footer {
+  position: relative;
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  padding-block: 1rem;
+
+  color: black;
+  background-color: white;
+}

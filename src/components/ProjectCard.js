@@ -4,6 +4,10 @@ import { ImSpinner2 } from "react-icons/im";
 
 import GrantCardModal from "./ProjectCardModal.js";
 
+import "./styles/ProjectCard.css";
+
+// TODO refactor grant card to project card
+
 const ProjectCard = ({ proposal, description, fileName, team }) => {
   const IMAGE_ASSETS_PATH = "./images/projects/";
   const image = IMAGE_ASSETS_PATH + fileName;

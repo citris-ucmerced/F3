@@ -1,6 +1,8 @@
 import { Grid, Typography } from "@mui/material";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
+import "./styles/Footer.css"
+
 const Footer = () => {
   return (
     <Grid container className="footer" sx={{ paddingX: "3rem" }}>

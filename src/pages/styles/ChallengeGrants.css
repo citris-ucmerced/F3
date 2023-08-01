@@ -1,0 +1,48 @@
+/* ChallengeGrants.js */
+
+.grant-card .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.grant-card .card-subtitle {
+  padding: 1rem;
+}
+
+.grant-card-text-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+.grant-card-text-container .card-title {
+  text-align: center;
+  margin: auto;
+}
+
+.learn-more-button {
+  border-radius: 3rem;
+  padding: 0.75rem;
+
+  justify-self: flex-end;
+  background: linear-gradient(to top right, #679461, #77ab6f);
+  box-shadow: none;
+
+  margin: 1.5rem;
+  margin-top: auto;
+  width: 8rem;
+  text-transform: none;
+  align-self: flex-end;
+}
+
+.learn-more-button:hover {
+  color: black;
+  background-color: lightgreen;
+  box-shadow: none;
+}
+.learn-more-button:focus {
+  box-shadow: none;
+}

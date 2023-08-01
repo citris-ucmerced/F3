@@ -8,6 +8,8 @@ import NewsCard from "../components/NewsCard.js";
 import newsCSV from "../assets/sheets/news.csv";
 import Footer from "../components/Footer.js";
 
+import "./styles/News.css"
+
 const News = () => {
   const [data, setData] = useState([]);
   const [newsCards, setNewsCards] = useState([]);

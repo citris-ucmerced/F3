@@ -11,6 +11,8 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+import "./styles/ContactUs.css"
+
 const ContactUs = () => {
   const contactDetails = [
     {
@@ -54,7 +56,7 @@ const ContactUs = () => {
                   <Card
                     sx={{
                       height: "100%",
-                      backgroundColor: "rgba(255, 255, 255, 0.7)",
+                      backgroundColor: "rgba(255, 255, 255, 1)",
                     }}
                   >
                     <CardContent>

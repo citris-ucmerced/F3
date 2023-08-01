@@ -8,6 +8,8 @@ import Navbar from "../components/Navbar";
 import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer.js";
 
+import "./styles/ChallengeGrants.css"
+
 const ChallengeGrants = () => {
   const [data, setData] = useState([]);
   const [cards, setCards] = useState([]);
