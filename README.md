@@ -2,8 +2,9 @@
 
 - Have Node.js installed (https://nodejs.org/en/download)
 - Have Git installed (https://git-scm.com/downloads)
+- Are on the `develop` branch (use `git branch` command to confirm you are on the right branch. There should be a * next to the branch you are currently viewing)
 
-## Project Structure
+## Repo Structure
 
 This is a react based project created using create-react-app
 
