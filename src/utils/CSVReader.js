@@ -16,24 +16,46 @@ const readCSV = (file, setData) => {
   });
 };
 
+const getRowById = (file, id, setData) => {
+  let stopParsing = false;
+
+  Papa.parse(file, {
+    ...config,
+    step: (results) => {
+      const row = results.data;
+      if (row.id === id) {
+        setData(row);
+        stopParsing = true;
+      }
+
+      if (stopParsing) {
+        return;
+      }
+    },
+  });
+
+  return () => {
+    stopParsing = true;
+  };
+};
+
 /*
   file: csv file
   catagory: the column name to sort by
   setData: function to set the data (e.g. const [data, setData] = useState({})
 */
-const readCSVSortedByColumn = (file, catagory, setData)=>{
+const readCSVSortedByColumn = (file, catagory, setData) => {
   const data = {
     keys: [],
-    dataByCategory:{
-    }
+    dataByCategory: {},
   };
 
   Papa.parse(file, {
     ...config,
-    step: (results)=>{
+    step: (results) => {
       const key = results.data[catagory];
       const value = results.data;
-      if(!(data.keys.includes(key))){
+      if (!data.keys.includes(key)) {
         data.keys.push(key);
         data.dataByCategory[key] = [];
       }
@@ -42,7 +64,7 @@ const readCSVSortedByColumn = (file, catagory, setData)=>{
     complete: (results) => {
       setData(data);
     },
-  })
-}
+  });
+};
 
-export {readCSV, readCSVSortedByColumn};
+export { readCSV, readCSVSortedByColumn, getRowById };

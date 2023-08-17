@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { StyledEngineProvider } from "@mui/material/styles";
 
 import Home from "./pages/Home.js";
+import Events from "./pages/Events.js";
+import EventDetails from "./pages/EventDetails.js";
 import News from "./pages/News.js";
 import ChallengeGrants from "./pages/ChallengeGrants.js";
 import StudentProjects from "./pages/StudentProjects.js";
@@ -33,6 +35,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Events" element={<Events />} />
+          <Route path="/Events/:id" element={<EventDetails />} />
           <Route path="/News" element={<News />} />
           <Route path="/ChallengeGrants" element={<ChallengeGrants />} />
           <Route path="/People" element={<People />} />
