@@ -126,7 +126,7 @@ const EventCard = ({ event }) => {
   } = event;
 
   const tagsArr = tags.split(",").map((tag) => tag.toUpperCase()); // convert tags to array then convert to uppercase
-  const url = `/events/${id}`;
+  const url = title === "F3 Innovate Showcase" ? "https://f3.ucmerced.edu/InnovateShowcase" : `/InnovateShowcase/${id}`;
 
   const [image, setImage] = useState(`./images/events/${coverImageFile}`);
 
