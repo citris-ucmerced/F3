@@ -32,6 +32,12 @@ const Navbar = () => {
     {
       name: "Events",
       endpoint: "/Events",
+      sublinks: [
+        {
+          name: "F3InnovateShowcase",
+          endpoint: "/InnovateShowcase",
+        },
+      ],
     },
     {
       name: "News",
