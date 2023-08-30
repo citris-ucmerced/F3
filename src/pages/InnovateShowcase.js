@@ -27,12 +27,12 @@ const InnovateShowcase = () => {
     {
       time: "10:15am",
       title: "Welcome and Introductions",
-      details: "Josh Viers, Associate Vice Chancellor for Research and Strategic Initiatives, UC Merced Ram Nunna, Dean of the Lyles School of Engineering, Fresno State  "
+      details: "- Josh Viers, Associate Vice Chancellor for Research and Strategic Initiatives, UC Merced \n - Ram Nunna, Dean of the Lyles School of Engineering, Fresno State  "
     },
     {
       time: "10:30am",
       title: "Technological Innovation for Agriculture: F3 Challenge Grant Research Collaborations ",
-      details: " - “Smart and advanced water treatment and food processing technologies and strategies: towards the development of sustainable and  controlled environmental agricultural pathways“ \n   - “California’s Water for Farms:  Irrigation Decisions Under Climate Change”\n  - “Non-invasive Hybrid Sensing of Key Chemical Compositions of Grapes” \n  - “Using biochar co-compost to foster a climate smart, circular agriculture economy”"
+      details: '- Dr. Sankhar Banerjee, "Smart and advanced water treatment and food processing technologies and strategies: towards the development of sustainable and controlled environmental agricultural pathways” Co-authored with Dr. Venkattraman Ayyaswamy, Dr. Gerardo Diaz, Dr. Walter Mizuno, Dr. The Nguyen, and Dr. Edbertho Leal-Quiros  \n - Dr. Qin Fan, “California’s Water for Farms:  Irrigation Decisions Under Climate Change,” Co-authored with Dr. Safeeq Kahn and Dr. Jiaochen Liang  \n - Iman Ebrahimi, “Non-invasive Hybrid Sensing of Key Chemical Compositions of Grapes,” Co-authored with Dr. Luca Brillante and Dr. Ricardo Pinto de Castro \n - Dr. Rebecca Ryals, “Using biochar co-compost to foster a climate smart, circular agriculture economy,” Co-authored with Dr. Xuan Zheng  " '
     },
     {
       time: "11:30am",
@@ -41,9 +41,21 @@ const InnovateShowcase = () => {
     },
     {
       time: "11:45am",
-      title: "Inclusive Innovation with Industry and Communities Moderated by Dr. Leigh Bernacchi, Executive Director, VISTA F3 Innovate Panelists  ",
-      details: " - Dr. Luca Brillante, Assistant Professor of Viticulture, Bronco Wine Co. Chair in Viticulture, Fresno State \n  - Dr. Reza Ehsani, Professor of Mechanical Engineering, UC Merced \n - Dr. Tea Lempiala, Assistant Professor of Management, UC Merced "
-
+      title: (
+        <>
+          <span style={{ display: 'block', marginBottom: '-10px' }}>
+            Inclusive Innovation with Industry and Communities
+          </span>
+          <span style={{ fontSize: "0.6em", display: 'block', marginTop: '0', paddingTop: '0' }}>
+            Moderated by Dr. Leigh Bernacchi, Executive Director, VISTA F3 Innovate Panelists
+          </span>
+        </>
+      ),
+      details: (
+        " - Dr. Luca Brillante, Assistant Professor of Viticulture, Bronco Wine Co. Chair in Viticulture, Fresno State \n" +
+        " - Dr. Reza Ehsani, Professor of Mechanical Engineering, UC Merced \n" +
+        " - Dr. Tea Lempiala, Assistant Professor of Management, UC Merced "
+      ),
     },
     {
       time: "12:25pm",
