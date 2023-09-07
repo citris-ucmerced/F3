@@ -18,30 +18,44 @@ const Navbar = () => {
 
   /*
   * The routes array is an array of objects
-  * 
+  *
   * Each object has a name and an endpoint
-  * 
+  *
   * If the object has a sublink array then the links in the sublink array will be displayed as a dropdown menu
-  * 
+  *
   */
   const routes = [
     {
-      name: "Home",
-      endpoint: "/",
-    },
-    {
-      name: "Events",
-      endpoint: "/Events",
+      name: "About",
+      endpoint: "",
       sublinks: [
         {
-          name: "F3InnovateShowcase",
-          endpoint: "/InnovateShowcase",
+          name:"People",
+          endpoint:"/People",
         },
       ],
     },
     {
-      name: "News",
-      endpoint: "/News",
+      name:"Get Involved",
+      endpoint:"",
+      sublinks:[
+        {
+          name:"Events",
+          endpoint:"/Events",
+        },
+        {
+          name:"News",
+          endpoint:"/News",
+        },
+        {
+          name:"Contact Us",
+          endpoint:"/ContactUs",
+        },
+        {
+          name:"F3 Innovate Showcase",
+          endpoint:"/InnovateShowcase"
+        },
+      ],
     },
     {
       name: "Research",
@@ -56,14 +70,6 @@ const Navbar = () => {
           endpoint: "/StudentProjects",
         }
       ],
-    },
-    {
-      name: "People",
-      endpoint: "/People",
-    },
-    {
-      name: "Contact Us",
-      endpoint: "/ContactUs",
     },
   ];
 
@@ -111,10 +117,10 @@ const Navbar = () => {
           <Sidebar routes={routes} toggleSidebar={toggleSidebar} />
         </SwipeableDrawer>
 
-        {/* List the routes, only visiible when in desktop view */}
+        {/* List the routes, only visible when in desktop view */}
         {routes.map((route) => {
 
-          {/* If route does not sublinks key then just display route */}
+          /* If route does not sublinks key then just display route */
           if (route.sublinks === undefined) {
             return (
               <Link to={route.endpoint} className="nav-link" key={route.name}>
@@ -123,7 +129,7 @@ const Navbar = () => {
             );
           } else {
           
-          {/* Else if route has the sublinks then display route with dropdown menu */}
+          /* Else if route has the sublinks then display route with dropdown menu */
             return (
               <div className="dropdown">
                 <Link to={route.endpoint} className="nav-link" key={route.name}>
