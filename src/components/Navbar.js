@@ -92,7 +92,7 @@ const Navbar = () => {
         
         <Typography sx={{ flexGrow: 1, fontWeight: "bold" }}>
           <a href="/" style={{ textDecoration: "inherit", color: "black" }}>
-            F3
+          Farms Food Future Innovation Initative
           </a>
         </Typography>
 
