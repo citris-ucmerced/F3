@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.275e5114.css",
-    "main.js": "/static/js/main.7de43c03.js",
+    "main.css": "/static/css/main.b255e17d.css",
+    "main.js": "/static/js/main.1308dcac.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/tractor.mp4": "/static/media/tractor.36634e831b4ea967213f.mp4",
+    "static/media/F3_MainLogo_Horizontal.jpg": "/static/media/F3_MainLogo_Horizontal.46972804cf7af15512f4.jpg",
     "static/media/background.svg": "/static/media/background.aba1af4ed75dc238bc5a.svg",
-    "static/media/F3_Logo.png": "/static/media/F3_Logo.498df994e6859ffda509.png",
     "static/media/staff.csv": "/static/media/staff.4388d6f1e8e4b1f5de5d.csv",
     "static/media/studentProjects.csv": "/static/media/studentProjects.a0308233a39b59d07fda.csv",
     "static/media/challengeGrants.csv": "/static/media/challengeGrants.84142d01468e240dd5f1.csv",
     "static/media/news.csv": "/static/media/news.99ef0e54c2b8f18309b2.csv",
+    "static/media/events.csv": "/static/media/events.f874fb72d3ccf9e6f838.csv",
     "index.html": "/index.html",
-    "static/media/events.csv": "/static/media/events.c1f62a038948b9061386.csv",
-    "main.275e5114.css.map": "/static/css/main.275e5114.css.map",
-    "main.7de43c03.js.map": "/static/js/main.7de43c03.js.map",
+    "main.b255e17d.css.map": "/static/css/main.b255e17d.css.map",
+    "main.1308dcac.js.map": "/static/js/main.1308dcac.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.275e5114.css",
-    "static/js/main.7de43c03.js"
+    "static/css/main.b255e17d.css",
+    "static/js/main.1308dcac.js"
   ]
 }
