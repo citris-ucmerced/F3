@@ -9,8 +9,10 @@ import {
   SwipeableDrawer,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import logo from "../assets/images/F3_Logo.png";
+import logo from "../assets/images/F3_MainLogo_Horizontal.jpg";
 import Sidebar from "./Sidebar";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import "./styles/Navbar.css"
 
@@ -34,10 +36,12 @@ const Navbar = () => {
           endpoint:"/People",
         },
       ],
-    },
+    }
+    ,
     {
       name:"Get Involved",
       endpoint:"",
+      icon:faChevronDown,
       sublinks:[
         {
           name:"Events",
@@ -60,6 +64,7 @@ const Navbar = () => {
     {
       name: "Research",
       endpoint: "",
+      icon: faChevronDown,
       sublinks: [
         {
           name: "Challenge Grants",
@@ -98,7 +103,6 @@ const Navbar = () => {
         
         <Typography sx={{ flexGrow: 1, fontWeight: "bold" }}>
           <a href="/" style={{ textDecoration: "inherit", color: "black" }}>
-          Farms Food Future Innovation Initative
           </a>
         </Typography>
 
@@ -133,7 +137,7 @@ const Navbar = () => {
             return (
               <div className="dropdown">
                 <Link to={route.endpoint} className="nav-link" key={route.name}>
-                  {route.name}
+                  {route.name}  <FontAwesomeIcon className="chevron" icon={faChevronDown} color="black"/>
                 </Link>
                 
                 <div className="dropdown-content">

@@ -5,6 +5,7 @@
   background-color: white;
   color: black;
   font-weight: bold;
+  margin: 0;
 }
 
 /* Desktop */
@@ -84,9 +85,10 @@
   }
 
   .logo {
-    height: 3rem;
-    width: 4rem;
+    height: 2.8rem;
+    width: 9rem;
   }
+
 }
 
 /* Mobile */

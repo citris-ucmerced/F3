@@ -27,7 +27,7 @@ const Home = () => {
           </div>
           <Container className="home-banner-text-container">
             <h1 className="home-banner-text">F3 Innovate:</h1>
-            <h2 className="home-banner-text">supporting the central valley</h2>
+            <h2 className="home-banner-text"><span style={{color: "#f0bf8b"}}>supporting</span> the central valley</h2>
           </Container>
         </div>
       </div>
