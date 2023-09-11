@@ -2,7 +2,8 @@
 .people-card.MuiCard-root {
   width: 17rem;
   height: 23.75rem;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 20px #02304b81;
+  transition: box-shadow 200ms ease-out, transform 100ms ease-in;
 }
 
 .people-card .MuiCardMedia-root {
@@ -30,6 +31,15 @@
 .people-card .people-card_description {
   display: block;
   margin-top: 0.5em;
+}
+
+.people-card:hover{
+  transform: scale(1.015);
+  box-shadow: 0px 20px 20px #02304b81;
+  -webkit-transform: scale(1.015);
+  -moz-transform: scale(1.015);
+  -ms-transform: scale(1.015);
+  -o-transform: scale(1.015);
 }
 
 .flip-card {
