@@ -24,7 +24,7 @@ const Home = () => {
           <div className="home-banner-video-container">
             <video autoplay="autoplay" muted={true} loop id="home-banner-video">
               <source
-                src={require("../assets/video/tractor.mp4")}
+                src={require("../assets/video/tractor(compressed)-Trim.mp4")}
                 type="video/mp4"
               />
             </video>
