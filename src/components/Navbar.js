@@ -9,7 +9,7 @@ import {
   SwipeableDrawer,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import logo from "../assets/images/F3_MainLogo_Horizontal.jpg";
+import logo from "../assets/images/F3+Innovate_Logo.png";
 import Sidebar from "./Sidebar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';

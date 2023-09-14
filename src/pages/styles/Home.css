@@ -36,6 +36,7 @@
   top: 30%;
   left: 0;
   right: 0;
+  overflow: hidden;
 }
 
 h1.home-banner-text {
@@ -45,4 +46,34 @@ h1.home-banner-text {
 h2.home-banner-text {
   color: white;
   font-size: 5rem;
+}
+
+.page-home {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  background-image: linear-gradient(#8F95E7 0%,#84BFE2 40.21%, #84BFE2 95.21%, #81E7B3 100%);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.about-content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+}
+
+
+.animate{
+  width: 50vw;
+  height: 70vh;
+  margin: 1% auto;
+  position: relative;
+}
+
+.animate.partners{
+  background-size: cover;
+  background-image: url("../../assets/images/Slide7.jpg");
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Container, Typography, Box, Grid } from "@mui/material";
+import { Container, Typography, Grid } from "@mui/material";
 
 import { readCSV } from "../utils/CSVReader";
 import eventsCSV from "../assets/sheets/events.csv";
@@ -13,7 +13,8 @@ import "./styles/Events.css";
 
 const Events = () => {
   const [csvData, setCsvData] = useState([]);
-  const [groupedData, setGroupedData] = useState({});
+  const [futureEvents, setFutureEvents] = useState({});
+  const [pastEvents, setPastEvents] = useState({});
 
   useEffect(() => {
     readCSV(eventsCSV, setCsvData);
@@ -26,21 +27,44 @@ const Events = () => {
       return item;
     });
 
-    const data = csvData.reduce((acc, item) => {
+    const currentDate = new Date();
+
+    const futureData = csvData.reduce((acc, item) => {
       const monthAndYear = item.start.toLocaleString("default", {
         month: "long",
         year: "numeric",
       });
 
-      if (!acc[monthAndYear]) {
-        acc[monthAndYear] = [];
+      if (item.start >= currentDate) {
+        if (!acc[monthAndYear]) {
+          acc[monthAndYear] = [];
+        }
+        acc[monthAndYear].push(item);
+        acc[monthAndYear].sort((a, b) => a.start.getDate() - b.start.getDate()); // sort days in ascending order
       }
-      acc[monthAndYear].push(item);
-      acc[monthAndYear].sort((a, b) => a.start.getDate() - b.start.getDate()); // sort days in ascending order
+
       return acc;
     }, {});
 
-    setGroupedData(data);
+    const pastData = csvData.reduce((acc, item) => {
+      if (item.start < currentDate) {
+        const monthAndYear = item.start.toLocaleString("default", {
+          month: "long",
+          year: "numeric",
+        });
+
+        if (!acc[monthAndYear]) {
+          acc[monthAndYear] = [];
+        }
+        acc[monthAndYear].push(item);
+        acc[monthAndYear].sort((a, b) => b.start.getDate() - a.start.getDate()); // sort days in descending order for past events
+      }
+
+      return acc;
+    }, {});
+
+    setFutureEvents(futureData);
+    setPastEvents(pastData);
   }, [csvData]);
 
   return (
@@ -57,11 +81,33 @@ const Events = () => {
         <Navbar />
 
         <Container>
-        <Typography variant="h4" component="h1" className="page-title">
-          Events
-        </Typography>
+          <Typography variant="h4" component="h1" className="page-title">
+            Events
+          </Typography>
 
-          {Object.entries(groupedData).map(([monthAndYear, events]) => (
+          {/* Display Future Events */}
+          {Object.entries(futureEvents).map(([monthAndYear, events]) => (
+            <Grid container key={monthAndYear} sx={{ marginBottom: "2rem" }}>
+              <Grid item xs={12} className="section">
+                <Typography variant="h6" sx={{ width: "fit-content" }}>
+                  {monthAndYear}
+                </Typography>
+                <span className="line"></span>
+              </Grid>
+
+              {events.map((event, iterator) => (
+                <EventCard key={iterator} event={event} />
+              ))}
+            </Grid>
+          ))}
+
+          {/* Display Past Events */}
+
+          <Typography variant="h4" component="h1" className="page-title">
+            Past Events
+          </Typography>
+
+          {Object.entries(pastEvents).map(([monthAndYear, events]) => (
             <Grid container key={monthAndYear} sx={{ marginBottom: "2rem" }}>
               <Grid item xs={12} className="section">
                 <Typography variant="h6" sx={{ width: "fit-content" }}>
