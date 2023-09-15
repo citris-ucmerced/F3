@@ -35,13 +35,14 @@ const Home = () => {
         </Container>
         </div>
         <div className="page-home">
-        <div className="about-content">
-        <Typography variant="h2" component="h1" className="page-title" data-aos="fade-zoom-in">
+        <Typography variant="h2" component="h1" className="page-title">
           Our Partners
         </Typography>
+        <div className="about-content" data-aos="flip-up">
           {/*<div className="animate" data-aos="fade-down"></div>
           <div className="animate" data-aos="fade-right"></div>*/}
-          <div className="animate partners" data-aos="flip-up"></div>
+          <div className="animate partner1"></div>
+          <div className="animate partner2"></div>
         </div>
         </div>
     </>

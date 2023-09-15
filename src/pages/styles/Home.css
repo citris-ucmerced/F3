@@ -1,13 +1,12 @@
 /* Home */
 .home-banner {
-  height: 100vh;
+  height: 80vh;
 }
 
 .home-banner-video-container {
   height: 100%;
   display: flex;
   justify-content: center;
-  overflow: hidden;
 }
 
 .home-banner-video-container:before {
@@ -49,31 +48,57 @@ h2.home-banner-text {
 }
 
 .page-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  min-height: 100vh;
-  height: 100%;
-  background-image: linear-gradient(#8F95E7 0%,#84BFE2 40.21%, #84BFE2 95.21%, #81E7B3 100%);
+  min-height: 100vh;;
+  background-image: linear-gradient(#81E7B3 0%,#84BFE2 40.21%, #84BFE2 95.21%, #8F95E7 100%);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  overflow:scroll;
 }
 
 .about-content{
+  background-color: white;
+  border-radius: 1rem;
   position: relative;
   display: flex;
-  flex-direction: column;
-  padding-top: 3%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 70rem;
+  height: 20rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 
 .animate{
-  width: 50vw;
-  height: 70vh;
+  width: 30rem;
+  height: 20rem;
   margin: 1% auto;
   position: relative;
+  overflow: hidden;
 }
 
-.animate.partners{
+.animate.partner1{
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 5rem;
+  background-image: url("../../assets/images/UCM+VISTA_LogoHorizontal.png");
+}
+
+.animate.partner2{
   background-size: cover;
+  background-repeat: no-repeat;
   background-image: url("../../assets/images/Slide7.jpg");
+}
+
+@media screen and (max-width: 600px) {
+  .about-content {
+    flex-direction: column;
+  }
 }
