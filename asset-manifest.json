@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.babfdab9.css",
-    "main.js": "/static/js/main.5a1bbdbd.js",
+    "main.js": "/static/js/main.219524df.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
     "static/media/F3+Innovate_Logo.png": "/static/media/F3+Innovate_Logo.0dc72498c1b50b94551c.png",
     "static/media/Slide7.jpg": "/static/media/Slide7.c6cc8d9f876468a55501.jpg",
-    "static/media/staff.csv": "/static/media/staff.23431e65529ba156c466.csv",
+    "static/media/staff.csv": "/static/media/staff.9534c5e0a80d0c73f920.csv",
     "static/media/studentProjects.csv": "/static/media/studentProjects.157a2498356944f89335.csv",
     "static/media/challengeGrants.csv": "/static/media/challengeGrants.d85c0042c6506b3f9565.csv",
     "static/media/news.csv": "/static/media/news.22af2004fb477768ed22.csv",
     "static/media/events.csv": "/static/media/events.4b4d57855b6f8379a07b.csv",
     "index.html": "/index.html",
     "main.babfdab9.css.map": "/static/css/main.babfdab9.css.map",
-    "main.5a1bbdbd.js.map": "/static/js/main.5a1bbdbd.js.map",
+    "main.219524df.js.map": "/static/js/main.219524df.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.babfdab9.css",
-    "static/js/main.5a1bbdbd.js"
+    "static/js/main.219524df.js"
   ]
 }
