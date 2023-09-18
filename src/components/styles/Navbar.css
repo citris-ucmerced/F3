@@ -85,9 +85,31 @@
   }
 
   .logo {
-    height: 2.8rem;
-    width: 8.5rem;
+    max-height: 50px;
+    max-width: 150px;
+    object-fit: contain;
+    margin-right: 10px;
   }
+/* Add this to your Navbar.css */
+.holographic-blue-text {
+  font-weight: bold;
+  background: linear-gradient(90deg, #0000ff, #00ffff, #0000ff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 3s infinite linear;
+  margin-left: 16px; /* Adds a little spacing between the logo and the text */
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
 
 }
 
@@ -110,3 +132,4 @@
     height: 60px;
   }
 }
+
