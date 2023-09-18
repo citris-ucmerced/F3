@@ -84,7 +84,7 @@ const Navbar = () => {
   return (
     <AppBar className="main-navbar">
       <Toolbar>
-        <Box display="flex" alignItems="center">
+        <Box display="flex" alignItems="center" flexGrow={1}>
           <a href="/">
             <img className="logo" src={logo} alt="F3 logo" />
           </a>
@@ -93,9 +93,37 @@ const Navbar = () => {
           </Typography>
         </Box>
 
-        <Button onClick={toggleSidebar(true)} id="hamburger-menu">
-          <MenuIcon />
-        </Button>
+        <Box display="flex" alignItems="center">
+          {routes.map((route) => {
+            if (route.sublinks === undefined) {
+              return (
+                <Link to={route.endpoint} className="nav-link" key={route.name}>
+                  {route.name}
+                </Link>
+              );
+            } else {
+              return (
+                <div className="dropdown">
+                  <Link to={route.endpoint} className="nav-link" key={route.name}>
+                    {route.name} <FontAwesomeIcon className="chevron" icon={faChevronDown} color="black" />
+                  </Link>
+
+                  <div className="dropdown-content">
+                    {route.sublinks.map((sublink) => (
+                      <Link to={sublink.endpoint} key={sublink.name} className="sublink">
+                        {sublink.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              );
+            }
+          })}
+          
+          <Button onClick={toggleSidebar(true)} id="hamburger-menu">
+            <MenuIcon />
+          </Button>
+        </Box>
 
         <SwipeableDrawer
           anchor="right"
@@ -105,9 +133,6 @@ const Navbar = () => {
         >
           <Sidebar routes={routes} toggleSidebar={toggleSidebar} />
         </SwipeableDrawer>
-
-        {/* ... (rest of the code remains the same) */}
-
       </Toolbar>
     </AppBar>
   );
