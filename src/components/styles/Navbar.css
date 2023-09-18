@@ -88,12 +88,12 @@
     max-height: 50px;
     max-width: 150px;
     object-fit: contain;
-    margin-right: 10px;
+    margin-right: -10px;
   }
 /* Add this to your Navbar.css */
 .holographic-blue-text {
   font-weight: bold;
-  background: linear-gradient(90deg, #0000ff, #00ffff, #0000ff);
+  background: linear-gradient(90deg, #0000ff, #27e0e0, #0000ff);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
