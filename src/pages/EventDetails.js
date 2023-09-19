@@ -77,6 +77,7 @@ const Form = ({ url }) => {
       </Typography>
       <Typography variant="h6" component="p">
         <iframe
+          title="eventDesc"
           src={url}
           style={{ width: "100%", height: "550px", border: "none" }}
         />
