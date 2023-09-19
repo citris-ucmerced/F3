@@ -59,7 +59,6 @@
     background-position: -100%;
     padding: 5px 0;
     position: relative;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
   }
@@ -95,7 +94,6 @@
   font-weight: bold;
   background: linear-gradient(90deg, #81E7B3 0%,#84BFE2 10.21%, #84BFE2 33.21%, #8F95E7 76%, #81E7B3 100%);
   background-size: 200% 200%;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient-animation 10s infinite linear;
   margin-left: 16px;
