@@ -1,4 +1,4 @@
-/* Navbar.js */
+/* Navbar.css */
 
 .main-navbar.MuiAppBar-root {
   position: static;
@@ -28,7 +28,7 @@
   }
 
   .dropdown-content a {
-    color: black;
+    color: rgb(12, 161, 240);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -54,12 +54,9 @@
     margin-left: 1.5rem;
     text-decoration: none;
     vertical-align: middle;
-    background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
-    background-size: 200% 100%;
-    background-position: -100%;
+    color: #54b3d6;  /* Setting a default text color */
     padding: 5px 0;
     position: relative;
-    -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
   }
 
@@ -76,7 +73,8 @@
   }
 
   .nav-link:hover {
-    background-position: 0;
+    color: white; /* You can adjust this */
+    background-color: #54b3d6;
   }
 
   .nav-link:hover::before {
@@ -87,29 +85,8 @@
     max-height: 3rem;
     max-width: 8rem;
     object-fit: contain;
-    margin-right: -10px;
+    margin-right: 10px;
   }
-/* Add this to your Navbar.css */
-.holographic-blue-text {
-  font-weight: bold;
-  background: linear-gradient(90deg, #81E7B3 0%,#84BFE2 10.21%, #84BFE2 33.21%, #8F95E7 76%, #81E7B3 100%);
-  background-size: 200% 200%;
-  -webkit-text-fill-color: transparent;
-  animation: gradient-animation 10s infinite linear;
-  margin-left: 16px;
-  /*Addsalittlespacingbetweenthelogoandthetext*/-webkit-animation: gradient-animation 6s infinite linear;
-  -webkit-animation: gradient-animation 10s infinite linear;
-}
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
-}
-
 }
 
 /* Mobile */
@@ -131,4 +108,3 @@
     height: 50px;
   }
 }
-
