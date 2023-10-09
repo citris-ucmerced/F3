@@ -9,6 +9,7 @@ import ChallengeGrants from "./pages/ChallengeGrants.js";
 import StudentProjects from "./pages/StudentProjects.js";
 import People from "./pages/People.js";
 import InnovateShowcase from "./pages/InnovateShowcase.js";
+import FarmBotChallenge from "./pages/FarmBotChallenge.js";
 import ContactUs from "./pages/ContactUs.js";
 import NotFound from "./pages/NotFound.js";
 
@@ -44,6 +45,7 @@ function App() {
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/StudentProjects" element={<StudentProjects />} />
           <Route path="/InnovateShowcase" element={<InnovateShowcase />} />
+          <Route path="/FarmBotChallenge" element={<FarmBotChallenge />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
