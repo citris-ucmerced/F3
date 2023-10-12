@@ -49,6 +49,11 @@ const Navbar = () => {
           name: "F3 Innovate Showcase",
           endpoint: "/InnovateShowcase",
         },
+        {
+          name: "Farm Bot Challenge",
+          endpoint: "/FarmBotChallenge",
+        },
+
       ],
     },
     {
