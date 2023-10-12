@@ -7,7 +7,6 @@ import {
   List,
   ListItem,
   ListItemText,
-  ListItemIcon,
   Button
 } from "@mui/material";
 import { Helmet } from "react-helmet-async";
@@ -63,11 +62,11 @@ const FarmRoboticsChallenge = () => {
                 The challenge is divided into four main phases:
               </Typography>
   
-            <List>
-              <ListItem>
-                <ListItemIcon></ListItemIcon>
-                <ListItemText primary="Team Formation" secondary="Assemble your multidisciplinary team and complete the registration process." />
-              </ListItem>
+              <List>
+                <ListItem>
+                  <ListItemIcon></ListItemIcon>
+                  <ListItemText primary="Team Formation" secondary="Assemble your multidisciplinary team and complete the registration process." />
+                </ListItem>
                 <ListItem>
                   <ListItemIcon></ListItemIcon>
                   <ListItemText primary="Research and Proposal" secondary="Conduct market research to identify a real-world agricultural problem and submit a detailed project proposal." />
@@ -128,13 +127,13 @@ const FarmRoboticsChallenge = () => {
   
               <Typography variant="body1" gutterBottom>
                 Internship Opportunities: Top performers will be considered for internships.
-            </Typography>
-            <Typography variant="body1" gutterBottom>
+              </Typography>
+              <Typography variant="body1" gutterBottom>
                 Conference Invitations: Winners will be invited to present their projects at leading agricultural and robotics conferences.
-            </Typography>
-            <Typography variant="body1" gutterBottom>
+              </Typography>
+              <Typography variant="body1" gutterBottom>
                 Media Coverage: Exceptional projects will be featured in industry publications and media outlets.
-            </Typography>
+              </Typography>
 
             {/* ... [rest of the existing content] ... */}
 
