@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Container, Typography } from "@mui/material";
 
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
 import AOS from "aos";
 import 'aos/dist/aos.css';
 
@@ -45,6 +46,7 @@ const Home = () => {
           <div className="animate partner2"></div>
         </div>
         </div>
+        <Footer/>
     </>
   );
 };
