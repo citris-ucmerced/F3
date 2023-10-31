@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.526c0d40.css",
-    "main.js": "/static/js/main.8aefc549.js",
+    "main.css": "/static/css/main.6fd7ace5.css",
+    "main.js": "/static/js/main.c210408d.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
     "static/media/UCM+VISTA_LogoHorizontal.png": "/static/media/UCM+VISTA_LogoHorizontal.390225281a7d743f5cc8.png",
@@ -13,12 +13,12 @@
     "static/media/news.csv": "/static/media/news.7f5d21212cb0d84fa0e8.csv",
     "static/media/events.csv": "/static/media/events.22da8d72b39605b6e755.csv",
     "index.html": "/index.html",
-    "main.526c0d40.css.map": "/static/css/main.526c0d40.css.map",
-    "main.8aefc549.js.map": "/static/js/main.8aefc549.js.map",
+    "main.6fd7ace5.css.map": "/static/css/main.6fd7ace5.css.map",
+    "main.c210408d.js.map": "/static/js/main.c210408d.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.526c0d40.css",
-    "static/js/main.8aefc549.js"
+    "static/css/main.6fd7ace5.css",
+    "static/js/main.c210408d.js"
   ]
 }
