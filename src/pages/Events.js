@@ -95,9 +95,11 @@ const Events = () => {
         <Navbar />
 
         <Container>
-          <Typography variant="h4" component="h1" className="page-title">
-            Events
+        <div className="events-divider">
+          <Typography variant="h4" component= "h1" className="divider-text">
+           Events
           </Typography>
+        </div>
 
           <TextField
             label="Search Events"
@@ -130,9 +132,16 @@ const Events = () => {
             return null;
           })}
 
-          <Typography variant="h4" component="h1" className="page-title">
+
+<div className="events-divider">
+  <Typography variant="h4" component= "h1" className="divider-text">
+    Past Events
+  </Typography>
+</div>
+
+          {/* <Typography variant="h4" component="h1" className="page-title">
             Past Events
-          </Typography>
+          </Typography> */}
 
           {/* Display Past Events */}
           {Object.entries(pastEvents).map(([monthAndYear, events]) => {
