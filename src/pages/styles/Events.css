@@ -12,3 +12,73 @@
   border-radius: 5px;
 }
 
+/* Textfield component */
+.search-bar .MuiOutlinedInput-root {
+  background-color: #fff; /* Light background for the input */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ccc; /* Light grey border */
+}
+
+/* When input field is clicked/focused, border turns blue */
+.search-bar .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #3f51b5; /* Highlight color when focused */
+  border-width: 2px; /* Make the border thicker when focused */
+}
+
+/* Highlights search events*/
+.search-bar .MuiInputLabel-root.Mui-focused {
+  color: #3f51b5; /* Highlight color for the label when focused */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .search-bar .MuiOutlinedInput-root {
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+
+.events-divider {
+  margin: 2rem 0;
+}
+
+.divider-line {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+} 
+
+
+
+/* Divider with text */
+.events-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.events-divider::before,
+.events-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 3px solid #000; /* Adjust the color and thickness of the line here */
+  border-style: outset; /*Or we could make it double???? */
+  border-color: black;
+}
+
+.divider-text {
+  padding: 0 1rem;
+   /* We could add text background to match the background color of the page */
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+

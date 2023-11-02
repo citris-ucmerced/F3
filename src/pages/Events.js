@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Container, Typography, Grid } from "@mui/material";
+import { Container, Typography, Grid, TextField } from "@mui/material";
 
 import { readCSV } from "../utils/CSVReader";
 import eventsCSV from "../assets/sheets/events.csv";
@@ -15,6 +15,7 @@ const Events = () => {
   const [csvData, setCsvData] = useState([]);
   const [futureEvents, setFutureEvents] = useState({});
   const [pastEvents, setPastEvents] = useState({});
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     readCSV(eventsCSV, setCsvData);
@@ -40,7 +41,7 @@ const Events = () => {
           acc[monthAndYear] = [];
         }
         acc[monthAndYear].push(item);
-        acc[monthAndYear].sort((a, b) => a.start.getDate() - b.start.getDate()); // sort days in ascending order
+        acc[monthAndYear].sort((a, b) => a.start.getDate() - b.start.getDate());
       }
 
       return acc;
@@ -57,7 +58,7 @@ const Events = () => {
           acc[monthAndYear] = [];
         }
         acc[monthAndYear].push(item);
-        acc[monthAndYear].sort((a, b) => b.start.getDate() - a.start.getDate()); // sort days in descending order for past events
+        acc[monthAndYear].sort((a, b) => b.start.getDate() - a.start.getDate());
       }
 
       return acc;
@@ -66,6 +67,19 @@ const Events = () => {
     setFutureEvents(futureData);
     setPastEvents(pastData);
   }, [csvData]);
+
+  const handleSearch = (event) => {
+    setSearchQuery(event.target.value.toLowerCase());
+  };
+
+  const filterEvents = (events) => {
+    return events.filter((event) =>
+      event.title.toLowerCase().includes(searchQuery) ||
+      event.location.toLowerCase().includes(searchQuery) ||
+      event.summary.toLowerCase().includes(searchQuery) ||
+      event.tags.toLowerCase().includes(searchQuery)
+    );
+  };
 
   return (
     <>
@@ -81,46 +95,75 @@ const Events = () => {
         <Navbar />
 
         <Container>
-          <Typography variant="h4" component="h1" className="page-title">
-            Events
+        <div className="events-divider">
+          <Typography variant="h4" component= "h1" className="divider-text">
+           Events
           </Typography>
+        </div>
+
+          <TextField
+            label="Search Events"
+            variant="outlined"
+            fullWidth
+            margin="normal"
+            onChange={handleSearch}
+            className="search-bar"
+          />
 
           {/* Display Future Events */}
-          {Object.entries(futureEvents).map(([monthAndYear, events]) => (
-            <Grid container key={monthAndYear} sx={{ marginBottom: "2rem" }}>
-              <Grid item xs={12} className="section">
-                <Typography variant="h6" sx={{ width: "fit-content" }}>
-                  {monthAndYear}
-                </Typography>
-                <span className="line"></span>
-              </Grid>
+          {Object.entries(futureEvents).map(([monthAndYear, events]) => {
+            const filteredEvents = filterEvents(events);
+            if (filteredEvents.length > 0) {
+              return (
+                <Grid container key={monthAndYear} sx={{ marginBottom: "2rem" }}>
+                  <Grid item xs={12} className="section">
+                    <Typography variant="h6" sx={{ width: "fit-content" }}>
+                      {monthAndYear}
+                    </Typography>
+                    <span className="line"></span>
+                  </Grid>
 
-              {events.map((event, iterator) => (
-                <EventCard key={iterator} event={event} />
-              ))}
-            </Grid>
-          ))}
+                  {filteredEvents.map((event, iterator) => (
+                    <EventCard key={iterator} event={event} />
+                  ))}
+                </Grid>
+              );
+            }
+            return null;
+          })}
+
+
+<div className="events-divider">
+  <Typography variant="h4" component= "h1" className="divider-text">
+    Past Events
+  </Typography>
+</div>
+
+          {/* <Typography variant="h4" component="h1" className="page-title">
+            Past Events
+          </Typography> */}
 
           {/* Display Past Events */}
+          {Object.entries(pastEvents).map(([monthAndYear, events]) => {
+            const filteredEvents = filterEvents(events);
+            if (filteredEvents.length > 0) {
+              return (
+                <Grid container key={monthAndYear} sx={{ marginBottom: "2rem" }}>
+                  <Grid item xs={12} className="section">
+                    <Typography variant="h6" sx={{ width: "fit-content" }}>
+                      {monthAndYear}
+                    </Typography>
+                    <span className="line"></span>
+                  </Grid>
 
-          <Typography variant="h4" component="h1" className="page-title">
-            Past Events
-          </Typography>
-
-          {Object.entries(pastEvents).map(([monthAndYear, events]) => (
-            <Grid container key={monthAndYear} sx={{ marginBottom: "2rem" }}>
-              <Grid item xs={12} className="section">
-                <Typography variant="h6" sx={{ width: "fit-content" }}>
-                  {monthAndYear}
-                </Typography>
-                <span className="line"></span>
-              </Grid>
-
-              {events.map((event, iterator) => (
-                <EventCard key={iterator} event={event} />
-              ))}
-            </Grid>
-          ))}
+                  {filteredEvents.map((event, iterator) => (
+                    <EventCard key={iterator} event={event} />
+                  ))}
+                </Grid>
+              );
+            }
+            return null;
+          })}
         </Container>
 
         <Footer />
