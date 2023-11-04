@@ -27,9 +27,23 @@ const ProjectSection = ({ title, projectData }) => {
     <Container
       sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
-      <Typography variant="h5" sx={{ marginBottom: "2rem", textAlign: "center"}}>
-        {title}
-      </Typography>
+      <Typography
+  variant="h5"
+  sx={{ 
+    marginBottom: "2rem", 
+    textAlign: "center", 
+    fontWeight: "bold", 
+    textDecoration: "underline", 
+    fontSize: "2rem", 
+          '&:hover': { 
+      transform: 'scale(1.1)', 
+      transition: 'transform 0.3s' 
+    }
+  }}
+>
+  {title}
+</Typography>
+
 
       <Box
         sx={{
