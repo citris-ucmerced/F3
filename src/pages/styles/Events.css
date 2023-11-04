@@ -12,11 +12,25 @@
   border-radius: 5px;
 }
 
+.search-bar-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin: 2 rem;
+  max-width: 800 px;
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto;
+}
+
 /* Textfield component */
 .search-bar .MuiOutlinedInput-root {
   background-color: #fff; /* Light background for the input */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 30px; /* Rounded corners */
   border: 1px solid #ccc; /* Light grey border */
+  width:100%;
+  min-width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  padding: 5px 25px;
 }
 
 /* When input field is clicked/focused, border turns blue */
@@ -28,13 +42,23 @@
 /* Highlights search events*/
 .search-bar .MuiInputLabel-root.Mui-focused {
   color: #3f51b5; /* Highlight color for the label when focused */
+  
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .search-bar .MuiOutlinedInput-root {
     height: auto; /* Adjust height for smaller screens */
+    width:100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* smooth transitions */
+    
   }
+}
+
+.search-bar .MuiOutlinedInput-root:hover {
+  transform: translateY(-2px); /* slight lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* stronger shadow on hover */
 }
 
 .events-divider {
@@ -72,6 +96,68 @@
   font-weight: bold;
   font-size: 2rem;
 }
+
+.search-bar .MuiInputAdornment-positionStart {
+  margin-right: 8px; /* Adjust spacing between category select and input field */
+  display:none;
+}
+
+
+/* Category Select FormControl component */
+.search-bar .MuiFormControl-root {
+  min-width: 120px; /* Adjust the width of the category select as needed */
+  padding-bottom: 15px;
+  min-height: 40px;
+}
+
+/* Category Select component */
+.search-bar .MuiSelect-root {
+  background-color: #f5f5f5; /* Light background for the select */
+  border-radius: 4px; /* Rounded corners for the select */
+  padding: 10px; /* Padding inside the select */
+  transition: background-color 0.3s ease; /* Smooth background-color transition */
+  justify-content: right;
+}
+
+/* Category Select component on hover */
+.search-bar .MuiSelect-root:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+/* Category Select label */
+.search-bar .MuiInputLabel-root {
+  color: #757575; /* Color of the label */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Category Select label when select is focused */
+.search-bar .MuiInputLabel-root.Mui-focused {
+  color: #3f51b5; /* Color of the label when select is focused */
+}
+
+/* Category Select border when focused */
+.search-bar .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #3f51b5; /* Color of the border when select is focused */
+  border-width: 2px; /* Thickness of the border when select is focused */
+}
+
+/* Category Menu Items styling */
+.search-bar .MuiMenuItem-root {
+  font-size: 1rem; /* Adjust the font size as needed */
+  color: #333; /* Color of the menu items */
+}
+
+/* Adjustments to align the Select input with the Search input */
+.search-bar .MuiOutlinedInput-input {
+  padding: 10.5px 14px; /* Adjust the padding to vertically align with the category select */
+  margin-top: 3px; /* Push down the select a bit if it's too close to the search bar */
+
+}
+
+.category-select {
+  min-width: 120px;
+}
+
 
 
 
