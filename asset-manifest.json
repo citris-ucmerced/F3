@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.db59d479.css",
-    "main.js": "/static/js/main.7fbf773b.js",
+    "main.css": "/static/css/main.1f211eb5.css",
+    "main.js": "/static/js/main.46981e6d.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
     "static/media/UCM+VISTA_LogoHorizontal.png": "/static/media/UCM+VISTA_LogoHorizontal.390225281a7d743f5cc8.png",
+    "static/media/F3_MainLogo_Horizontal.jpg": "/static/media/F3_MainLogo_Horizontal.46972804cf7af15512f4.jpg",
     "static/media/Slide7.jpg": "/static/media/Slide7.c6cc8d9f876468a55501.jpg",
     "static/media/F3_Logo.png": "/static/media/F3_Logo.498df994e6859ffda509.png",
+    "static/media/gobiz-logo-transparent.png": "/static/media/gobiz-logo-transparent.a897208c09278f826a3d.png",
+    "static/media/VISTA-Logo-Final-PNG-Color.png": "/static/media/VISTA-Logo-Final-PNG-Color.843c989caf050fbf65ef.png",
     "static/media/staff.csv": "/static/media/staff.f52828a7a0442ce2dbd7.csv",
+    "static/media/UCM_Logos_Primary.png": "/static/media/UCM_Logos_Primary.af7005d9031c6d4b6635.png",
+    "static/media/Fresno_State.webp": "/static/media/Fresno_State.d7e248d05012c07d0ff0.webp",
     "static/media/studentProjects.csv": "/static/media/studentProjects.1107286657c484881890.csv",
     "static/media/challengeGrants.csv": "/static/media/challengeGrants.d85c0042c6506b3f9565.csv",
     "static/media/news.csv": "/static/media/news.7f5d21212cb0d84fa0e8.csv",
     "static/media/events.csv": "/static/media/events.4bed01e4ececb53e3b91.csv",
     "index.html": "/index.html",
-    "main.db59d479.css.map": "/static/css/main.db59d479.css.map",
-    "main.7fbf773b.js.map": "/static/js/main.7fbf773b.js.map",
+    "main.1f211eb5.css.map": "/static/css/main.1f211eb5.css.map",
+    "main.46981e6d.js.map": "/static/js/main.46981e6d.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db59d479.css",
-    "static/js/main.7fbf773b.js"
+    "static/css/main.1f211eb5.css",
+    "static/js/main.46981e6d.js"
   ]
 }
