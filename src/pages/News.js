@@ -23,6 +23,8 @@ const News = () => {
       return (
         <NewsCard
           title={content.title}
+          author={content.author}
+          position={content.position}
           fileName={content.fileName}
           link={content.link}
           description={content.description}

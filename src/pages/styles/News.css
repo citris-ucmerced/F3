@@ -18,6 +18,40 @@
   width: 21rem;
 }
 
+.news-card-author{
+  font-size:15px;
+}
+
+.author-name::after {
+  content: '';
+  display: block; 
+}
+
+/* Styles for the author's name */
+.author-name {
+  font-weight: bold; /* makes the name bold */
+  color: #333; /* dark grey color for text */
+  margin-right: 16px; /* adds a little space between the name and position */
+}
+
+/* Styles for the author's position */
+.author-position {
+  font-style: italic; /* italicizes the position */
+  color: #666; /* lighter grey color for text */
+  font-style:italic;
+
+}
+
+/* Additional styles for the Typography component that wraps both */
+.news-card-author {
+  font-size: 15px; /* base font size for both name and position */
+  line-height: 1.5; /* adjusts the space between lines */
+  margin-top: 5px;
+  margin-bottom: 5px; /* space below the author line */
+}
+
+
+
 .news-card-image {
   height: 40%;
 }
