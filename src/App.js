@@ -12,6 +12,7 @@ import InnovateShowcase from "./pages/InnovateShowcase.js";
 import FarmBotChallenge from "./pages/FarmBotChallenge.js";
 import ContactUs from "./pages/ContactUs.js";
 import NotFound from "./pages/NotFound.js";
+import Mission from "./pages/Mission.js";
 
 import "./global.css";
 
@@ -42,6 +43,7 @@ function App() {
           <Route path="/News" element={<News />} />
           <Route path="/ChallengeGrants" element={<ChallengeGrants />} />
           <Route path="/People" element={<People />} />
+          <Route path="/Mission" element={<Mission />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/StudentProjects" element={<StudentProjects />} />
           <Route path="/InnovateShowcase" element={<InnovateShowcase />} />
