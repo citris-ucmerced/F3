@@ -26,6 +26,10 @@ const Navbar = () => {
           name: "People",
           endpoint: "/People",
         },
+        {
+          name:"Mission",
+          endpoint:"/Mission"
+        }
       ],
     },
     {
