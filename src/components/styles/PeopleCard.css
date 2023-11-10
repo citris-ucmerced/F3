@@ -1,6 +1,6 @@
 /* PeopleCard.js */
 .people-card.MuiCard-root {
-  width: 17rem;
+  width: 17rem; /* Adjusted in media query for smaller screens */
   height: 23.75rem;
   box-shadow: 0px 10px 20px #02304b81;
   transition: box-shadow 200ms ease-out, transform 100ms ease-in;
@@ -44,11 +44,11 @@
 
 .flip-card {
   background-color: transparent;
-  width: 17rem;
+  width: 17rem; /* Adjusted in media query for smaller screens */
   height: 23.75rem;
   border-radius: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   perspective: 1000px;
 }
 
@@ -83,4 +83,40 @@
   transform: rotateY(180deg);
   background-color: white;
   border-radius: 1rem;
+}
+
+.people-grid.two-items .flip-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .people-card.MuiCard-root, .flip-card {
+    width: 15rem; 
+  }
+
+  .people-grid {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  }
+
+  .people-grid.two-items .flip-card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .people-card.MuiCard-root, .flip-card {
+    width: 100%; 
+  }
+
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .people-grid.two-items .flip-card {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
 }
