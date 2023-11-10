@@ -1,102 +1,102 @@
 
 .page {
     
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-section h1 {
+  color: #333;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.greenhouse{
+  height: auto;
+  width: 320px;
+  border-radius: 60px;
+}
+
+
+/* Mobile-first approach, with media queries for larger screens */
+@media (min-width: 768px) {
   .about-us-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff; 
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
   }
-  
+
   .about-us-section h1 {
-    color: #333;
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 2.5em;
   }
-  
+
   .about-description {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-us-section {
+    padding: 60px;
   }
 
-  .greenhouse{
-    height: auto;
-    width: 320px;
-  }
- 
-
-  /* Mobile-first approach, with media queries for larger screens */
-  @media (min-width: 768px) {
-    .about-us-section {
-      padding: 40px;
-    }
-  
-    .about-us-section h1 {
-      font-size: 2.5em;
-    }
-  
-    .about-description {
-      font-size: 1.1em;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .about-us-section {
-      padding: 60px;
-    }
-  
-    .about-us-section h1 {
-      font-size: 3em;
-    }
-  
-    .about-description {
-      font-size: 1.2em;
-    }
+  .about-us-section h1 {
+    font-size: 3em;
   }
 
-  /* Add these styles to your existing CSS */
+  .about-description {
+    font-size: 1.2em;
+  }
+}
+
+/* Add these styles to your existing CSS */
 .about-section {
-    clear: both;
-    margin-bottom: 40px;
-  }
-  
-  .image-wrapper {
-    float: right; /* Change to "left" for left-aligned images */
-    margin-left: 20px;
-  }
-  
-  .text-wrapper {
-    overflow: hidden; /* Clear the float */
-    padding: 20px;
-  }
-  
-  /* Add these styles to your existing CSS */
+  clear: both;
+  margin-bottom: 40px;
+}
+
+.image-wrapper {
+  float: right; /* Change to "left" for left-aligned images */
+  margin-left: 20px;
+}
+
+.text-wrapper {
+  overflow: hidden; /* Clear the float */
+  padding: 20px;
+}
+
+/* Add these styles to your existing CSS */
 .about-section {
-    clear: both;
-    margin-bottom: 40px;
-  }
-  
-  .image-wrapper {
-    float: left;
-    margin-right: 20px;
-  }
-  .image-wrapper2 {
-    float: right;
-    margin-left: 20px;
-  }
-  
-  .text-wrapper {
-    overflow: hidden; 
-  }
-  
-  
+  clear: both;
+  margin-bottom: 40px;
+}
+
+.image-wrapper {
+  float: left;
+  margin-right: 20px;
+}
+.image-wrapper2 {
+  float: right;
+  margin-left: 20px;
+}
+
+.text-wrapper {
+  overflow: hidden; 
+}
+
