@@ -23,13 +23,14 @@ const Navbar = () => {
       endpoint: "",
       sublinks: [
         {
-          name: "People",
-          endpoint: "/People",
-        },
-        {
           name:"Mission",
           endpoint:"/Mission"
+        },
+        {
+          name: "People",
+          endpoint: "/People",
         }
+       
       ],
     },
     {
