@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e49941c.css",
+    "main.css": "/static/css/main.ebb5a486.css",
     "main.js": "/static/js/main.c6711276.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
@@ -18,12 +18,12 @@
     "static/media/challengeGrants.csv": "/static/media/challengeGrants.d85c0042c6506b3f9565.csv",
     "static/media/events.csv": "/static/media/events.548cd7a5b890139aaeb5.csv",
     "index.html": "/index.html",
-    "main.3e49941c.css.map": "/static/css/main.3e49941c.css.map",
+    "main.ebb5a486.css.map": "/static/css/main.ebb5a486.css.map",
     "main.c6711276.js.map": "/static/js/main.c6711276.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e49941c.css",
+    "static/css/main.ebb5a486.css",
     "static/js/main.c6711276.js"
   ]
 }
