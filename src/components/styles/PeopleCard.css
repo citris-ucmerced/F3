@@ -24,10 +24,14 @@
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   height: max-content;
+  align-items: left; /* Center the content */
+  text-align: left; 
 }
 
 .people-card .MuiTypography-root {
   margin: 0;
+  width: 100%;
+ 
 }
 
 .people-card .people-card_description {
