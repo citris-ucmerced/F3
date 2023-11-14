@@ -49,6 +49,11 @@ function App() {
           <Route path="/InnovateShowcase" element={<InnovateShowcase />} />
           <Route path="/FarmBotChallenge" element={<FarmBotChallenge />} />
           <Route path="*" element={<NotFound />} />
+
+          <Route path="/" exact component={Events} />
+          <Route path="/events/:id" component={EventDetails} />
+
+
         </Routes>
       </BrowserRouter>
     </StyledEngineProvider>

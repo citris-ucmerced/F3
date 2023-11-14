@@ -15,6 +15,7 @@ import {
 import { FaCaretDown } from "react-icons/fa";
 
 import "./styles/EventCard.css";
+import { Link } from "react-router-dom";
 
 const DateSquare = ({ date }) => {
   const day = date.toLocaleString("default", { day: "numeric" });
@@ -136,7 +137,13 @@ const EventCard = ({ event }) => {
   }
 
   return (
+
+    
     <Grid
+
+
+
+
       item
       container
       xs={12}
@@ -145,15 +152,20 @@ const EventCard = ({ event }) => {
       display="flex"
       alignItems="top"
     >
+
+
+
       <Grid item xs={1}>
         <DateSquare date={start} />
       </Grid>
 
       <Grid item container md={7} marginY="1.5rem" display="flex" direction="column">
         <a href={url} className="event-title" style={{marginBottom: "10px"}}>
-          <Typography variant="h6" component="h1" fontWeight="700" color="black" >
-            {title}
-          </Typography>
+        <Link to={`/events/${id}`} className="event-title" style={{marginBottom: "10px"}}>
+       <Typography variant="h6" component="h1" fontWeight="700" color="black">
+          {title}
+        </Typography>
+       </Link>
         </a>
         <Typography variant="body1" component="p" fontWeight="500">
           {start.getTime() !== end.getTime()
@@ -192,6 +204,10 @@ const EventCard = ({ event }) => {
             />
           ))}
         </Box>
+
+
+        
+
       </Grid>
 
       <Grid item md={4} display="flex" justifyContent="center">
