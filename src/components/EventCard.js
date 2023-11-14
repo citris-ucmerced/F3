@@ -162,11 +162,12 @@ const EventCard = ({ event }) => {
       <Grid item container md={7} marginY="1.5rem" display="flex" direction="column">
         <a href={url} className="event-title" style={{marginBottom: "10px"}}>
         <Link to={`/events/${id}`} className="event-title" style={{marginBottom: "10px"}}>
-       <Typography variant="h6" component="h1" fontWeight="700" color="black">
+        <Typography variant="h6" component="h1" fontWeight="700" color="black">
           {title}
         </Typography>
        </Link>
         </a>
+        
         <Typography variant="body1" component="p" fontWeight="500">
           {start.getTime() !== end.getTime()
             ? `${start.toLocaleString("default", {
@@ -178,6 +179,7 @@ const EventCard = ({ event }) => {
               })} `
             : ""}
         </Typography>
+        
         <Typography variant="body1" component="p" fontWeight="400">
           {location} {time ? `@ ${time} ` : ""}
         </Typography>
