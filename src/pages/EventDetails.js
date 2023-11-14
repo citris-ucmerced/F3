@@ -114,6 +114,7 @@ const ImageCarousel = ({ imageFiles }) => {
 };
 
 const EventDetails = () => {
+  
   const { id } = useParams();
 
   const [event, setEvent] = useState({});
