@@ -1,3 +1,4 @@
+// NewsCard.js
 import React, { useState } from "react";
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { ImSpinner2 } from "react-icons/im";
@@ -18,7 +19,6 @@ const NewsCard = ({ title, author, position, fileName, link, description, date }
         title="Click me to read more!"
       >
         {!imageLoaded && (
-          // Add your loading animation or placeholder image here
           <div className="loading-animation"><ImSpinner2 /></div>
         )}
         <CardMedia
