@@ -39,12 +39,38 @@ const getRowById = (file, id, setData) => {
   };
 };
 
-/*
-  file: csv file
-  catagory: the column name to sort by
-  setData: function to set the data (e.g. const [data, setData] = useState({})
-*/
-const readCSVSortedByColumn = (file, catagory, setData) => {
+const getRowByTitle = (file, slug, setData) => {
+  let stopParsing = false;
+
+  const toSlug = (title) => {
+    return title
+      .toLowerCase()
+      .replace(/['":,.]/g, '')  
+      .replace(/ /g, '-')       
+      .replace(/[^\w-]+/g, ''); 
+  };
+
+  Papa.parse(file, {
+    ...config,
+    step: (results) => {
+      const row = results.data;
+      if (row.title && toSlug(row.title) === slug) {
+        setData(row);
+        stopParsing = true;
+      }
+
+      if (stopParsing) {
+        return;
+      }
+    },
+  });
+
+  return () => {
+    stopParsing = true;
+  };
+};
+
+const readCSVSortedByColumn = (file, category, setData) => {
   const data = {
     keys: [],
     dataByCategory: {},
@@ -53,7 +79,7 @@ const readCSVSortedByColumn = (file, catagory, setData) => {
   Papa.parse(file, {
     ...config,
     step: (results) => {
-      const key = results.data[catagory];
+      const key = results.data[category];
       const value = results.data;
       if (!data.keys.includes(key)) {
         data.keys.push(key);
@@ -61,10 +87,10 @@ const readCSVSortedByColumn = (file, catagory, setData) => {
       }
       data.dataByCategory[key].push(value);
     },
-    complete: (results) => {
+    complete: () => {
       setData(data);
     },
   });
 };
 
-export { readCSV, readCSVSortedByColumn, getRowById };
+export { readCSV, readCSVSortedByColumn, getRowById, getRowByTitle };
