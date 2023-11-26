@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3e49941c.css",
-    "main.js": "/static/js/main.8ff2bc31.js",
+    "main.js": "/static/js/main.fcac9ab4.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
     "static/media/UCM+VISTA_LogoHorizontal.png": "/static/media/UCM+VISTA_LogoHorizontal.390225281a7d743f5cc8.png",
@@ -10,7 +10,7 @@
     "static/media/F3_Logo.png": "/static/media/F3_Logo.498df994e6859ffda509.png",
     "static/media/gobiz-logo-transparent.png": "/static/media/gobiz-logo-transparent.a897208c09278f826a3d.png",
     "static/media/VISTA-Logo-Final-PNG-Color.png": "/static/media/VISTA-Logo-Final-PNG-Color.843c989caf050fbf65ef.png",
-    "static/media/staff.csv": "/static/media/staff.43894d060985c3b4933e.csv",
+    "static/media/staff.csv": "/static/media/staff.0abf869c8e27a3a5a6bd.csv",
     "static/media/UCM_Logos_Primary.png": "/static/media/UCM_Logos_Primary.af7005d9031c6d4b6635.png",
     "static/media/Fresno_State.webp": "/static/media/Fresno_State.d7e248d05012c07d0ff0.webp",
     "static/media/news.csv": "/static/media/news.da385e93e0acb389bc41.csv",
@@ -19,11 +19,11 @@
     "static/media/events.csv": "/static/media/events.548cd7a5b890139aaeb5.csv",
     "index.html": "/index.html",
     "main.3e49941c.css.map": "/static/css/main.3e49941c.css.map",
-    "main.8ff2bc31.js.map": "/static/js/main.8ff2bc31.js.map",
+    "main.fcac9ab4.js.map": "/static/js/main.fcac9ab4.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3e49941c.css",
-    "static/js/main.8ff2bc31.js"
+    "static/js/main.fcac9ab4.js"
   ]
 }
