@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b674f900.css",
-    "main.js": "/static/js/main.bd2316da.js",
+    "main.css": "/static/css/main.3223d2f8.css",
+    "main.js": "/static/js/main.ae8e6fb4.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
     "static/media/UCM+VISTA_LogoHorizontal.png": "/static/media/UCM+VISTA_LogoHorizontal.390225281a7d743f5cc8.png",
@@ -16,14 +16,14 @@
     "static/media/Fresno_State.webp": "/static/media/Fresno_State.d7e248d05012c07d0ff0.webp",
     "static/media/studentProjects.csv": "/static/media/studentProjects.cc9ff9a77a317ca56a2a.csv",
     "static/media/challengeGrants.csv": "/static/media/challengeGrants.d85c0042c6506b3f9565.csv",
-    "static/media/events.csv": "/static/media/events.ee47a22d150f5fef8a39.csv",
+    "static/media/events.csv": "/static/media/events.20347a1a08f8852e7733.csv",
     "index.html": "/index.html",
-    "main.b674f900.css.map": "/static/css/main.b674f900.css.map",
-    "main.bd2316da.js.map": "/static/js/main.bd2316da.js.map",
+    "main.3223d2f8.css.map": "/static/css/main.3223d2f8.css.map",
+    "main.ae8e6fb4.js.map": "/static/js/main.ae8e6fb4.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b674f900.css",
-    "static/js/main.bd2316da.js"
+    "static/css/main.3223d2f8.css",
+    "static/js/main.ae8e6fb4.js"
   ]
 }
