@@ -45,11 +45,7 @@
     background-color: #f4f4f4;
   }
   
-  /* Hover effects for interactive elements */
-  .detail-author-name:hover, .news-link:hover {
-    color: #007bff; /* Blue color on hover for links */
-    cursor: pointer;
-  }
+
   .detail-image {
     max-width: 100%; /* Ensure it doesn't overflow its container */
     height: auto; /* Maintain aspect ratio */

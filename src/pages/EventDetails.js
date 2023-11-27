@@ -91,10 +91,22 @@ const ImageCarousel = ({ imageFiles }) => {
 
   return (
     <>
-      <Typography variant="h5" component="p" align="center">
+
+{images.map((image, index) => (
+          <img
+            key={index}
+            src={process.env.PUBLIC_URL + "/images/events/" + image}
+            alt="Event"
+            className="flyer-image"
+          />
+        ))}
+
+
+
+      {/* <Typography variant="h5" component="p" align="center">
         Slideshow
-      </Typography>
-      <Carousel
+      </Typography> */}
+      {/* <Carousel
         autoplay={true}
         wrapAround={true}
         swiping={true}
@@ -108,7 +120,7 @@ const ImageCarousel = ({ imageFiles }) => {
             className="carousel-image"
           />
         ))}
-      </Carousel>
+      </Carousel> */}
     </>
   );
 };
