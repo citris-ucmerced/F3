@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3223d2f8.css",
-    "main.js": "/static/js/main.ae8e6fb4.js",
+    "main.css": "/static/css/main.3e49941c.css",
+    "main.js": "/static/js/main.f80f4c1f.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
     "static/media/UCM+VISTA_LogoHorizontal.png": "/static/media/UCM+VISTA_LogoHorizontal.390225281a7d743f5cc8.png",
@@ -10,20 +10,20 @@
     "static/media/F3_Logo.png": "/static/media/F3_Logo.498df994e6859ffda509.png",
     "static/media/gobiz-logo-transparent.png": "/static/media/gobiz-logo-transparent.a897208c09278f826a3d.png",
     "static/media/VISTA-Logo-Final-PNG-Color.png": "/static/media/VISTA-Logo-Final-PNG-Color.843c989caf050fbf65ef.png",
-    "static/media/staff.csv": "/static/media/staff.de6cdd458a8b4b62b1f5.csv",
-    "static/media/news.csv": "/static/media/news.3d10da1c7b92779b02a2.csv",
+    "static/media/staff.csv": "/static/media/staff.0b07a0793b3528e331f9.csv",
     "static/media/UCM_Logos_Primary.png": "/static/media/UCM_Logos_Primary.af7005d9031c6d4b6635.png",
     "static/media/Fresno_State.webp": "/static/media/Fresno_State.d7e248d05012c07d0ff0.webp",
-    "static/media/studentProjects.csv": "/static/media/studentProjects.cc9ff9a77a317ca56a2a.csv",
+    "static/media/news.csv": "/static/media/news.da385e93e0acb389bc41.csv",
+    "static/media/studentProjects.csv": "/static/media/studentProjects.157a2498356944f89335.csv",
     "static/media/challengeGrants.csv": "/static/media/challengeGrants.d85c0042c6506b3f9565.csv",
-    "static/media/events.csv": "/static/media/events.20347a1a08f8852e7733.csv",
+    "static/media/events.csv": "/static/media/events.548cd7a5b890139aaeb5.csv",
     "index.html": "/index.html",
-    "main.3223d2f8.css.map": "/static/css/main.3223d2f8.css.map",
-    "main.ae8e6fb4.js.map": "/static/js/main.ae8e6fb4.js.map",
+    "main.3e49941c.css.map": "/static/css/main.3e49941c.css.map",
+    "main.f80f4c1f.js.map": "/static/js/main.f80f4c1f.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3223d2f8.css",
-    "static/js/main.ae8e6fb4.js"
+    "static/css/main.3e49941c.css",
+    "static/js/main.f80f4c1f.js"
   ]
 }
