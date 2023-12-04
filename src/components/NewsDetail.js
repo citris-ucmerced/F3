@@ -5,6 +5,12 @@ import Footer from '../components/Footer.js';
 import newsCSV from '../assets/sheets/news.csv';
 import './styles/NewsDetail.css';
 import { getRowByTitle } from '../utils/CSVReader.js';
+import displayWithParagraphs from '../utils/CSVReader.js';
+
+
+
+
+
 
 const NewsDetail = () => {
   const { slug } = useParams(); // Retrieve the slug from URL
@@ -27,11 +33,22 @@ const NewsDetail = () => {
       <Navbar />
       <div className="page">
         <div className='news-detail'>
+
+          
           <h1 className='detail-title'>{newsItem.title}</h1>
-          <h3 className='detail-author-name'>Author: {newsItem.author}</h3>
-          <h3 className='detail-author-position'>{newsItem.position}</h3>
-          <p className='detail-description'>{newsItem.description}</p>
+          
+          <h3 className='detail-author-name'> By: {newsItem.author}, {newsItem.position}</h3>
+          <h3 className='detail-author-date'>{newsItem.date}</h3>
+          <p className='detail-description'>{displayWithParagraphs(newsItem.description)}</p>
+
+
+
+
+
+
+          
         </div>
+
       </div>
       <Footer />
     </>

@@ -16,6 +16,17 @@ const readCSV = (file, setData) => {
   });
 };
 
+
+const displayWithParagraphs = (text) => {
+  return text.split('\n').map((paragraph, index) => (
+    <p key={index} className="paragraph">{paragraph}</p>
+  ));
+};
+
+
+export default displayWithParagraphs;
+
+
 const getRowById = (file, id, setData) => {
   let stopParsing = false;
 
@@ -92,5 +103,7 @@ const readCSVSortedByColumn = (file, category, setData) => {
     },
   });
 };
+
+
 
 export { readCSV, readCSVSortedByColumn, getRowById, getRowByTitle };
