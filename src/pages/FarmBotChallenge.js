@@ -147,10 +147,13 @@ const FarmRoboticsChallenge = () => {
                 <ListItemText primary="Competition Opens" secondary="September 19, 2023" />
               </ListItem>
               <ListItem>
-                <ListItemText primary="Team Formation" secondary="October 31, 2023" />
+              <ListItemText primary="Team Formation" secondary="December 10, 2023 (if you need help forming a team)" />
+              </ListItem>
+<             ListItem>
+              <ListItemText primary="" secondary="December 18, 2023 (if you already formed a team)" />
               </ListItem>
               <ListItem>
-                <ListItemText primary="Project Proposal Submission" secondary="November 15, 2023" />
+                <ListItemText primary="Project Proposal Submission" secondary="December 18, 2023"/>
               </ListItem>
               <ListItem>
                 <ListItemText primary="Development Starts" secondary="January 31, 2024" />
