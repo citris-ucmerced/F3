@@ -13,21 +13,28 @@
   
   .detail-title {
     color: #1a1a1a; /* Dark color for the title */
-    font-size: 2rem; /* Larger font size for the title */
-    margin-bottom: 10px;
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 5px;
     text-align: center; /* Center align the title */
-    padding: 40px;
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px auto; /* Center align the card */
+    overflow-y: auto; /* Allow vertical scrolling */
+    height: auto; /* Adjust height automatically */
+    line-height: 1.6; /* Improve readability */
   }
   
-  .detail-author-name, .detail-author-position {
+  .detail-author-name, .detail-author-position, .detail-author-date {
     text-align: center; /* Center align author details */
     margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    color:#aeb4b1;
+    
   }
+  
 
-  .detail-author-position{
-    color:gray;
 
-  }
   
   .detail-description {
     padding: 15px;
@@ -39,8 +46,11 @@
     line-height: 1.6; /* Improve readability */
     font-size: 16px; /* Increase font size for body text */
   }
-  
- 
+
+  .paragraph {
+    margin-bottom: 1em; /* Adjust as needed for spacing */
+    font-size: 18px;
+  }
   
   .detail-description::-webkit-scrollbar-thumb {
     background-color: #ccc; /* Light grey scrollbar */
