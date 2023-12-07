@@ -93,7 +93,7 @@ const Home = () => {
   </Container>
 </div>
 
-<div className="instagram-section">
+{/* <div className="instagram-section">
         <Container maxWidth="md">
           <Typography variant="h3" component="h2" className="instagram-header">
             Discover Our Latest Events and Innovations
@@ -103,7 +103,7 @@ const Home = () => {
           </Typography>
           <InstagramPosts />
         </Container>
-      </div>
+      </div> */}
 
   
             
