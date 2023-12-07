@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ebafcf8.css",
-    "main.js": "/static/js/main.2bf0067a.js",
+    "main.css": "/static/css/main.0cbd12f2.css",
+    "main.js": "/static/js/main.a06684dc.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
     "static/media/small_farmer.jpg": "/static/media/small_farmer.8fa0de085989230b21f3.jpg",
@@ -20,13 +20,17 @@
     "static/media/studentProjects.csv": "/static/media/studentProjects.cc9ff9a77a317ca56a2a.csv",
     "static/media/challengeGrants.csv": "/static/media/challengeGrants.d85c0042c6506b3f9565.csv",
     "static/media/events.csv": "/static/media/events.8a7493d3823e0e78ae30.csv",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.7ebafcf8.css.map": "/static/css/main.7ebafcf8.css.map",
-    "main.2bf0067a.js.map": "/static/js/main.2bf0067a.js.map",
+    "main.0cbd12f2.css.map": "/static/css/main.0cbd12f2.css.map",
+    "main.a06684dc.js.map": "/static/js/main.a06684dc.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ebafcf8.css",
-    "static/js/main.2bf0067a.js"
+    "static/css/main.0cbd12f2.css",
+    "static/js/main.a06684dc.js"
   ]
 }
