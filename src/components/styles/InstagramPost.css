@@ -1,0 +1,64 @@
+.instagram-feed {
+  width: 100%;
+  margin: auto;
+
+}
+
+.instagram-post {
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  margin: auto;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.username-link {
+  text-decoration: none;
+  color: #262626;
+}
+.username-link:hover {
+  text-decoration: underline;
+  color: #262626;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.post-image {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  object-fit: cover; /* This ensures the image covers the area without stretching */
+  max-height: 1350px;
+}
+
+.post-caption {
+  padding-top: 10px;
+  text-align: left;
+  font-size: 14px;
+  color: #262626;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #000;
+}
+
+/* Optional: Add custom styling for navigation buttons */
+.slick-prev, .slick-next {
+  z-index: 1;
+}

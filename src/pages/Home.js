@@ -14,6 +14,7 @@ import bot from "../assets/images/amigabot.jpg"
 import "./styles/Home.css";
 import { useEffect } from "react";
 import partnerData from "../components/partnerData";
+import InstagramPosts from "../components/InstagramPost";
 
 const Home = () => {
   useEffect(() => {
@@ -91,6 +92,18 @@ const Home = () => {
     </Grid>
   </Container>
 </div>
+
+<div className="instagram-section">
+        <Container maxWidth="md">
+          <Typography variant="h3" component="h2" className="instagram-header">
+            Discover Our Latest Events and Innovations
+          </Typography>
+          <Typography variant="subtitle1" gutterBottom className="instagram-subheader">
+            Explore our journey and contributions through our latest Instagram updates.
+          </Typography>
+          <InstagramPosts />
+        </Container>
+      </div>
 
   
             

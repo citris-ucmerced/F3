@@ -14,6 +14,7 @@ import ContactUs from "./pages/ContactUs.js";
 import NotFound from "./pages/NotFound.js";
 import Mission from "./pages/Mission.js";
 import NewsDetail from "./components/NewsDetail.js";
+import InstagramPosts from "./components/InstagramPost.js";
 
 import "./global.css";
 
@@ -55,6 +56,9 @@ function App() {
           <Route path="/Events/:slug" component={<EventDetails/>} />
           <Route path="/News" element={<News />} />
           <Route path="/News/:slug" element={<NewsDetail />} />
+
+
+          
           
           
          
