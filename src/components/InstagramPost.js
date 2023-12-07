@@ -14,9 +14,9 @@ function InstagramPosts() {
   useEffect(() => {
     async function fetchPosts() {
       try {
-        const response = await axios.get("http://localhost:3000/api/getRecentPosts");
+        const response = await axios.get("http://f3.ucmerced.edu/api/getRecentPosts");
         setPosts(response.data.data);
-        const profileResponse = await axios.get("http://localhost:3000/api/getProfileInfo");
+        const profileResponse = await axios.get("http://f3.ucmerced.edu/api/getProfileInfo");
         setProfileInfo(profileResponse.data);
       } catch (error) {
         console.error("Error fetching posts", error);
