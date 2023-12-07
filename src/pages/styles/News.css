@@ -11,11 +11,19 @@
   gap: 6rem;
 }
 
+.read-more-link{
+  color:gray;
+
+}
+
+
+
 .news-card {
   display: flex;
   flex-direction: column;
   height: 31rem;
   width: 21rem;
+  cursor: pointer;
 }
 
 .news-card-author{
