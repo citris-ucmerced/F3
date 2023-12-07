@@ -139,6 +139,30 @@ h2.home-banner-text {
   }
 }
 
+.instagram-feed{
+  text-align: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+.instagram-header{
+  margin-bottom: 30px;
+}
+.instagram-section {
+  background-color: #f4f4f4; /* Light background to distinguish the section */
+  padding: 80px;
+  text-align: center;
+}
+
+.instagram-header {
+  margin-bottom: 20px;
+  color: #333; /* Adjust to match your color scheme */
+}
+
+.instagram-subheader {
+  margin-bottom: 30px;
+}
+
 
 
 .about-content{
