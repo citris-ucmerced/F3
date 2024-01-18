@@ -24,7 +24,7 @@ const Mission = () => {
             <h1>About Us</h1>
             <div className="about-section">
               <div className="image-wrapper">
-                <img className="greenhouse" src="./images/projects/vegetables.jpg" alt="Vegetables" />
+                <img className="greenhouse" src="./images/projects/about_us_left.jpeg" alt="Tomatoes" />
               </div>
               <div className="text-wrapper">
                 <h3>Our Journey Begins Here</h3>
@@ -40,7 +40,7 @@ const Mission = () => {
             </div>
             <div className="about-section">
               <div className="image-wrapper2">
-                <img className="greenhouse" src="./images/projects/greenhouse.jpg" alt="Greenhouse" />
+                <img className="greenhouse" src="./images/projects/about_us_right.jpeg" alt="Farming" />
               </div>
               <div className="text-wrapper">
                 <h3>Rooted in Growth</h3>

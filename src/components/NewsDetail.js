@@ -36,8 +36,13 @@ const NewsDetail = () => {
 
           
           <h1 className='detail-title'>{newsItem.title}</h1>
+
+          <h3 className='detail-author-name'> 
+            By: {newsItem.author}
+  {         newsItem.position && `, ${newsItem.position}`}
+          </h3>
+
           
-          <h3 className='detail-author-name'> By: {newsItem.author}, {newsItem.position}</h3>
           <h3 className='detail-author-date'>{newsItem.date}</h3>
           <p className='detail-description'>{displayWithParagraphs(newsItem.description)}</p>
 

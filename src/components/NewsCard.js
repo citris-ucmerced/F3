@@ -54,9 +54,10 @@ const NewsCard = ({ title, author, position, fileName, link, description, date, 
         <Typography className="news-card-title" variant="h5">
           {title}
         </Typography>
+
         <Typography className="news-card-author">
           By: <span className="author-name">{author}</span>
-          <span className="author-position">{position}</span>
+          {position && <span className="author-position">{position}</span>}
         </Typography>
         <Typography className="news-card-description" variant="body2">
           {firstTwoParagraphs}

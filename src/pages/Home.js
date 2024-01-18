@@ -6,8 +6,8 @@ import PartnerCard from "../components/PartnerCard"; // New component for partne
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import ucmerced_image from "../assets/images/ucmerced_aerial.jpg"
-import farmer from "../assets/images/small_farmer.jpg"
-import bot from "../assets/images/amigabot.jpg"
+import fruit from "../assets/images/Rooted_in_Growth.jpeg"
+import tractor from "../assets/images/Future_of_Food.jpeg"
 
 
 
@@ -47,9 +47,9 @@ const Home = () => {
         <div className="info-home">
   <Container maxWidth="lg">
     {/* Section 1 */}
-    <Grid container spacing={4} alignItems="center">
+    <Grid container spacing={12} alignItems="center">
       <Grid item xs={12} md={6}>
-        <img src={farmer} alt="UC Merced Farm Landscape" className="info-image" />
+        <img src={fruit} alt="UC Merced Farm Landscape" className="info-image" />
       </Grid>
       <Grid item xs={12} md={6}>
         <Typography variant="h6" gutterBottom>
@@ -77,9 +77,9 @@ const Home = () => {
     </Grid>
 
     {/* Section 3 */}
-    <Grid container spacing={4} alignItems="center">
+    <Grid container spacing={12} alignItems="center">
       <Grid item xs={12} md={6}>
-        <img src={bot} alt="UC Merced Farm Landscape" className="info-image" />
+        <img src={tractor} alt="UC Merced Farm Tractors" className="info-image" />
       </Grid>
       <Grid item xs={12} md={6}>
         <Typography variant="h6" gutterBottom>

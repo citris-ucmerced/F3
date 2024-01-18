@@ -116,10 +116,11 @@ h2.home-banner-text {
 }
 
 .info-image {
-  width: 100%;
-  height: auto;
+  width: 550px;
+  height: 450px;
   object-fit: cover;
 }
+
 
 /* Typography Styles */
 .info-home .MuiTypography-h6 {
