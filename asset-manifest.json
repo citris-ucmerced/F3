@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.00073f7e.css",
-    "main.js": "/static/js/main.5b67e154.js",
+    "main.js": "/static/js/main.0d321c4c.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/Future_of_Food.jpeg": "/static/media/Future_of_Food.311960377f4dc720c3ec.jpeg",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
@@ -11,7 +11,7 @@
     "static/media/F3_MainLogo_Horizontal.jpg": "/static/media/F3_MainLogo_Horizontal.46972804cf7af15512f4.jpg",
     "static/media/Slide7.jpg": "/static/media/Slide7.c6cc8d9f876468a55501.jpg",
     "static/media/F3_Logo.png": "/static/media/F3_Logo.498df994e6859ffda509.png",
-    "static/media/news.csv": "/static/media/news.62650c76f6894c063825.csv",
+    "static/media/news.csv": "/static/media/news.c77732020c4f7480b739.csv",
     "static/media/gobiz-logo-transparent.png": "/static/media/gobiz-logo-transparent.a897208c09278f826a3d.png",
     "static/media/VISTA-Logo-Final-PNG-Color.png": "/static/media/VISTA-Logo-Final-PNG-Color.843c989caf050fbf65ef.png",
     "static/media/staff.csv": "/static/media/staff.6246df1cdf11299aa29d.csv",
@@ -26,11 +26,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.00073f7e.css.map": "/static/css/main.00073f7e.css.map",
-    "main.5b67e154.js.map": "/static/js/main.5b67e154.js.map",
+    "main.0d321c4c.js.map": "/static/js/main.0d321c4c.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00073f7e.css",
-    "static/js/main.5b67e154.js"
+    "static/js/main.0d321c4c.js"
   ]
 }
