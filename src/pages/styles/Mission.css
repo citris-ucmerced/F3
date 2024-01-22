@@ -30,8 +30,8 @@
 }
 
 .greenhouse{
-  height: 450px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   border-radius: 60px;
 }
 
@@ -65,7 +65,6 @@
   }
 }
 
-/* Add these styles to your existing CSS */
 .about-section {
   clear: both;
   margin-bottom: 40px;
