@@ -26,6 +26,7 @@ const Events = () => {
   const [csvData, setCsvData] = useState([]);
   const [futureEvents, setFutureEvents] = useState({});
   const [pastEvents, setPastEvents] = useState({});
+  const [sortedPastEvents, setSortedPastEvents] = useState({}); // New state for sorted past events
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [categories, setCategories] = useState([]);
@@ -71,7 +72,6 @@ const Events = () => {
           acc[monthAndYear] = [];
         }
         acc[monthAndYear].push(item);
-        acc[monthAndYear].sort((a, b) => b.start.getDate() - a.start.getDate());
       }
 
       return acc;
@@ -79,6 +79,21 @@ const Events = () => {
 
     setFutureEvents(futureData);
     setPastEvents(pastData);
+
+    // Sort the month and year keys in descending order for past events
+    const sortedKeys = Object.keys(pastData).sort((a, b) => {
+      const dateA = new Date(a + " 1");
+      const dateB = new Date(b + " 1");
+      return dateB - dateA;
+    });
+
+    // Create a new object with sorted keys
+    const sortedData = {};
+    sortedKeys.forEach((key) => {
+      sortedData[key] = pastData[key];
+    });
+
+    setSortedPastEvents(sortedData);
 
     // Extract categories from events
     const uniqueCategories = Array.from(
@@ -132,49 +147,51 @@ const Events = () => {
         <Navbar />
 
         <Container>
+          {/* Future Events Section */}
           <div className="events-divider">
             <Typography variant="h4" component="h1" className="divider-text">
               Upcoming Events
             </Typography>
           </div>
 
+          {/* Search Bar */}
           <div className="search-bar-container">
-          <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
-            <TextField
-              label="Search Events"
-              variant="outlined"
-              margin="normal"
-              fullWidth
-              onChange={handleSearch}
-              className="search-bar"
-              InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
-                    <FormControl variant="standard" className="category-select">
-                      <InputLabel>Category</InputLabel>
-                      <Select
-                        value={selectedCategory}
-                        onChange={handleCategoryChange}
-                        label="Category"
-                      >
-                        <MenuItem value="">
-                          <em>All</em>
-                        </MenuItem>
-                        {categories.map((category, index) => (
-                          <MenuItem key={index} value={category}>
-                            {category}
+            <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
+              <TextField
+                label="Search Events"
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                onChange={handleSearch}
+                className="search-bar"
+                InputProps={{
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <FormControl variant="standard" className="category-select">
+                        <InputLabel>Category</InputLabel>
+                        <Select
+                          value={selectedCategory}
+                          onChange={handleCategoryChange}
+                          label="Category"
+                        >
+                          <MenuItem value="">
+                            <em>All</em>
                           </MenuItem>
-                        ))}
-                      </Select>
-                    </FormControl>
-                  </InputAdornment>
-                ),
-              }}
-            />
+                          {categories.map((category, index) => (
+                            <MenuItem key={index} value={category}>
+                              {category}
+                            </MenuItem>
+                          ))}
+                        </Select>
+                      </FormControl>
+                    </InputAdornment>
+                  ),
+                }}
+              />
             </Box>
           </div>
 
-          {/* Display Future Events */}
+          {/* Render Future Events */}
           {Object.entries(futureEvents).map(([monthAndYear, events]) => {
             const filteredEvents = filterEvents(events);
             if (filteredEvents.length > 0) {
@@ -195,14 +212,15 @@ const Events = () => {
             } else return null;
           })}
 
-          {/* Display Past Events */}
+          {/* Past Events Section */}
           <div className="events-divider">
             <Typography variant="h4" component="h1" className="divider-text">
               Past Events
             </Typography>
           </div>
 
-          {Object.entries(pastEvents).map(([monthAndYear, events]) => {
+          {/* Render Past Events */}
+          {Object.entries(sortedPastEvents).map(([monthAndYear, events]) => {
             const filteredEvents = filterEvents(events);
             if (filteredEvents.length > 0) {
               return (
