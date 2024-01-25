@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Container,
   Typography,
@@ -11,7 +12,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-import "./styles/ContactUs.css"
+import "./styles/ContactUs.css"; // Ensure this CSS file includes the new styles
 
 const ContactUs = () => {
   const contactDetails = [
@@ -42,25 +43,27 @@ const ContactUs = () => {
         <meta name="description" content="Have questions? Reach out and we'll be in touch!" />
         <link rel="canonical" href="/ContactUs" />
       </Helmet>
-      <Box className="page">
+      <Box className="page" style={{ backgroundColor: "#f4f4f4", color: "#333" }}>
         <Navbar />
-        <Container>
+        <Container style={{ paddingTop: "2rem", paddingBottom: "2rem" }}>
           <Box my={4}>
-            <Typography variant="h4" component="h1" align="center" className="page-title" gutterBottom>
+            <Typography variant="h4" component="h1" align="center" style={{ fontWeight: "bold" }}>
               Contact Us
             </Typography>
 
-            <Grid container spacing={4} sx={{ marginTop: "2rem" }}>
+            <Grid container spacing={4} style={{ marginTop: "2rem" }}>
               {contactDetails.map((contact, index) => (
                 <Grid item xs={12} sm={6} md={3} key={index}>
                   <Card
-                    sx={{
+                    style={{
                       height: "100%",
-                      backgroundColor: "rgba(255, 255, 255, 1)",
+                      backgroundColor: "#fff",
+                      boxShadow: "0px 4px 8px rgba(0,0,0,0.1)",
+                      borderRadius: "8px",
                     }}
                   >
                     <CardContent>
-                      <Typography variant="h6">{contact.title}</Typography>
+                      <Typography variant="h6" style={{ fontWeight: "500" }}>{contact.title}</Typography>
                       <Typography paragraph>{contact.detail}</Typography>
                     </CardContent>
                   </Card>
@@ -68,12 +71,22 @@ const ContactUs = () => {
               ))}
             </Grid>
 
-            <Box mt={4} p={2} className="contact-form">
-              <iframe
-                src="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=o-nf9HjKmEm3p-bQaS6s5iTKSvsBWF5BqrxIXpmK-adUQUM2VFRUWDY2RkZKSE1RSjAxM1pOSDA0Ty4u"
-                title="Contact Us Microsoft Form"
-                style={{ width: "100%", height: "500px", border: "none" }}
-              />
+
+
+            <Box mt={4} p={1} style={{  borderRadius: "8px", overflow:"hidden"}}>
+            <iframe
+            src="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=o-nf9HjKmEm3p-bQaS6s5iTKSvsBWF5BqrxIXpmK-adUQUM2VFRUWDY2RkZKSE1RSjAxM1pOSDA0Ty4u"
+            title="Contact Us Microsoft Form"
+           style={{
+            width: "1.2 * 100%", // 120% of the container width
+            height: "1.2 * 500px", // 120% of the desired height
+            transform: "scale(0.900)", // scale down to 83.3%
+            transformOrigin: "center",
+            border: "none",
+            borderRadius: "8px",
+            margin:"-5px"
+          }}
+        />
             </Box>
           </Box>
         </Container>
