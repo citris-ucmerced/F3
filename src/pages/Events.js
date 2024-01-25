@@ -192,25 +192,41 @@ const Events = () => {
           </div>
 
           {/* Render Future Events */}
-          {Object.entries(futureEvents).map(([monthAndYear, events]) => {
-            const filteredEvents = filterEvents(events);
-            if (filteredEvents.length > 0) {
-              return (
-                <Grid container key={monthAndYear} sx={{ marginBottom: "2rem" }}>
-                  <Grid item xs={12} className="section">
-                    <Typography variant="h6" sx={{ width: "fit-content" }}>
-                      {monthAndYear}
-                    </Typography>
-                    <span className="line"></span>
-                  </Grid>
 
-                  {filteredEvents.map((event, iterator) => (
-                    <EventCard key={iterator} event={event} />
-                  ))}
-                </Grid>
-              );
-            } else return null;
-          })}
+{Object.keys(futureEvents).length === 0 ? (
+  <Typography
+    variant="h6"
+    component="h1"
+    align="center"
+    fontWeight="bold"
+    color="black"
+    margin={"7rem 7rem"}
+  >
+    THERE ARE CURRENTLY NO UPCOMING EVENTS, KEEP AN EYE OUT FOR UPDATES!
+  </Typography>
+) : (
+  Object.entries(futureEvents).map(([monthAndYear, events]) => {
+    const filteredEvents = filterEvents(events);
+    if (filteredEvents.length > 0) {
+      return (
+        <Grid container key={monthAndYear} sx={{ marginBottom: "2rem" }}>
+          <Grid item xs={12} className="section">
+            <Typography variant="h6" sx={{ width: "fit-content" }}>
+              {monthAndYear}
+            </Typography>
+            <span className="line"></span>
+          </Grid>
+
+          {filteredEvents.map((event, iterator) => (
+            <EventCard key={iterator} event={event} />
+          ))}
+        </Grid>
+      );
+    }
+    return null;
+  })
+)}
+
 
           {/* Past Events Section */}
           <div className="events-divider">
