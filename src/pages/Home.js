@@ -86,7 +86,7 @@ const Home = () => {
           The Future of Food
         </Typography>
         <Typography variant="body2">
-        F3 integrates the latest technologies and research into agriculture to make farming more sustainable and productive. F3 aims to educate and equip farmers with these advancedments.
+        F3 integrates the latest technologies and research into agriculture to make farming more sustainable and productive. F3 aims to educate and equip farmers with these advancements.
         </Typography>
       </Grid>
     </Grid>
