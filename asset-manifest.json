@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d2aced9.css",
-    "main.js": "/static/js/main.0f35e9fa.js",
+    "main.css": "/static/css/main.bb8b2fc6.css",
+    "main.js": "/static/js/main.7bcd3f6b.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/Future_of_Food.jpeg": "/static/media/Future_of_Food.311960377f4dc720c3ec.jpeg",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
@@ -25,12 +25,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.6d2aced9.css.map": "/static/css/main.6d2aced9.css.map",
-    "main.0f35e9fa.js.map": "/static/js/main.0f35e9fa.js.map",
+    "main.bb8b2fc6.css.map": "/static/css/main.bb8b2fc6.css.map",
+    "main.7bcd3f6b.js.map": "/static/js/main.7bcd3f6b.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d2aced9.css",
-    "static/js/main.0f35e9fa.js"
+    "static/css/main.bb8b2fc6.css",
+    "static/js/main.7bcd3f6b.js"
   ]
 }
