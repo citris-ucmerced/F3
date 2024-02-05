@@ -14,6 +14,7 @@ import Footer from "../components/Footer";
 
 import "./styles/ContactUs.css"; // Ensure this CSS file includes the new styles
 
+
 const ContactUs = () => {
   const contactDetails = [
     {
@@ -43,7 +44,7 @@ const ContactUs = () => {
         <meta name="description" content="Have questions? Reach out and we'll be in touch!" />
         <link rel="canonical" href="/ContactUs" />
       </Helmet>
-      <Box className="page" style={{ backgroundColor: "#f4f4f4", color: "#333" }}>
+      <Box className="page" style={{ backgroundColor: "#84BEF2", color: "#333" }}>
         <Navbar />
         <Container style={{ paddingTop: "2rem", paddingBottom: "2rem" }}>
           <Box my={4}>

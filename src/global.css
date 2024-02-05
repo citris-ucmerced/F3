@@ -27,7 +27,7 @@ iframe {
 .page {
   position: relative;
   min-height: 100vh;
-  background-image: linear-gradient(45deg, #8F95E7 0%,#84BFE2 40.21%, #84BFE2 81.21%, #81E7B3 100%);
+    background-color: #84BEF2;
   background-position: center;
   background-size: 100% auto;
 }

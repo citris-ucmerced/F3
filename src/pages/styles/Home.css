@@ -54,8 +54,9 @@ h2.home-banner-text {
   flex-direction: column;
   align-items: center;
   position: relative;
-  min-height: 100vh;;
-  background-image: linear-gradient(#81E7B3 0%,#84BFE2 40.21%, #84BFE2 95.21%, #8F95E7 100%);
+  min-height: 100vh;
+  background-color: #84BEF2;
+  ;
   background-position: center;
   background-size: cover;
   overflow:scroll;
