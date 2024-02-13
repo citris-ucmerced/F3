@@ -1,0 +1,109 @@
+.support-us-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .support-us-container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .support-us-container h2 {
+    margin-top: 40px;
+  }
+  
+  .support-us-container ul {
+    text-align: left;
+    list-style-position: inside;
+    margin-bottom: 20px;
+  }
+  
+  .support-us-container p {
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust the button style as needed */
+  .support-us-container .MuiButton-containedPrimary {
+    margin-top: 20px;
+  }
+  .page {
+    background-color: #84BEF2; /* Light grey background for slight contrast */
+    color: #333; /* Dark grey text for readability */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  .support-us-container {
+    background-color: #ffffff; /* White background for the content area */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Center-align the text for focus */
+  }
+  
+  .support-us-container h1, .support-us-container h2 {
+    color: #005687; /* A color that matches your branding */
+  }
+  
+  .support-us-container h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem; /* Larger font size for the main heading */
+  }
+  
+  .support-us-container h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2rem; /* Slightly smaller font size for subsection headings */
+  }
+  
+  .support-us-container ul {
+    text-align: left; /* Align list text to left */
+    list-style-position: inside;
+    padding: 0;
+    margin: 0 auto 30px auto; /* Center the list with some bottom margin */
+    display: inline-block;
+    text-align: start;
+  }
+  
+  .support-us-container li {
+    margin-bottom: 10px;
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+  }
+  
+  .support-us-container p {
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improved line height for readability */
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+  }
+  
+  .MuiButton-containedPrimary {
+    background-color: #007BFF; /* A vibrant color for the donation button */
+    color: #ffffff; /* White text for contrast */
+    padding: 10px 30px; /* Ample padding for a larger click area */
+    font-size: 1.1rem; /* Larger font size for the button text */
+    border-radius: 20px; /* Rounded corners for the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .MuiButton-containedPrimary:hover {
+    background-color: #0056b3; /* Darker shade on hover for feedback */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .support-us-container {
+      padding: 20px;
+    }
+  
+    .support-us-container h1 {
+      font-size: 2rem;
+    }
+  
+    .support-us-container h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+
+  

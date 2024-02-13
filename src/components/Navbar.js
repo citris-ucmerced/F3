@@ -60,7 +60,8 @@ const Navbar = () => {
         },
          {
           name:"Support Us",
-          endpoint:"https://engage.ucmerced.edu/vista"
+          endpoint: "/SupportUs"
+          // endpoint:"https://engage.ucmerced.edu/vista"
         },
 
       ],
