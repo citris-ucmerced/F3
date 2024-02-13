@@ -23,15 +23,12 @@ const SupportUs = () => {
 
           <h1>Support Our Mission</h1>
           <p>
-            F3 Innovate at UC Merced builds groundbreaking research and technology in sustainable agriculture, aiming to revolutionize food production in California's Central Valley and beyond. Our efforts focus on creating a sustainable future for food production, reducing environmental impact, and supporting local communities.
+            F3 Innovate at UC Merced builds groundbreaking research and technology in sustainable agriculture, aiming to revolutionize food production in California's Central Valley and beyond. Our efforts focus on creating a sustainable future for food production, reducing environmental impact, and supporting local communities.Your donation helps fund critical research and educational programs, preparing the next generation of leaders in sustainable agriculture.
+
           </p>
-          <h2>Why Your Support Matters</h2>
-          <ul>
-            <li><strong>Environmental Impact:</strong> Sustainable farming practices can significantly reduce water usage by up to 50% compared to traditional methods.</li>
-            <li><strong>Innovation and Education:</strong> Your donation helps fund critical research and educational programs, preparing the next generation of leaders in sustainable agriculture.</li>
-          </ul>
+         
           <p>
-            Every contribution, no matter the size, makes a significant difference in our mission. Together, we can build a more sustainable and food-secure future.
+            Every contribution, no matter the size, makes a significant difference in our mission. Together, we can build a more sustainable and food-secure future. Let's build the future of food together!
           </p>
           <Button
             variant="contained"
