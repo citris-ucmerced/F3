@@ -42,7 +42,7 @@
   }
   
   .support-us-container h1, .support-us-container h2 {
-    color: black; /* A color that matches your branding */
+    color: black; 
   }
   
   .support-us-container h1 {
@@ -77,7 +77,7 @@
   }
   
   .MuiButton-containedPrimary {
-    background-color: #007BFF; /* A vibrant color for the donation button */
+    background-color: #007BFF; 
     color: #ffffff; /* White text for contrast */
     padding: 10px 30px; /* Ample padding for a larger click area */
     font-size: 1.1rem; /* Larger font size for the button text */

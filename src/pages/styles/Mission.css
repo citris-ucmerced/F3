@@ -72,16 +72,15 @@
 }
 
 .image-wrapper {
-  float: right; /* Change to "left" for left-aligned images */
+  float: right; 
   margin-left: 20px;
 }
 
 .text-wrapper {
-  overflow: hidden; /* Clear the float */
+  overflow: hidden; 
   padding: 20px;
 }
 
-/* Add these styles to your existing CSS */
 .about-section {
   clear: both;
   margin-bottom: 40px;
