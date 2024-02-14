@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb8b2fc6.css",
-    "main.js": "/static/js/main.fe1c69a1.js",
+    "main.css": "/static/css/main.9f66e446.css",
+    "main.js": "/static/js/main.21d11a98.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/Future_of_Food.jpeg": "/static/media/Future_of_Food.311960377f4dc720c3ec.jpeg",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
     "static/media/Rooted_in_Growth.jpeg": "/static/media/Rooted_in_Growth.c51a42cfab6c09b94afa.jpeg",
+    "static/media/SupportUs.jpg": "/static/media/SupportUs.cd42a5f3c2383e58ce28.jpg",
     "static/media/ucmerced_aerial.jpg": "/static/media/ucmerced_aerial.03eb5e830d6be9761627.jpg",
     "static/media/UCM+VISTA_LogoHorizontal.png": "/static/media/UCM+VISTA_LogoHorizontal.390225281a7d743f5cc8.png",
     "static/media/F3_MainLogo_Horizontal.jpg": "/static/media/F3_MainLogo_Horizontal.46972804cf7af15512f4.jpg",
     "static/media/Slide7.jpg": "/static/media/Slide7.c6cc8d9f876468a55501.jpg",
     "static/media/F3_Logo.png": "/static/media/F3_Logo.498df994e6859ffda509.png",
     "static/media/news.csv": "/static/media/news.76afbc8aa7a26fb4ad1b.csv",
+    "static/media/planting.png": "/static/media/planting.7bdb772072fac1f95749.png",
     "static/media/gobiz-logo-transparent.png": "/static/media/gobiz-logo-transparent.a897208c09278f826a3d.png",
     "static/media/VISTA-Logo-Final-PNG-Color.png": "/static/media/VISTA-Logo-Final-PNG-Color.843c989caf050fbf65ef.png",
-    "static/media/staff.csv": "/static/media/staff.1324ea29fe48be47061d.csv",
+    "static/media/staff.csv": "/static/media/staff.d784d3ec871af8ceafa0.csv",
     "static/media/UCM_Logos_Primary.png": "/static/media/UCM_Logos_Primary.af7005d9031c6d4b6635.png",
     "static/media/Fresno_State.webp": "/static/media/Fresno_State.d7e248d05012c07d0ff0.webp",
     "static/media/studentProjects.csv": "/static/media/studentProjects.5b8db3c97ae2b5f09422.csv",
@@ -25,12 +27,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.bb8b2fc6.css.map": "/static/css/main.bb8b2fc6.css.map",
-    "main.fe1c69a1.js.map": "/static/js/main.fe1c69a1.js.map",
+    "main.9f66e446.css.map": "/static/css/main.9f66e446.css.map",
+    "main.21d11a98.js.map": "/static/js/main.21d11a98.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb8b2fc6.css",
-    "static/js/main.fe1c69a1.js"
+    "static/css/main.9f66e446.css",
+    "static/js/main.21d11a98.js"
   ]
 }
