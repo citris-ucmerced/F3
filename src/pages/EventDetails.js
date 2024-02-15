@@ -153,7 +153,7 @@ const EventDetails = () => {
   return (
     <>
       <Helmet>
-        <title>F3 - Farms, Food, Future</title>
+        <title>F3 | Farms, Food, Future</title>
         <meta name="description" content="" />
       </Helmet>
 

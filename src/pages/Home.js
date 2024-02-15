@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>F3 - Farms, Food, Future</title>
+        <title>F3 | Farms, Food, Future</title>
         <meta name="description" content="Pioneering sustainable food production through cutting-edge research and development. Training the next generation for the future of food workforce."/>
         <link rel="canonical" href="/" />
       </Helmet>
