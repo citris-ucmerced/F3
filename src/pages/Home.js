@@ -93,26 +93,36 @@ const Home = () => {
   </Container>
 </div>
 
-{/* <div className="instagram-section">
-        <Container maxWidth="md">
+
+<hr className="animated-line"></hr>
+
+
+{/* Instagram */}
+
+
+ <div className="instagram-section">
           <Typography variant="h3" component="h2" className="instagram-header">
             Discover Our Latest Events and Innovations
           </Typography>
-          <Typography variant="subtitle1" gutterBottom className="instagram-subheader">
+          <Typography variant="h5" gutterBottom className="instagram-subheader">
             Explore our journey and contributions through our latest Instagram updates.
           </Typography>
-          <InstagramPosts />
-        </Container>
-      </div> */}
+         
+          <div className="instagram-feed-ac">
+                <behold-widget feed-id="LJPjH92djBjYEWjNDZZ8"></behold-widget>
+                
 
-  
-            
+                </div>
+      </div> 
+
+      <hr className="animated-line"></hr>
+
+{/* Partners */}
+
       <div className="page-home">
         <Typography variant="h2" component="h1" className="page-title">
           Our Partners
         </Typography>
-
-      
 
         <div className="partners-container" data-aos="flip-up">
           {partnerData.map((partner, index) => (

@@ -22,6 +22,7 @@
     "axios": "^1.6.5",
     "carousel": "^0.0.3",
     "express": "^4.18.2",
+    "instagram": "^0.0.4",
     "nuka-carousel": "^6.0.3",
     "papaparse": "^5.4.1",
     "react": "^18.2.0",
