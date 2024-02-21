@@ -105,7 +105,7 @@ const Home = () => {
             Discover Our Latest Events and Innovations
           </Typography>
           <Typography variant="h5" gutterBottom className="instagram-subheader">
-            Explore our journey and contributions through our latest Instagram updates.
+            Explore our journey and contributions through our latest Instagram updates!
           </Typography>
          
           <div className="instagram-feed-ac">
