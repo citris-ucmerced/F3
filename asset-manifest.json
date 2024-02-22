@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2f8a0d86.css",
-    "main.js": "/static/js/main.af7f564e.js",
+    "main.js": "/static/js/main.c61dad6b.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/Future_of_Food.jpeg": "/static/media/Future_of_Food.311960377f4dc720c3ec.jpeg",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
@@ -19,8 +19,8 @@
     "static/media/staff.csv": "/static/media/staff.d784d3ec871af8ceafa0.csv",
     "static/media/UCM_Logos_Primary.png": "/static/media/UCM_Logos_Primary.af7005d9031c6d4b6635.png",
     "static/media/Fresno_State.webp": "/static/media/Fresno_State.d7e248d05012c07d0ff0.webp",
+    "static/media/events.csv": "/static/media/events.b51141da72c1f6994b48.csv",
     "static/media/studentProjects.csv": "/static/media/studentProjects.5b8db3c97ae2b5f09422.csv",
-    "static/media/events.csv": "/static/media/events.b0a5e2f43968983d329b.csv",
     "static/media/challengeGrants.csv": "/static/media/challengeGrants.d85c0042c6506b3f9565.csv",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -28,11 +28,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.2f8a0d86.css.map": "/static/css/main.2f8a0d86.css.map",
-    "main.af7f564e.js.map": "/static/js/main.af7f564e.js.map",
+    "main.c61dad6b.js.map": "/static/js/main.c61dad6b.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f8a0d86.css",
-    "static/js/main.af7f564e.js"
+    "static/js/main.c61dad6b.js"
   ]
 }
