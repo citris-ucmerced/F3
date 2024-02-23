@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2f8a0d86.css",
-    "main.js": "/static/js/main.c61dad6b.js",
+    "main.js": "/static/js/main.7cbfb575.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/Future_of_Food.jpeg": "/static/media/Future_of_Food.311960377f4dc720c3ec.jpeg",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
@@ -12,14 +12,14 @@
     "static/media/F3_MainLogo_Horizontal.jpg": "/static/media/F3_MainLogo_Horizontal.46972804cf7af15512f4.jpg",
     "static/media/Slide7.jpg": "/static/media/Slide7.c6cc8d9f876468a55501.jpg",
     "static/media/F3_Logo.png": "/static/media/F3_Logo.498df994e6859ffda509.png",
-    "static/media/news.csv": "/static/media/news.76afbc8aa7a26fb4ad1b.csv",
+    "static/media/news.csv": "/static/media/news.3012d1578a76a1d879d1.csv",
     "static/media/planting.png": "/static/media/planting.7bdb772072fac1f95749.png",
     "static/media/gobiz-logo-transparent.png": "/static/media/gobiz-logo-transparent.a897208c09278f826a3d.png",
     "static/media/VISTA-Logo-Final-PNG-Color.png": "/static/media/VISTA-Logo-Final-PNG-Color.843c989caf050fbf65ef.png",
     "static/media/staff.csv": "/static/media/staff.d784d3ec871af8ceafa0.csv",
     "static/media/UCM_Logos_Primary.png": "/static/media/UCM_Logos_Primary.af7005d9031c6d4b6635.png",
     "static/media/Fresno_State.webp": "/static/media/Fresno_State.d7e248d05012c07d0ff0.webp",
-    "static/media/events.csv": "/static/media/events.b51141da72c1f6994b48.csv",
+    "static/media/events.csv": "/static/media/events.3a260b15a101a3e3b30c.csv",
     "static/media/studentProjects.csv": "/static/media/studentProjects.5b8db3c97ae2b5f09422.csv",
     "static/media/challengeGrants.csv": "/static/media/challengeGrants.d85c0042c6506b3f9565.csv",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -28,11 +28,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.2f8a0d86.css.map": "/static/css/main.2f8a0d86.css.map",
-    "main.c61dad6b.js.map": "/static/js/main.c61dad6b.js.map",
+    "main.7cbfb575.js.map": "/static/js/main.7cbfb575.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f8a0d86.css",
-    "static/js/main.c61dad6b.js"
+    "static/js/main.7cbfb575.js"
   ]
 }
