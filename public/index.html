@@ -74,5 +74,16 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script type="module">
+      if ('noModule' in HTMLScriptElement.prototype) {
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.src = 'https://w.behold.so/widget.js';
+        document.body.appendChild(script);
+      }
+    </script>
+    </body>
+    
   </body>
 </html>
