@@ -15,7 +15,14 @@ const Footer = () => {
         </Link>
         <Typography variant="h6" sx={{ marginBottom: "0.5rem" }}>Farms Food Future Innovate</Typography>
         <Typography>Let's build the future of food together!</Typography>
+        <div style={{ maxWidth: "400px" }}> 
+       <Typography variant="body2" sx={{ marginTop: "1rem", fontSize: "0.73rem"}}>
+        Funding support from the US Department of Commerce, Economic Development Agency Build Back Better Regional Challenge, investment no. 07 79 07893, “Fresno-Merced Future of Food (F3) Initiative” and the UC Merced iCREATE project, award no. 07 79 07913.
+      </Typography>
+</div>
+
       </Grid>
+      
 
       <Grid item xs={12} sm={4} display="flex" flexDirection="column" alignItems={{xs: "flex-start", sm: "center"}}>
         <Typography variant="h6" sx={{ marginBottom: "1rem" }}>
@@ -43,6 +50,7 @@ const Footer = () => {
       <Grid item xs={12} display="flex" justifyContent="center" paddingTop={"1rem"}>
         <Typography>©2023 Farms Food Future | All rights reserved.</Typography>
       </Grid>
+      
     </Grid>
   );
 };
