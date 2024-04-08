@@ -16,6 +16,7 @@ import Mission from "./pages/Mission.js";
 import NewsDetail from "./components/NewsDetail.js";
 import InstagramPosts from "./components/InstagramPost.js";
 import SupportUs from "./pages/SupportUs.js";
+import HackTheValley from "./pages/HackTheValley.js";
 
 import "./global.css";
 
@@ -58,7 +59,7 @@ function App() {
           <Route path="/News" element={<News />} />
           <Route path="/News/:slug" element={<NewsDetail />} />
           <Route path="/SupportUs" element={<SupportUs/>} />
-
+          <Route path="/HackTheValley" element={<HackTheValley/>} />
 
 
           
