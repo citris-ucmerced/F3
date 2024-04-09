@@ -12,6 +12,7 @@ import {
 import "./styles/HackTheValley.css";
 import { useEffect } from "react";
 import { Padding } from "@mui/icons-material";
+import robot from "../assets/images/amiga-bot.png"
 
 const HackTheValley = () => {
   
@@ -27,6 +28,9 @@ const HackTheValley = () => {
         <Container style={{background: "white"}}>
             <Typography variant="h2" component="h1" align="center" className="page-title" gutterBottom >
               Hack The Valley Online Guide Book
+
+              <img src={robot} alt="UC Merced Farm Tractors" className="info-image" />
+
             </Typography>
         </Container>
 
@@ -46,21 +50,21 @@ const HackTheValley = () => {
                 Robot Path Creation 
             </Typography>
 
-            <div style={{paddingLeft: "10px"}}>
+            <div style={{paddingLeft: "10px", paddingTop: "5px"}}>
                 Create your own path, virtually or physically, upload it to the Amiga, and run your code!
                 <br />
                 
             </div>
 
-            <div style={{paddingLeft: "10px"}}>
+            <div style={{paddingLeft: "10px", paddingTop: "5px"}}>
                 <b >Virtual</b> <br />
-                <span style={{paddingLeft: "10px"}}>
+                <span style={{paddingLeft: "10px", paddingTop: "5px"}}>
                         In this section you will use Python to create a path around the obstacle course set up by us! <br></br>
                         <b style={{paddingLeft: "10px"}}>Goal: </b> Make it through the course WITHOUT hitting any cones
                 </span>
-                <br /> <b >Physical</b> <br />
-                <span style={{paddingLeft: "10px"}}>
-                    Using the onboard controller on the Amiga, you can program your own path without having to code.
+                <br /> <b>Physical</b> <br />
+                <span style={{paddingLeft: "10px", paddingTop: "5px"}}>
+                    Using the onboard controller on the Amiga, you can program your own path without having to code. <br></br>
                     <b style={{paddingLeft: "10px"}}>Goal: </b> Make it through the course WITHOUT hitting any cones
                 </span>
             </div>
@@ -69,19 +73,13 @@ const HackTheValley = () => {
               Computer Vision
             </Typography>
 
-            <div style={{paddingLeft: "10px"}}>
-                With an existing data set, by using a camera client, watch how the Amiga will use image processing on 
+            <div style={{paddingLeft: "10px", paddingTop: "5px"}}>
+                With an existing data set, a camera client, learn how the Amiga will use image processing on 
                 various fields and crops!
             </div>
-
             <br /><br /><br /><br /><br /><br /><br /><br />
-
         </Container>
-
-        
-            
       </Box>
-      
       <Footer/>
     </>
   );
