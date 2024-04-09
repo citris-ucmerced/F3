@@ -31,12 +31,6 @@ const HackTheValley = () => {
         </Container>
 
         <Container style={{background: "white"}}>
-            {/* <Typography variant="" component="h3" align="" gutterBottom >
-              Files
-            </Typography> */}
-        </Container>
-
-        <Container style={{background: "white"}}>
             <Typography variant="" component="h3" align="" gutterBottom >
               Resources
             </Typography>
@@ -76,7 +70,8 @@ const HackTheValley = () => {
             </Typography>
 
             <div style={{paddingLeft: "10px"}}>
-                With an existing data set, watch how the Amiga robot will use image processing on various agricultural fields.
+                With an existing data set, by using a camera client, watch how the Amiga will use image processing on 
+                various fields and crops!
             </div>
 
             <br /><br /><br /><br /><br /><br /><br /><br />
