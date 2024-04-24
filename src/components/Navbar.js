@@ -57,6 +57,10 @@ const Navbar = () => {
         {
           name: "Farm Bot Challenge",
           endpoint: "/FarmBotChallenge",
+        },  {
+          name:"Experimental Smart Farm",
+          endpoint: "/ExperimentalSmartFarm"
+          // endpoint:"https://engage.ucmerced.edu/vista"
         },
          {
           name:"Support Us",

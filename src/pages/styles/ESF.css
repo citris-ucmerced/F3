@@ -1,0 +1,16 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .ESF_one, .ESF_two {
+    width: 75%; 
+    max-width:fit-content; 
+    margin:  auto; 
+  }
+
+
+  
