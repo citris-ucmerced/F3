@@ -27,6 +27,7 @@
   .detail-author-name, .detail-author-position, .detail-author-date {
     text-align: center; /* Center align author details */
     margin-bottom: 5px;
+    margin-top: 10px;
     font-weight: 700;
     font-size: 20px;
     color:#aeb4b1;
