@@ -17,6 +17,7 @@ import NewsDetail from "./components/NewsDetail.js";
 import InstagramPosts from "./components/InstagramPost.js";
 import SupportUs from "./pages/SupportUs.js";
 import TheFarm from "./pages/ESF.js";
+import F3 from "./pages/F3.js"
 
 import "./global.css";
 
@@ -53,7 +54,7 @@ function App() {
           <Route path="/InnovateShowcase" element={<InnovateShowcase />} />
           <Route path="/FarmBotChallenge" element={<FarmBotChallenge />} />
           <Route path="/ExperimentalSmartFarm" element={<TheFarm/>} />
-
+          <Route path="/F3" element={<F3/>} />
           <Route path="*" element={<NotFound />} />
 
           <Route path="/" exact component={Events} />
