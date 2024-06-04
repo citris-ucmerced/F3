@@ -1,13 +1,13 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import { StyledEngineProvider } from "@mui/material/styles";
 
 import Home from "./pages/Home.js";
-import Events from "./pages/Events.js";
+// import Events from "./pages/Events.js";
 import EventDetails from "./pages/EventDetails.js";
-import News from "./pages/News.js";
+// import News from "./pages/News.js";
 import ChallengeGrants from "./pages/ChallengeGrants.js";
 import StudentProjects from "./pages/StudentProjects.js";
-import People from "./pages/People.js";
+// import People from "./pages/People.js";
 import InnovateShowcase from "./pages/InnovateShowcase.js";
 import FarmBotChallenge from "./pages/FarmBotChallenge.js";
 import ContactUs from "./pages/ContactUs.js";
@@ -37,6 +37,17 @@ import "./global.css";
 
 */
 
+// redirects for new site
+const Events = () => {
+	return(<><div><meta http-equiv="Refresh" Content="0; url=https://vista.ucmerced.edu/f3-events/" /></div></>);
+};
+const News = () => {
+	return(<><div><meta http-equiv="Refresh" Content="0; url=https://vista.ucmerced.edu/f3-news/" /></div></>);
+};
+const People = () => {
+	return(<><div><meta http-equiv="Refresh" Content="0; url=https://vista.ucmerced.edu/f3-staff/" /></div></>);
+};
+
 function App() {
   return (
     <StyledEngineProvider injectFirst>
@@ -60,15 +71,6 @@ function App() {
           <Route path="/News" element={<News />} />
           <Route path="/News/:slug" element={<NewsDetail />} />
           <Route path="/SupportUs" element={<SupportUs/>} />
-
-
-
-          
-          
-          
-         
-
-
         </Routes>
       </BrowserRouter>
     </StyledEngineProvider>
