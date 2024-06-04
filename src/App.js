@@ -17,6 +17,7 @@ import NewsDetail from "./components/NewsDetail.js";
 import InstagramPosts from "./components/InstagramPost.js";
 import SupportUs from "./pages/SupportUs.js";
 import TheFarm from "./pages/ESF.js";
+import F3 from "./pages/F3.js"
 
 import "./global.css";
 
@@ -41,7 +42,7 @@ function App() {
     <StyledEngineProvider injectFirst>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<F3 />} />
           <Route path="/Events" element={<Events />} />
           <Route path="/Events/:id" element={<EventDetails />} />
           <Route path="/News" element={<News />} />
@@ -53,9 +54,7 @@ function App() {
           <Route path="/InnovateShowcase" element={<InnovateShowcase />} />
           <Route path="/FarmBotChallenge" element={<FarmBotChallenge />} />
           <Route path="/ExperimentalSmartFarm" element={<TheFarm/>} />
-
           <Route path="*" element={<NotFound />} />
-
           <Route path="/" exact component={Events} />
           <Route path="/Events/:slug" component={<EventDetails/>} />
           <Route path="/News" element={<News />} />
