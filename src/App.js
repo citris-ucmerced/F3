@@ -54,9 +54,7 @@ function App() {
           <Route path="/InnovateShowcase" element={<InnovateShowcase />} />
           <Route path="/FarmBotChallenge" element={<FarmBotChallenge />} />
           <Route path="/ExperimentalSmartFarm" element={<TheFarm/>} />
-          {/* <Route path="/F3" element={<F3/>} /> */}
           <Route path="*" element={<NotFound />} />
-
           <Route path="/" exact component={Events} />
           <Route path="/Events/:slug" component={<EventDetails/>} />
           <Route path="/News" element={<News />} />
