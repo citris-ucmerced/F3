@@ -45,7 +45,7 @@ const News = () => {
 	return(<><div><meta http-equiv="Refresh" Content="0; url=https://vista.ucmerced.edu/f3-news/" /></div></>);
 };
 const People = () => {
-	return(<><div><meta http-equiv="Refresh" Content="0; url=https://vista.ucmerced.edu/f3-staff/" /></div></>);
+	return(<><div><meta http-equiv="Refresh" Content="0; url=https://vista.ucmerced.edu/f3-team/" /></div></>);
 };
 
 function App() {
