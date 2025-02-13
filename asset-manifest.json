@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1127b0fa.css",
-    "main.js": "/static/js/main.ca5cc468.js",
+    "main.js": "/static/js/main.4de47905.js",
     "static/js/787.4420cbb4.chunk.js": "/static/js/787.4420cbb4.chunk.js",
     "static/media/Future_of_Food.jpeg": "/static/media/Future_of_Food.311960377f4dc720c3ec.jpeg",
     "static/media/tractor(compressed)-Trim.mp4": "/static/media/tractor(compressed)-Trim.7446a61f813e89bf54b1.mp4",
@@ -27,11 +27,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.1127b0fa.css.map": "/static/css/main.1127b0fa.css.map",
-    "main.ca5cc468.js.map": "/static/js/main.ca5cc468.js.map",
+    "main.4de47905.js.map": "/static/js/main.4de47905.js.map",
     "787.4420cbb4.chunk.js.map": "/static/js/787.4420cbb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1127b0fa.css",
-    "static/js/main.ca5cc468.js"
+    "static/js/main.4de47905.js"
   ]
 }
